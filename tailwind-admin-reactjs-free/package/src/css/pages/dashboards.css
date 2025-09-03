@@ -1,0 +1,128 @@
+.rounded-bars .apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path {
+    clip-path: inset(0 0 5% 0 round 20px);
+}
+
+.rounded-circle .apexcharts-pie-area {
+    clip-path: inset(0 13% 33% 11% round 61px);
+}
+
+body .apexcharts-tooltip {
+    border-radius: 16px;
+}
+
+body .apexcharts-tooltip-marker {
+    border-radius: 4px;
+    width: 12px;
+    height: 4px;
+}
+
+body .apexcharts-tooltip.apexcharts-theme-dark {
+    background: rgba(17, 28, 45, 0.8);
+
+    .apexcharts-tooltip-title {
+        border-bottom: 0;
+        background: rgba(17, 28, 45, 0.7);
+    }
+}
+
+@media (min-width: 1024px) {
+    .tables-position {
+        left: unset;
+        right: 100%;
+    }
+
+    html[dir="rtl"] .tables-position {
+        right: unset;
+        left: 100%;
+    }
+}
+
+body .apexcharts-tooltip-series-group {
+    padding: 0 14px;
+}
+
+body .apexcharts-tooltip-title {
+    padding: 10px 14px;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+.timeline-tabs .timeline .timeline-icon {
+    position: relative;
+}
+
+.timeline-tabs .timeline .timeline-icon:after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    height: 20px;
+    width: 1px;
+    background-color: var(--color-border);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.trade-history td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.trade-history td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.timeline-tabs .timeline:last-child .timeline-icon:after {
+    height: 0;
+}
+
+.timeline-tabs .timeline-list {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 8px;
+}
+
+.timeline-tabs .timeline-list:last-child {
+    border-bottom: 0 !important;
+}
+
+#vector-map svg .dxm-background {
+    stroke: transparent !important;
+}
+
+#vector-map svg path {
+    fill: #C9D6DE !important;
+    stroke-width: 0.2px;
+}
+
+.dxm-tooltip svg path {
+    fill: var(--color-dark) !important;
+    stroke-width: 0;
+}
+
+.dxm-tooltip div {
+    color: #fff !important;
+    font-family: inherit !important;
+}
+
+.custome-badge span {
+    display: flex;
+    align-items: center;
+}
+
+.linear-gradient {
+    background-image: linear-gradient(rgb(80, 178, 252), rgb(244, 76, 102));
+}
+
+.crypto-btn span {
+    padding: 6px 8px !important;
+}
+
+.mySwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+    margin: 0 auto !important;
+}

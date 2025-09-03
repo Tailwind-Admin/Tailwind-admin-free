@@ -1,0 +1,100 @@
+.megamenu {
+  transform: translateY(38px) !important;
+}
+
+.simplebar-scrollbar:before {
+  background: var(--color-border) !important;
+}
+
+.translate {
+  transform: translate(-88%, 40px) !important;
+  transition: 0.5s;
+}
+.translate-lng {
+  transform: translate(-81%, 40px) !important;
+  transition: 0.5s;
+}
+
+.h-n80 {
+  height: calc(100vh - 80px);
+}
+
+/* styles/globals.css */
+.dropdown-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translate(0);
+  transition: opacity 150ms, transform 150ms;
+}
+
+.dropdown-leave {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.dropdown-leave-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 150ms, transform 150ms;
+}
+
+.two-cols{
+  -webkit-columns: 4;
+  -moz-columns: 4;
+  columns: 4;
+}
+
+
+
+[data-simplebar], .simplebar-offset, .simplebar-content,.simplebar-wrapper,.simplebar-mask,.simplebar-content-wrapper{
+  outline:none !important;
+  border:none !important
+}
+
+.ui-button.bg-primary:hover{
+  background-color: var(--color-primaryemphasis);
+}
+.ui-button.bg-secondary:hover{
+  background-color: var(--color-secondaryemphasis);
+}
+.ui-button.bg-success:hover{
+  background-color: var(--color-successemphasis);
+}
+.ui-button.bg-error:hover{
+  background-color: var(--color-erroremphasis);
+}
+.ui-button.bg-warning:hover{
+  background-color: var(--color-warningemphasis);
+}
+.ui-button.bg-info:hover{
+  background-color: var(--color-infoemphasis);
+}
+
+select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background: transparent !important;
+background-image: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4'/%3e %3c/svg%3e")!important;
+  background-repeat: no-repeat !important;
+    background-position: right .75rem center !important;
+    background-repeat: no-repeat !important;
+    background-size: .75em .75em !important;
+}
+.custom-navbar ul li{
+  margin-right: 0px !important;
+}
+
+.custom-navbar ul div{
+  margin-right: 0px !important;
+}
+.no-inset {
+  --tw-inset-shadow: 0 0 #0000 !important;
+}
+.no-ring {
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+}

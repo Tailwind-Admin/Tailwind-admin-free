@@ -1,0 +1,122 @@
+
+/* Header */
+.custom-nav > .container{
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+/* Hero Section */
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+}
+
+100% {
+    transform: translateY(-10px);
+}
+}
+
+.img-wrapper .animated-img {
+  position: absolute;
+  z-index: 9;
+  animation: mover 5s infinite alternate;
+}
+
+
+
+/* Custom Shadows */
+.custom-shadow {
+    -webkit-box-shadow: 10px 12px 30px -2px rgba(58, 75, 122, 0.15);
+    -moz-box-shadow: 10px 12px 30px -2px rgba(58, 75, 122, 0.15);
+    box-shadow: 10px 12px 30px -2px rgba(58, 75, 122, 0.15);
+}
+
+.custom-shadow2 {
+    box-shadow: -1px 13px 22px -4px rgba(145, 158, 171, 0.12);
+    -webkit-box-shadow: -1px 13px 22px -4px rgba(145, 158, 171, 0.12);
+    -moz-box-shadow: -1px 13px 22px -4px rgba(145, 158, 171, 0.12);
+}
+
+
+.elevation-1 {
+  box-shadow:0px 56px 56px -25px rgba(0,0,0,0.08) !important
+}
+.elevation-2 {
+  box-shadow:1px 3px 0px 0px rgba(235,241,246,0.25)!important
+}
+
+/* leader Section */
+.leader-swiper{
+  padding: 30px 0px !important;
+}
+
+/* Features Sectiom */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+}
+
+100% {
+    transform: translate3d(-2086px, 0, 0);
+}
+}
+@keyframes marquee2 {
+  0% {
+    transform: translate3d(-2086px, 0, 0);
+}
+
+100% {
+    transform: translate3d(0, 0, 0);
+}
+}
+
+.marquee1-group {
+  animation: marquee 45s linear infinite;
+}
+.marquee2-group {
+  animation: marquee2 45s linear infinite;
+}
+
+/* Banner */
+.bg-collections{
+  position: relative;
+  background-image: url("/images/frontend-pages/background/design-collection.png");
+  background-repeat: no-repeat;
+  background-position: 158% -53px;
+  background-size: 83%;
+}
+
+@media screen and (max-width: 1024px) {
+  .bg-collections{
+    background-image:none;
+  }
+}
+
+/* Rtl css */
+
+html[dir="rtl"] .marquee1-group {
+  animation: marquee-rtl 45s linear infinite;
+}
+html[dir="rtl"] .marquee2-group {
+  animation: marquee2-rtl 45s linear infinite;
+}
+@keyframes marquee-rtl {
+  0% {
+      transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+      transform: translate3d(2086px, 0, 0);
+  }
+}
+
+@keyframes marquee2-rtl {
+  0% {
+      transform: translate3d(2086px, 0, 0);
+  }
+
+  100% {
+      transform: translate3d(0, 0, 0);
+  }
+}

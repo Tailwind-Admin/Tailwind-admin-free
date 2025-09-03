@@ -1,0 +1,92 @@
+.bannerSlider {
+  padding: 25.6px;
+  min-width: 2000px;
+  height: calc(100vh - 100px);
+  max-height: 790px;
+  border-radius: 7px;
+}
+
+
+.animateUp {
+  animation: 35s linear 0s infinite normal none running slideup;
+  height: 800px;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0px, -100%, 0px);
+  }
+}
+
+.animateDown {
+  animation: 35s linear 0s infinite normal none running slideDown;
+  height: 800px;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    transform: translate3d(0px, 0, 0px);
+  }
+}
+
+.slider-group {
+  animation: slide 45s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.client-reviews .slick-track {
+  display: flex;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+.client-reviews .slick-dots li button:before {
+  font-size: 10px;
+  color: var(--color-darkgray);
+}
+
+.client-reviews .slick-dots {
+  bottom: -40px;
+}
+
+.client-reviews .slick-dots li.slick-active button:before {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.client-reviews .slick-dots li {
+  margin: 0 1px;
+}
+
+.client-reviews .slick-dots li button:hover::before {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+@media screen and (max-width:1199px){
+  .client-reviews .slick-track{
+    gap: 10px;
+  }
+}
+@media screen and (max-width:767px){
+  .client-reviews .slick-track{
+    gap: 0;
+  }
+}

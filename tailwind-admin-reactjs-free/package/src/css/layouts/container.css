@@ -1,0 +1,13 @@
+.page-wrapper {
+    margin-left: calc(0px + 270px);
+    transition: .2s ease-in;
+}
+.rounded-bars .apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path {
+    clip-path: inset(0 0 5% 0 round 20px);
+  }
+@media screen and (max-width:1279px) {
+    .page-wrapper{
+        margin-left: 0;
+    }
+}
+

@@ -1,0 +1,9 @@
+.horizontal-nav ul li .active{
+    background-color:var(--color-lightprimary);
+    color: var(--color-primary);
+}
+
+[data-layout='horizontal'] .page-wrapper {
+    margin-left: 0;
+    transition: none;
+}

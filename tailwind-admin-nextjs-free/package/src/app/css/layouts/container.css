@@ -1,0 +1,21 @@
+.page-wrapper {
+    margin-left: calc(0px + 270px);
+    transition: .2s ease-in;
+}
+.custom-dropdown{
+    transform: translate(-245px, 40px) !important;
+}
+.sales-box{
+    padding-bottom: 0px !important;
+}
+.btn-circle{
+    width: 40px;
+    height:40px;
+}
+
+@media screen and (max-width:1280px) {
+    .page-wrapper{
+        margin-left: 0;
+    }
+}
+
