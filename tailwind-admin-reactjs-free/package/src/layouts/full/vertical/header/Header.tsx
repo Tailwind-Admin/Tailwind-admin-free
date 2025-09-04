@@ -19,7 +19,14 @@ const Header = ({ layoutType }: HeaderPropsType) => {
   const [isSticky, setIsSticky] = useState(false);
   const { mode, toggleMode } = useThemeMode();
 
-  console.log("Modeedede>>>", mode, window.matchMedia('(prefers-color-scheme: dark)')?.media);
+  useEffect(() => {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const theme = prefersDark ? "dark" : "light";
+    document.documentElement.setAttribute("lang", "en");
+    document.documentElement.classList.remove("dark", "light");
+    document.documentElement.classList.add(theme);
+    localStorage.setItem("flowbite-theme-mode", theme);
+  }, []);
 
 
   useEffect(() => {
