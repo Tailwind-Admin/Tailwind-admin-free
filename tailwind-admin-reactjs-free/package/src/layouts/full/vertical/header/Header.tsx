@@ -10,6 +10,7 @@ import HorizontalMenu from "../../horizontal/header/HorizontalMenu";
 
 import Profile from "./Profile";
 import SidebarLayout from "../sidebar/Sidebar";
+import { Input } from "src/components/ui/input";
 
 interface HeaderPropsType {
   layoutType: string;
@@ -84,21 +85,15 @@ const Header = ({ layoutType }: HeaderPropsType) => {
 
 
           <div className="hidden xl:flex items-center gap-2">
-            <button
-              onClick={() => setSearchOpen(!isOpen)}
-              className="p-2 rounded-full hover:bg-gray-200 transition"
-            >
-              <Icon icon="solar:magnifer-linear" width="20" height="20" />
-            </button>
 
-            {searchOpen && (
-              <TextInput
-                id="search-input"
+            <div className="relative">
+              <Icon icon="solar:magnifer-linear" width={18} height={18} className="absolute left-3 top-1/2 -translate-y-1/2" />
+              <Input
                 type="text"
                 placeholder="Search..."
-                className="form-control form-rounded-xl"
+                className="rounded-xl pl-10"
               />
-            )}
+            </div>
           </div>
 
 

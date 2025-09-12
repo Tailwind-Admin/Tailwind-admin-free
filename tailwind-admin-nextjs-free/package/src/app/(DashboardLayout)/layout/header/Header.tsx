@@ -16,6 +16,7 @@ import Link from "next/link";
 import Notifications from "./Notifications";
 import SidebarLayout from "../sidebar/Sidebar";
 import FullLogo from "../shared/logo/FullLogo";
+import { Input } from "@/components/ui/input";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -107,22 +108,15 @@ const Header = () => {
           <div className="hidden xl:flex items-center justify-between w-full">
             <div className="flex items-center gap-2">
               {/* Search Icon */}
-              <button
-                onClick={() => setSearchOpen(!isOpen)}
-                className="p-2 rounded-full hover:bg-gray-200 transition"
-              >
-                <Icon icon="solar:magnifer-linear" width="20" height="20" />
-              </button>
 
-              {/* Search Input */}
-              {searchOpen && (
-                <TextInput
-                  id="search-input"
+              <div className="relative">
+                <Icon icon="solar:magnifer-linear" width={18} height={18} className="absolute left-3 top-1/2 -translate-y-1/2" />
+                <Input
                   type="text"
                   placeholder="Search..."
-                  className="form-control form-rounded-xl"
+                  className="rounded-xl pl-10"
                 />
-              )}
+              </div>
             </div>
             <div className="flex w-full justify-end items-end">
               <div className="flex gap-0 items-center ">
