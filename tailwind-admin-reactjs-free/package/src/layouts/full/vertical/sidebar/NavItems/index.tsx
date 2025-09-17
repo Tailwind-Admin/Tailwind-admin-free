@@ -37,7 +37,9 @@ const NavItems: React.FC<NavItemsProps> = ({ item , onClose}) => {
                   } `}
               ></span>
             )}
-            <div className="group-hover:transform group-hover:translate-x-1 transition-all duration-200 ease-in-out max-w-36 overflow-hidden hide-menu flex-1 !leading-normal">{item.name}
+            <div className="
+            
+            group-hover:transform group-hover:translate-x-1 transition-all duration-200 ease-in-out max-w-36 overflow-hidden hide-menu flex-1 !leading-normal">{item.name}
               {item.subtitle ? <p className="text-xs mt-1" >{item.subtitle}</p> : null}
             </div>
             {item.badge ? item.badgeType === "filled" ? <span className="w-6 h-6 rounded-full bg-primary font-semibold text-white text-xs flex items-center justify-center sidebar-badge" >9</span> : <span className="px-2 py-1 border-primary border rounded-full  bg-transparent text-primary font-semibold text-xs sidebar-badge" >Outline</span> : null}

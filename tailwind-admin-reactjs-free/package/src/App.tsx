@@ -4,14 +4,17 @@ import customTheme from './utils/theme/custom-theme';
 import router from "./routes/Router";
 import './css/globals.css'
 
+
 function App() {
 
   return (
     <>
       <ThemeModeScript />
+
       <ThemeProvider theme={customTheme}>
         <RouterProvider router={router} />
       </ThemeProvider>
+
     </>
   );
 }

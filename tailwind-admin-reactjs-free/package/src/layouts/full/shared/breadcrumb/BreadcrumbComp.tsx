@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import CardBox from "../../../../components/shared/CardBox";
 import breadcrumbBg from "src/assets/images/breadcrumb/ChatBc.png"
 

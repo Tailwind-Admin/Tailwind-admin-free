@@ -1,3 +1,6 @@
+
+
+
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { lazy } from 'react';
@@ -38,8 +41,8 @@ const BlogDetail = Loadable(lazy(() => import('../views/apps/blog/BlogDetail')))
 const Error = Loadable(lazy(() => import('../views/authentication/Error')));
 
 
-/* ****Icons***** */
-const SolarIcon = Loadable(lazy(() => import('../views/icons/SolarIcon')));
+// const SamplePage = lazy(() => import('../views/sample-page/SamplePage'));
+
 
 const Router = [
   {
@@ -47,6 +50,7 @@ const Router = [
     element: <FullLayout />,
     children: [
       { path: '/', exact: true, element: <Modern /> },
+      // { path: '/', exact: true, element: <SamplePage /> },
       { path: '*', element: <Navigate to="/auth/404" /> },
 
       { path: '/apps/notes', element: <Notes /> },
@@ -59,7 +63,6 @@ const Router = [
       { path: '/user-profile', element: <UserProfile /> },
 
 
-      { path: '/icons/iconify', element: <SolarIcon /> },
     ],
   },
   {

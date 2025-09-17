@@ -42,6 +42,7 @@ const SidebarContent: MenuItem[] = [
         url: '/',
         isPro: false,
       },
+
       {
         name: 'Ecommerce',
         icon: 'solar:bag-5-linear',
@@ -101,27 +102,27 @@ const SidebarContent: MenuItem[] = [
     ],
   },
   {
-    heading: "pages",
+    heading: 'pages',
     children: [
       {
-        name: "Table",
+        name: 'Table',
         icon: 'solar:server-linear',
         id: uniqueId(),
-        url: "/utilities/table",
+        url: '/utilities/table',
       },
       {
-        name: "Form",
+        name: 'Form',
         icon: 'solar:document-add-linear',
         id: uniqueId(),
-        url: "/utilities/form",
+        url: '/utilities/form',
       },
 
       {
         id: uniqueId(),
-        name: "User Profile",
-        icon: "solar:user-circle-linear",
-        url: "/user-profile",
-        isPro: false
+        name: 'User Profile',
+        icon: 'solar:user-circle-linear',
+        url: '/user-profile',
+        isPro: false,
       },
     ],
   },
@@ -330,8 +331,8 @@ const SidebarContent: MenuItem[] = [
         icon: 'solar:pip-2-linear',
         url: 'https://tailwind-admin.com/components/headlessui/buttons',
         isPro: false,
-      }
-    ]
+      },
+    ],
   },
 
   {
@@ -671,7 +672,7 @@ const SidebarContent: MenuItem[] = [
             isPro: true,
           },
         ],
-      }
+      },
     ],
   },
   {
@@ -737,9 +738,9 @@ const SidebarContent: MenuItem[] = [
         icon: 'solar:structure-linear',
         url: '/icons/iconify',
         isPro: false,
-      }
+      },
     ],
-  },      
+  },
   {
     heading: 'Auth',
     children: [
@@ -834,7 +835,7 @@ const SidebarContent: MenuItem[] = [
         isPro: true,
       },
     ],
-  }
+  },
 ];
 
 export default SidebarContent;

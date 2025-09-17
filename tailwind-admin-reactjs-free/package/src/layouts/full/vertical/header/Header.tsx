@@ -10,7 +10,6 @@ import HorizontalMenu from "../../horizontal/header/HorizontalMenu";
 
 import Profile from "./Profile";
 import SidebarLayout from "../sidebar/Sidebar";
-import { Input } from "src/components/ui/input";
 
 interface HeaderPropsType {
   layoutType: string;
@@ -85,15 +84,21 @@ const Header = ({ layoutType }: HeaderPropsType) => {
 
 
           <div className="hidden xl:flex items-center gap-2">
+            <button
+              onClick={() => setSearchOpen(!isOpen)}
+              className="p-2 rounded-full hover:bg-gray-200 transition"
+            >
+              <Icon icon="solar:magnifer-linear" width="20" height="20" />
+            </button>
 
-            <div className="relative">
-              <Icon icon="solar:magnifer-linear" width={18} height={18} className="absolute left-3 top-1/2 -translate-y-1/2" />
-              <Input
+            {searchOpen && (
+              <TextInput
+                id="search-input"
                 type="text"
                 placeholder="Search..."
-                className="rounded-xl pl-10"
+                className="form-control form-rounded-xl"
               />
-            </div>
+            )}
           </div>
 
 
@@ -216,9 +221,11 @@ const Header = ({ layoutType }: HeaderPropsType) => {
       </header>
 
       {/* Mobile Sidebar */}
-      <Drawer open={isOpen} onClose={handleClose} className="w-64">
+      <Drawer open={isOpen} onClose={handleClose} className="w-[270px]">
         <DrawerItems>
-          <SidebarLayout onClose={() => setIsOpen(false)} />
+          {/* <SidebarLayout onClose={() => setIsOpen(false)} /> */}
+          <SidebarLayout />
+
         </DrawerItems>
       </Drawer>
     </>
