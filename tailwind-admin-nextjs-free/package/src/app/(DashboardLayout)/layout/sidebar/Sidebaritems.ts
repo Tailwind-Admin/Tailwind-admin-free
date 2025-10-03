@@ -52,6 +52,20 @@ const SidebarContent: MenuItem[] = [
         isPro: true
       },
       {
+        name: "Music",
+        icon: 'solar:music-note-linear',
+        id: uniqueId(),
+        url: "https://tailwindadmin-nextjs-main.vercel.app/dashboards/music",
+        isPro: true
+      },
+      {
+        name: "General",
+        icon: 'solar:chart-linear',
+        id: uniqueId(),
+        url: "https://tailwindadmin-nextjs-main.vercel.app/dashboards/general",
+        isPro: true
+      },
+      {
         name: "Front Pages",
         id: uniqueId(),
         icon: "solar:document-linear",
