@@ -35,12 +35,8 @@ export default defineConfig({
             ],
         },
     },
-
-
-    
-    // plugins: [react(),svgr({
-    //   exportAsDefault: true
-    // })],
-
+    build: {
+        outDir: 'dist', // ✅ this is required for Netlify
+    },
     plugins: [svgr(), react(), flowbiteReact()],
 });
