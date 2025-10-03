@@ -62,8 +62,8 @@ Built for speed, customization, and scalability, Tailwind Admin is fully respons
 | **React**              | A flexible JavaScript library for building user interfaces using component-based architecture. |
 | **Tailwind CSS**       | A utility-first CSS framework for rapidly building modern and responsive user interfaces. |
 | **Shadcn UI**          | A set of beautifully designed, accessible components built with Tailwind CSS and Radix UI primitives. |
-| **Chart.js / ApexCharts** | (Optional) Popular charting libraries used for visualizing data in dashboards. Replace or remove based on actual usage. |
-| **Tabler Icons**       | Lightweight and customizable SVG icons that fit seamlessly into modern UI designs. |
+| **ApexCharts** | A Popular charting libraries used for visualizing data in dashboards. Replace or remove based on actual usage. |
+| **Iconify Icons**       | Lightweight and customizable SVG icons that fit seamlessly into modern UI designs. |
 
 ---
 
