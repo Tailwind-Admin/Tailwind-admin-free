@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import './app.css';
 
 @import './layouts/container.css' layer(utilities);
@@ -22,7 +22,7 @@ main {
 }
 
 body{
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 @theme {

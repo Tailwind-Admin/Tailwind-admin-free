@@ -1,11 +1,15 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { DM_Sans } from 'next/font/google'
 import "./css/globals.css";
 import { ThemeModeScript, ThemeProvider } from 'flowbite-react';
 import customTheme from "@/utils/theme/custom-theme";
 
-const plus_jakarta_sans = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-dm-sans',
+})
 
 export const metadata: Metadata = {
   title: "TailwindAdmin - Nextjs",
@@ -23,7 +27,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         {typeof window !== "undefined" && <ThemeModeScript />}
       </head>
-      <body className={`${plus_jakarta_sans.className}`}>
+      <body className={`${dmSans.className}`}>
         <ThemeProvider theme={customTheme}>
           {children}
         </ThemeProvider>
