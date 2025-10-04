@@ -11,6 +11,7 @@ export interface ChildItem {
   badge?: boolean;
   badgeType?: string;
   isPro?: boolean;
+  target?: string;
 }
 
 export interface MenuItem {
@@ -51,18 +52,18 @@ const SidebarContent: MenuItem[] = [
         isPro: true,
       },
       {
-        name: "Music",
+        name: 'Music',
         icon: 'solar:music-note-linear',
         id: uniqueId(),
-        url: "https://tailwindadmin-reactjs-main.netlify.app/dashboards/music",
-        isPro: true
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/dashboards/music',
+        isPro: true,
       },
       {
-        name: "General",
+        name: 'General',
         icon: 'solar:chart-linear',
         id: uniqueId(),
-        url: "https://tailwindadmin-reactjs-main.netlify.app/dashboards/general",
-        isPro: true
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/dashboards/general',
+        isPro: true,
       },
       {
         name: 'Front Pages',
@@ -112,6 +113,35 @@ const SidebarContent: MenuItem[] = [
             isPro: true,
           },
         ],
+      },
+    ],
+  },
+  {
+    heading: 'AI',
+    children: [
+      {
+        name: 'Ai Table Builder',
+        icon: 'solar:server-linear',
+        id: uniqueId(),
+        url: 'https://tailwindbuilder.ai/table-builder',
+        isPro: false,
+        target: '_blank',
+      },
+      {
+        name: 'Ai Form Builder',
+        icon: 'solar:document-add-linear',
+        id: uniqueId(),
+        url: 'https://tailwindbuilder.ai/form-builder',
+        isPro: false,
+        target: '_blank',
+      },
+      {
+        id: uniqueId(),
+        name: 'Ai Chart Builder',
+        icon: 'solar:pie-chart-2-linear',
+        url: 'https://tailwindbuilder.ai/chart-builder',
+        isPro: false,
+        target: '_blank',
       },
     ],
   },
@@ -321,7 +351,6 @@ const SidebarContent: MenuItem[] = [
       },
     ],
   },
-
   {
     heading: 'UI ELEMENTS',
     children: [

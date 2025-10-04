@@ -118,6 +118,35 @@ const SidebarContent: MenuItem[] = [
     ],
   },
   {
+    heading: "AI",
+    children: [
+      {
+        name: "Ai Table Builder",
+        icon: 'solar:server-linear',
+        id: uniqueId(),
+        url: "https://tailwindbuilder.ai/table-builder",
+        isPro: false,
+        target: "_blank"
+      },
+      {
+        name: "Ai Form Builder",
+        icon: 'solar:document-add-linear',
+        id: uniqueId(),
+        url: "https://tailwindbuilder.ai/form-builder",
+        isPro: false,
+        target: "_blank"
+      },
+      {
+        id: uniqueId(),
+        name: "Ai Chart Builder",
+        icon: "solar:pie-chart-2-linear",
+        url: "https://tailwindbuilder.ai/chart-builder",
+        isPro: false,
+        target: "_blank"
+      },
+    ],
+  },
+  {
     heading: "pages",
     children: [
       {
@@ -141,7 +170,7 @@ const SidebarContent: MenuItem[] = [
         isPro: false
       },
     ],
-  },
+  },  
   {
     heading: "Apps",
     children: [
