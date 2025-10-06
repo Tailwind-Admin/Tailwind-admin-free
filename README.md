@@ -113,7 +113,7 @@ Welcome to the **Tailwind Admin Dashboard Template** documentation! Whether you'
 
 👉 **[Next.js :- Click here to read the full documentation](https://tailwind-admin.github.io/Tailwind-admin/free-documentation/nextjs/index.html)**
 
-👉 **[React.js :- Click here to read the full documentation](javascript:void(0))**
+👉 **[React.js :- Click here to read the full documentation](https://tailwind-admin.github.io/Tailwind-admin/free-documentation/react/index.html)**
 
 ---
 
