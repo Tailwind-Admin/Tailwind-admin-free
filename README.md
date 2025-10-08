@@ -130,7 +130,7 @@ The Pro Version of the **Tailwind Admin Dashboard Template** comes packed with e
   </a>
 </div>
 
-[![Tailwind Admin Dashboard Template Screenshot](https://tailwind-admin.github.io/Tailwind-admin/assets/images/Premium-dashboard.png)](https://tailwind-admin.com/#demos)
+[![Tailwind Admin Dashboard Template Screenshot](https://tailwind-admin.github.io/tailwind-admin/assets/images/Premium-dashboard.png)](https://tailwind-admin.com/#demos)
 
 ---
 
