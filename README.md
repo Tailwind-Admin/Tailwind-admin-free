@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://tailwind-admin.com/" target="_blank">
-      <img src="https://tailwind-admin.github.io/Tailwind-admin/assets/images/logo.svg" alt="tailwind-admin-logo" width="90px" height="90px">
+      <img src="https://tailwind-admin.github.io/tailwind-admin/assets/images/logo.svg" alt="tailwind-admin-logo" width="90px" height="90px">
    </a>
 </p>
 
@@ -13,7 +13,7 @@
 <p align="center">Download most useful and comprehensive 🚀 Free admin template built for developers 🛠</p>
 
 
-[![Tailwind Admin Template Demo Screenshot](https://tailwind-admin.github.io/Tailwind-admin/assets/images/Free-dashboard.png)](https://tailwind-admin.com)
+[![Tailwind Admin Template Demo Screenshot](https://tailwind-admin.github.io/tailwind-admin/assets/images/Free-dashboard.png)](https://tailwind-admin.com)
 
 
 ## 👋 Introduction
