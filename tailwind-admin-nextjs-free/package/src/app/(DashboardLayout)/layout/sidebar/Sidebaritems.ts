@@ -13,7 +13,6 @@ export interface ChildItem {
   badge?: boolean
   badgeType?: string
   isPro?: boolean
-  target?: string
 }
 
 export interface MenuItem {
@@ -125,7 +124,7 @@ const SidebarContent: MenuItem[] = [
         id: uniqueId(),
         url: 'https://tailwindbuilder.ai/table-builder',
         isPro: false,
-        target: '_blank',
+        
       },
       {
         name: 'Ai Form Builder',
@@ -133,7 +132,7 @@ const SidebarContent: MenuItem[] = [
         id: uniqueId(),
         url: 'https://tailwindbuilder.ai/form-builder',
         isPro: false,
-        target: '_blank',
+        
       },
       {
         id: uniqueId(),
@@ -141,7 +140,7 @@ const SidebarContent: MenuItem[] = [
         icon: 'solar:pie-chart-2-linear',
         url: 'https://tailwindbuilder.ai/chart-builder',
         isPro: false,
-        target: '_blank',
+        
       },
     ],
   },
@@ -398,97 +397,97 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: 'Avatar',
             url: 'https://tailwind-admin.com/components/shadcn/avatar',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Badge',
             url: 'https://tailwind-admin.com/components/shadcn/badge',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Tooltip',
             url: 'https://tailwind-admin.com/components/shadcn/tooltip',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Skeleton',
             url: 'https://tailwind-admin.com/components/shadcn/skeleton',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Alert',
             url: 'https://tailwind-admin.com/components/shadcn/alert',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Progressbar',
             url: 'https://tailwind-admin.com/components/shadcn/progressbar',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Breadcrumb',
             url: 'https://tailwind-admin.com/components/shadcn/breadcrumb',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Tab',
             url: 'https://tailwind-admin.com/components/shadcn/tab',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Dropdown',
             url: 'https://tailwind-admin.com/components/shadcn/dropdown',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Accordion',
             url: 'https://tailwind-admin.com/components/shadcn/accordion',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Card',
             url: 'https://tailwind-admin.com/components/shadcn/card',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Carousel',
             url: 'https://tailwind-admin.com/components/shadcn/carousel',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Collapsible',
             url: 'https://tailwind-admin.com/components/shadcn/collapsible',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Dialogs',
             url: 'https://tailwind-admin.com/components/shadcn/dialogs',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Drawer',
             url: 'https://tailwind-admin.com/components/shadcn/drawer',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Datepicker',
             url: 'https://tailwind-admin.com/components/shadcn/datepicker',
-            target: '_blank',
+            
           },
         ],
       },
@@ -501,181 +500,181 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: 'Badge',
             url: 'https://tailwind-admin.com/components/flowbite/badge',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Avatar',
             url: 'https://tailwind-admin.com/components/flowbite/avatar',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'List Group',
             url: 'https://tailwind-admin.com/components/flowbite/listgroup',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Popover',
             url: 'https://tailwind-admin.com/components/flowbite/popover',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Toast',
             url: 'https://tailwind-admin.com/components/flowbite/toast',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Tooltip',
             url: 'https://tailwind-admin.com/components/flowbite/tooltip',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Alert',
             url: 'https://tailwind-admin.com/components/flowbite/alert',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Modals',
             url: 'https://tailwind-admin.com/components/flowbite/modals',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Progressbar',
             url: 'https://tailwind-admin.com/components/flowbite/progressbar',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Spinner',
             url: 'https://tailwind-admin.com/components/flowbite/spinner',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Breadcrumb',
             url: 'https://tailwind-admin.com/components/flowbite/breadcrumb',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Pagination',
             url: 'https://tailwind-admin.com/components/flowbite/pagination',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Tab',
             url: 'https://tailwind-admin.com/components/flowbite/tab',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Dropdown',
             url: 'https://tailwind-admin.com/components/flowbite/dropdown',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Sidebar',
             url: 'https://tailwind-admin.com/components/flowbite/sidebar',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Tab',
             url: 'https://tailwind-admin.com/components/flowbite/tab',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Dropdown',
             url: 'https://tailwind-admin.com/components/flowbite/dropdown',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Sidebar',
             url: 'https://tailwind-admin.com/components/flowbite/sidebar',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Navbar',
             url: 'https://tailwind-admin.com/components/flowbite/navbar',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Megamenu',
             url: 'https://tailwind-admin.com/components/flowbite/megamenu',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Footer',
             url: 'https://tailwind-admin.com/components/flowbite/footer',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Accordian',
             url: 'https://tailwind-admin.com/components/flowbite/accordian',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Tables',
             url: 'https://tailwind-admin.com/components/flowbite/tables',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Card',
             url: 'https://tailwind-admin.com/components/flowbite/card',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Banner',
             url: 'https://tailwind-admin.com/components/flowbite/banner',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Drawer',
             url: 'https://tailwind-admin.com/components/flowbite/drawer',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Carousel',
             url: 'https://tailwind-admin.com/components/flowbite/carousel',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Datepicker',
             url: 'https://tailwind-admin.com/components/flowbite/datepicker',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Timeline',
             url: 'https://tailwind-admin.com/components/flowbite/timeline',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'KBD',
             url: 'https://tailwind-admin.com/components/flowbite/kbd',
-            target: '_blank',
+            
           },
         ],
       },
@@ -688,37 +687,37 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: 'Popover',
             url: 'https://tailwind-admin.com/components/headlessui/popover',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Disclosure',
             url: 'https://tailwind-admin.com/components/headlessui/disclosure',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Transition',
             url: 'https://tailwind-admin.com/components/headlessui/transition',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Dialog',
             url: 'https://tailwind-admin.com/components/headlessui/dialog',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Dropdown',
             url: 'https://tailwind-admin.com/components/headlessui/dropdown',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Tabs',
             url: 'https://tailwind-admin.com/components/headlessui/tabs',
-            target: '_blank',
+            
           },
         ],
       },
@@ -797,43 +796,43 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: 'Button',
             url: 'https://tailwind-admin.com/components/shadcn/buttons',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Input',
             url: 'https://tailwind-admin.com/components/shadcn/input',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Select',
             url: 'https://tailwind-admin.com/components/shadcn/select',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Checkbox',
             url: 'https://tailwind-admin.com/components/shadcn/checkbox',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Radio',
             url: 'https://tailwind-admin.com/components/shadcn/radio',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Combobox',
             url: 'https://tailwind-admin.com/components/shadcn/combobox',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Command',
             url: 'https://tailwind-admin.com/components/shadcn/command',
-            target: '_blank',
+            
           },
         ],
       },
@@ -846,43 +845,43 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: 'Button',
             url: 'https://tailwind-admin.com/components/flowbite/buttons',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Button Group',
             url: 'https://tailwind-admin.com/components/flowbite/button-group',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Checkbox',
             url: 'https://tailwind-admin.com/components/flowbite/checkbox',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Radio',
             url: 'https://tailwind-admin.com/components/flowbite/radio',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Rating',
             url: 'https://tailwind-admin.com/components/flowbite/rating',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Toggle Switch',
             url: 'https://tailwind-admin.com/components/flowbite/toggle-switch',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Input',
             url: 'https://tailwind-admin.com/components/flowbite/input',
-            target: '_blank',
+            
           },
         ],
       },
@@ -895,55 +894,55 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: 'Button',
             url: 'https://tailwind-admin.com/components/headlessui/buttons',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Input',
             url: 'https://tailwind-admin.com/components/headlessui/input',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Textarea',
             url: 'https://tailwind-admin.com/components/headlessui/textarea',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Checkbox',
             url: 'https://tailwind-admin.com/components/headlessui/checkbox',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Radio Group',
             url: 'https://tailwind-admin.com/components/headlessui/radiogroup',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'switch',
             url: 'https://tailwind-admin.com/components/headlessui/switch',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Fieldset',
             url: 'https://tailwind-admin.com/components/headlessui/fieldset',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Combobox',
             url: 'https://tailwind-admin.com/components/headlessui/combobox',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Select',
             url: 'https://tailwind-admin.com/components/headlessui/select',
-            target: '_blank',
+            
           },
         ],
       },
@@ -980,19 +979,19 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: 'Form Examples',
             url: 'https://tailwind-admin.com/components/shadcn/generated-forms/form-examples',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Repeater Forms',
             url: 'https://tailwind-admin.com/components/shadcn/generated-forms/repeater-forms',
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: 'Form Wizard',
             url: 'https://tailwind-admin.com/components/shadcn/generated-forms/form-wizard',
-            target: '_blank',
+            
           },
         ],
       },
@@ -1035,133 +1034,133 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: "Top Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#topCards",            
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Best Selling Product Card",
             url: "https://tailwind-admin.com/ui-blocks/card#bestsellingproduct",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Payment Gatways Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#paymentgateway",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Blog Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#blogcards",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Products Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#productscards",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Music Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#musiccards",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Profile Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#profilecards",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "User Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#usercards",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Social Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#socialcards",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Settings Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#settingscard",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Gift Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#giftcards",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Upcomming Activity Cards",
             url: "https://tailwind-admin.com/ui-blocks/card#upcommingactcard",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Recent Transaction Card",
             url: "https://tailwind-admin.com/ui-blocks/card#recenttransactioncard",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Recent Comment Card",
             url: "https://tailwind-admin.com/ui-blocks/card#recentcommentcard",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Task List",
             url: "https://tailwind-admin.com/ui-blocks/card#tasklist",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Recent Messages",
             url: "https://tailwind-admin.com/ui-blocks/card#recentmessages",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "User info Card",
             url: "https://tailwind-admin.com/ui-blocks/card#userinfocard",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Social Card",
             url: "https://tailwind-admin.com/ui-blocks/card#socialcard",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Feed Card",
             url: "https://tailwind-admin.com/ui-blocks/card#feedcard",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Poll of Week Card",
             url: "https://tailwind-admin.com/ui-blocks/card#pollofweekcard",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Result of Poll",
             url: "https://tailwind-admin.com/ui-blocks/card#resultofpoll",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Social Post Card",
             url: "https://tailwind-admin.com/ui-blocks/card#socialpostcard",
-            target: '_blank',
+            
           },
         ],
       },
@@ -1174,37 +1173,37 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: "Greeting Banner",
             url: "https://tailwind-admin.com/ui-blocks/banner#greetingbanner",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Download Banner",
             url: "https://tailwind-admin.com/ui-blocks/banner#downloadbanner",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Empty Cart Banner",
             url: "https://tailwind-admin.com/ui-blocks/banner#emptybanner",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Error Banner",
             url: "https://tailwind-admin.com/ui-blocks/banner#errorbanner",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Notifications Banner",
             url: "https://tailwind-admin.com/ui-blocks/banner#notificationsbanner",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Greeting Banner 2",
             url: "https://tailwind-admin.com/ui-blocks/banner#greetingbanner2",
-            target: '_blank',
+            
           },
         ],
       },
@@ -1217,91 +1216,91 @@ const SidebarContent: MenuItem[] = [
             id: uniqueId(),
             name: "Revenue Updates Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#revenueupdateschart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Yarly Breakup Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#yarlybreakupchart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Monthly Earning Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#monthlyearning",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Yearly Sales Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#yearlysaleschart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Current Year Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#currentyear",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Weekly Stats Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#weeklystatschart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Expance Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#expancechart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Customers Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#customerschart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Earned Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#revenuechart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Follower Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#followerchart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Visit Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#visitchart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Income Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#incomechart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Impressions Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#impressionschart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Sales Overviewchart",
             url: "https://tailwind-admin.com/ui-blocks/chart#salesoverviewchart",
-            target: '_blank',
+            
           },
           {
             id: uniqueId(),
             name: "Total Earnings Chart",
             url: "https://tailwind-admin.com/ui-blocks/chart#totalearningschart",
-            target: '_blank',
+            
           },
         ],
       },

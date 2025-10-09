@@ -12,8 +12,9 @@ interface NavItemsProps {
 }
 const NavItems: React.FC<NavItemsProps> = ({ item, onClose }) => {
   const pathname = usePathname();
+  const isExternal = /^https?:\/\//.test(item.url);
   const handleClick = (e: any) => {
-    if (item.isPro || item.target === "_blank") {
+    if (item.isPro || isExternal) {
       e.preventDefault();
       window.open(item.url, '_blank', 'noopener,noreferrer');
     }
