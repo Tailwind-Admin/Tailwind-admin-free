@@ -40,6 +40,8 @@ const BlogDetail = Loadable(lazy(() => import('../views/apps/blog/BlogDetail')))
 
 const Error = Loadable(lazy(() => import('../views/authentication/Error')));
 
+// // icons
+const SolarIcon = Loadable(lazy(() => import('../views/icons/SolarIcon')));
 
 // const SamplePage = lazy(() => import('../views/sample-page/SamplePage'));
 
@@ -61,8 +63,7 @@ const Router = [
       { path: '/apps/blog/post', element: <Blog /> },
       { path: '/apps/blog/detail/:id', element: <BlogDetail /> },
       { path: '/user-profile', element: <UserProfile /> },
-
-
+      { path: '/icons/iconify', element: <SolarIcon /> },
     ],
   },
   {

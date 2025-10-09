@@ -15,7 +15,7 @@
     --accent: var(--color-accent);
     --accent-foreground: var(--color-accent-foreground);
     --destructive: var(--color-error);
-    --border: var(--color-input);
+    --border: var(--color-darkborder);
     --input: var(--color-darkborder);
     --ring: var(--color-lightprimary);
     --chart-1: var(--color-primary);
