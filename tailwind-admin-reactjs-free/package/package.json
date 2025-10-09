@@ -1,5 +1,5 @@
 {
-  "name": "tailwindadmin-nextjs-free",
+  "name": "tailwindadmin-react-free",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -50,7 +50,6 @@
     "stylis-plugin-rtl": "^2.1.1",
     "swiper": "^12.0.1",
     "tailwind-merge": "^3.3.1",
-    "tailwind-sidebar": "^1.2.3",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
