@@ -19,16 +19,14 @@ const NavCollapse: React.FC<NavCollapseProps> = ({ item, onClose }: any) => {
   return (
     <>
       <SidebarCollapse
-        label={
-          (
-            <span className="transition-all duration-200 ease-in-out group-hover:translate-x-1">
-              {item.name}
-            </span>
-          ) as unknown as string
-        }
+        label={(item.name)}
+        {...{
+          title: undefined, // unset title
+          'aria-label': undefined, // unset aria-label
+        }}
         open={activeDD ? true : false}
         icon={() => <Icon icon={item.icon} width={20} height={20} />}
-        className={`${activeDD ? '!text-primary bg-lightprimary ' : ''} collapse-menu`}
+        className={`${activeDD ? '!text-primary bg-lightprimary ' : ''} collapse-menu transition-all duration-200 ease-in-out hover:translate-x-1`}
         renderChevronIcon={(theme: any, open: any) => {
           const IconComponent = open
             ? HiOutlineChevronDown

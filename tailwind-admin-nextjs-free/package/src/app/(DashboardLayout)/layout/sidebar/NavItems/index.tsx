@@ -28,7 +28,7 @@ const NavItems: React.FC<NavItemsProps> = ({ item, onClose }) => {
       href={item.url}
       rel="noopener noreferrer"
       as={Link}
-      className={`${item.disabled ? "opacity-50 cursor-default hover:bg-transparent hover:text-link" : item.url == pathname
+      className={`hover:transform hover:translate-x-1 transition-all duration-200 ease-in-out ${item.disabled ? "opacity-50 cursor-default hover:bg-transparent hover:text-link" : item.url == pathname
         ? `${item.icon ? '!text-white' : '!text-primary'} bg-primary mb-0.5 hover:bg-primary hover:text-white`
         : "text-link bg-transparent hover:bg-lightprimary group/link "
         }  `}
@@ -46,7 +46,7 @@ const NavItems: React.FC<NavItemsProps> = ({ item, onClose }) => {
               } `}
           ></span>
         )}
-        <div className="group-hover:transform group-hover:translate-x-1 transition-all duration-200 ease-in-out max-w-36 overflow-hidden hide-menu flex-1">
+        <div className="max-w-36 overflow-hidden hide-menu flex-1 truncate !leading-normal">
           {`${item.name}`}
           {item.subtitle ? <p className="text-xs mt-1" >{`${item.subtitle}`}</p> : null}
         </div>
