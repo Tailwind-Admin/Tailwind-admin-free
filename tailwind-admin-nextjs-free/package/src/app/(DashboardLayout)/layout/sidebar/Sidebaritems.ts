@@ -174,6 +174,26 @@ const SidebarContent: MenuItem[] = [
     heading: 'Apps',
     children: [
       {
+        name: 'AI',
+        id: uniqueId(),
+        url: '#',
+        icon: 'solar:star-circle-linear',
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Chat',
+            url: 'https://tailwindadmin-nextjs-main.vercel.app/apps/chat-ai',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Image',
+            url: 'https://tailwindadmin-nextjs-main.vercel.app/apps/image-ai',
+            isPro: true,
+          },
+        ],
+      },
+      {
         id: uniqueId(),
         name: 'Notes',
         icon: 'solar:notes-linear',
@@ -348,6 +368,20 @@ const SidebarContent: MenuItem[] = [
         name: 'Kanban',
         icon: 'solar:server-minimalistic-linear',
         url: 'https://tailwindadmin-nextjs-main.vercel.app/apps/kanban',
+        isPro: true,
+      },
+      {
+        id: uniqueId(),
+        name: 'Customers',
+        icon: 'solar:bedside-table-2-linear',
+        url: 'https://tailwindadmin-nextjs-main.vercel.app/react-tables/user-datatable',
+        isPro: true,
+      },
+      {
+        id: uniqueId(),
+        name: 'Orders',
+        icon: 'solar:bedside-table-4-linear',
+        url: 'https://tailwindadmin-nextjs-main.vercel.app/react-tables/order-datatable',
         isPro: true,
       },
     ],
