@@ -25,7 +25,7 @@ const NavItems: React.FC<NavItemsProps> = ({ item , onClose}) => {
           : "text-link bg-transparent hover:bg-lightprimary dark:hover:bg-lightprimary group/link "
           }  `}
       >
-        <Link to={item.url} target={item.isPro || item.target === "_blank" ? 'blank' : '_self'} className="p-0!">
+        <Link to={item.url} target={item.isPro ? 'blank' : '_self'} className="p-0!">
           <span className="group flex gap-3.5 align-center items-center truncate">
             {item.icon ? (
               <Icon icon={item.icon} className={`${item.color} my-0.5`} height={21} />

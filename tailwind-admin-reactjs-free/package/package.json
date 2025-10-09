@@ -1,7 +1,7 @@
 {
-  "name": "starterkit",
+  "name": "tailwindadmin-nextjs-free",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -68,7 +68,7 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
     "tw-animate-css": "^1.3.8",
-    "typescript": "5.9.2",
+    "typescript": "5.5.4",
     "vite": "^7.1.5"
   }
 }

@@ -11,7 +11,6 @@ export interface ChildItem {
   badge?: boolean;
   badgeType?: string;
   isPro?: boolean;
-  target?: string;
 }
 
 export interface MenuItem {
@@ -43,7 +42,6 @@ const SidebarContent: MenuItem[] = [
         url: '/',
         isPro: false,
       },
-
       {
         name: 'Ecommerce',
         icon: 'solar:bag-5-linear',
@@ -125,7 +123,6 @@ const SidebarContent: MenuItem[] = [
         id: uniqueId(),
         url: 'https://tailwindbuilder.ai/table-builder',
         isPro: false,
-        target: '_blank',
       },
       {
         name: 'Ai Form Builder',
@@ -133,7 +130,6 @@ const SidebarContent: MenuItem[] = [
         id: uniqueId(),
         url: 'https://tailwindbuilder.ai/form-builder',
         isPro: false,
-        target: '_blank',
       },
       {
         id: uniqueId(),
@@ -141,7 +137,6 @@ const SidebarContent: MenuItem[] = [
         icon: 'solar:pie-chart-2-linear',
         url: 'https://tailwindbuilder.ai/chart-builder',
         isPro: false,
-        target: '_blank',
       },
     ],
   },
@@ -173,6 +168,25 @@ const SidebarContent: MenuItem[] = [
   {
     heading: 'Apps',
     children: [
+      {
+        name: 'AI',
+        id: uniqueId(),
+        icon: 'solar:star-circle-linear',
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Chat',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/apps/chat-ai',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Image',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/apps/image-ai',
+            isPro: true,
+          },
+        ],
+      },
       {
         id: uniqueId(),
         name: 'Notes',
@@ -213,7 +227,6 @@ const SidebarContent: MenuItem[] = [
         url: 'https://tailwindadmin-reactjs-main.netlify.app/apps/contacts',
         isPro: true,
       },
-
       {
         name: 'Ecommerce',
         id: uniqueId(),
@@ -257,7 +270,6 @@ const SidebarContent: MenuItem[] = [
           },
         ],
       },
-
       {
         name: 'User Profile',
         id: uniqueId(),
@@ -289,7 +301,6 @@ const SidebarContent: MenuItem[] = [
           },
         ],
       },
-
       {
         name: 'Invoice',
         id: uniqueId(),
@@ -349,38 +360,414 @@ const SidebarContent: MenuItem[] = [
         url: 'https://tailwindadmin-reactjs-main.netlify.app/apps/kanban',
         isPro: true,
       },
+      {
+        id: uniqueId(),
+        name: 'Customers',
+        icon: 'solar:bedside-table-2-linear',
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/react-tables/user-table',
+        isPro: true,
+      },
+      {
+        id: uniqueId(),
+        name: 'Orders',
+        icon: 'solar:bedside-table-4-linear',
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/react-tables/orders-table',
+        isPro: true,
+      },
     ],
   },
   {
     heading: 'UI ELEMENTS',
     children: [
       {
-        name: 'Flowbite Ui',
-        id: uniqueId(),
-        icon: 'solar:snowflake-linear',
-        url: 'https://tailwind-admin.com/components/flowbite/buttons',
-        isPro: false,
-      },
-      {
-        name: 'Shadcn Ui',
+        name: 'ShadCn',
         id: uniqueId(),
         icon: 'solar:slash-square-linear',
-        url: 'https://tailwind-admin.com/components/shadcn/buttons',
-        isPro: false,
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Avatar',
+            url: 'https://tailwind-admin.com/components/shadcn/avatar',
+          },
+          {
+            id: uniqueId(),
+            name: 'Badge',
+            url: 'https://tailwind-admin.com/components/shadcn/badge',
+          },
+          {
+            id: uniqueId(),
+            name: 'Tooltip',
+            url: 'https://tailwind-admin.com/components/shadcn/tooltip',
+          },
+          {
+            id: uniqueId(),
+            name: 'Skeleton',
+            url: 'https://tailwind-admin.com/components/shadcn/skeleton',
+          },
+          {
+            id: uniqueId(),
+            name: 'Alert',
+            url: 'https://tailwind-admin.com/components/shadcn/alert',
+          },
+          {
+            id: uniqueId(),
+            name: 'Progressbar',
+            url: 'https://tailwind-admin.com/components/shadcn/progressbar',
+          },
+          {
+            id: uniqueId(),
+            name: 'Breadcrumb',
+            url: 'https://tailwind-admin.com/components/shadcn/breadcrumb',
+          },
+          {
+            id: uniqueId(),
+            name: 'Tab',
+            url: 'https://tailwind-admin.com/components/shadcn/tab',
+          },
+          {
+            id: uniqueId(),
+            name: 'Dropdown',
+            url: 'https://tailwind-admin.com/components/shadcn/dropdown',
+          },
+          {
+            id: uniqueId(),
+            name: 'Accordion',
+            url: 'https://tailwind-admin.com/components/shadcn/accordion',
+          },
+          {
+            id: uniqueId(),
+            name: 'Card',
+            url: 'https://tailwind-admin.com/components/shadcn/card',
+          },
+          {
+            id: uniqueId(),
+            name: 'Carousel',
+            url: 'https://tailwind-admin.com/components/shadcn/carousel',
+          },
+          {
+            id: uniqueId(),
+            name: 'Collapsible',
+            url: 'https://tailwind-admin.com/components/shadcn/collapsible',
+          },
+          {
+            id: uniqueId(),
+            name: 'Dialogs',
+            url: 'https://tailwind-admin.com/components/shadcn/dialogs',
+          },
+          {
+            id: uniqueId(),
+            name: 'Drawer',
+            url: 'https://tailwind-admin.com/components/shadcn/drawer',
+          },
+          {
+            id: uniqueId(),
+            name: 'Datepicker',
+            url: 'https://tailwind-admin.com/components/shadcn/datepicker',
+          },
+        ],
       },
       {
-        name: 'Headless Ui',
+        name: 'Flowbite',
+        id: uniqueId(),
+        icon: 'solar:snowflake-linear',
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Badge',
+            url: 'https://tailwind-admin.com/components/flowbite/badge',
+          },
+          {
+            id: uniqueId(),
+            name: 'Avatar',
+            url: 'https://tailwind-admin.com/components/flowbite/avatar',
+          },
+          {
+            id: uniqueId(),
+            name: 'List Group',
+            url: 'https://tailwind-admin.com/components/flowbite/listgroup',
+          },
+          {
+            id: uniqueId(),
+            name: 'Popover',
+            url: 'https://tailwind-admin.com/components/flowbite/popover',
+          },
+          {
+            id: uniqueId(),
+            name: 'Toast',
+            url: 'https://tailwind-admin.com/components/flowbite/toast',
+          },
+          {
+            id: uniqueId(),
+            name: 'Tooltip',
+            url: 'https://tailwind-admin.com/components/flowbite/tooltip',
+          },
+          {
+            id: uniqueId(),
+            name: 'Alert',
+            url: 'https://tailwind-admin.com/components/flowbite/alert',
+          },
+          {
+            id: uniqueId(),
+            name: 'Modals',
+            url: 'https://tailwind-admin.com/components/flowbite/modals',
+          },
+          {
+            id: uniqueId(),
+            name: 'Progressbar',
+            url: 'https://tailwind-admin.com/components/flowbite/progressbar',
+          },
+          {
+            id: uniqueId(),
+            name: 'Spinner',
+            url: 'https://tailwind-admin.com/components/flowbite/spinner',
+          },
+          {
+            id: uniqueId(),
+            name: 'Breadcrumb',
+            url: 'https://tailwind-admin.com/components/flowbite/breadcrumb',
+          },
+          {
+            id: uniqueId(),
+            name: 'Pagination',
+            url: 'https://tailwind-admin.com/components/flowbite/pagination',
+          },
+          {
+            id: uniqueId(),
+            name: 'Tab',
+            url: 'https://tailwind-admin.com/components/flowbite/tab',
+          },
+          {
+            id: uniqueId(),
+            name: 'Dropdown',
+            url: 'https://tailwind-admin.com/components/flowbite/dropdown',
+          },
+          {
+            id: uniqueId(),
+            name: 'Sidebar',
+            url: 'https://tailwind-admin.com/components/flowbite/sidebar',
+          },
+          {
+            id: uniqueId(),
+            name: 'Tab',
+            url: 'https://tailwind-admin.com/components/flowbite/tab',
+          },
+          {
+            id: uniqueId(),
+            name: 'Dropdown',
+            url: 'https://tailwind-admin.com/components/flowbite/dropdown',
+          },
+          {
+            id: uniqueId(),
+            name: 'Sidebar',
+            url: 'https://tailwind-admin.com/components/flowbite/sidebar',
+          },
+          {
+            id: uniqueId(),
+            name: 'Navbar',
+            url: 'https://tailwind-admin.com/components/flowbite/navbar',
+          },
+          {
+            id: uniqueId(),
+            name: 'Megamenu',
+            url: 'https://tailwind-admin.com/components/flowbite/megamenu',
+          },
+          {
+            id: uniqueId(),
+            name: 'Footer',
+            url: 'https://tailwind-admin.com/components/flowbite/footer',
+          },
+          {
+            id: uniqueId(),
+            name: 'Accordian',
+            url: 'https://tailwind-admin.com/components/flowbite/accordian',
+          },
+          {
+            id: uniqueId(),
+            name: 'Tables',
+            url: 'https://tailwind-admin.com/components/flowbite/tables',
+          },
+          {
+            id: uniqueId(),
+            name: 'Card',
+            url: 'https://tailwind-admin.com/components/flowbite/card',
+          },
+          {
+            id: uniqueId(),
+            name: 'Banner',
+            url: 'https://tailwind-admin.com/components/flowbite/banner',
+          },
+          {
+            id: uniqueId(),
+            name: 'Drawer',
+            url: 'https://tailwind-admin.com/components/flowbite/drawer',
+          },
+          {
+            id: uniqueId(),
+            name: 'Carousel',
+            url: 'https://tailwind-admin.com/components/flowbite/carousel',
+          },
+          {
+            id: uniqueId(),
+            name: 'Datepicker',
+            url: 'https://tailwind-admin.com/components/flowbite/datepicker',
+          },
+          {
+            id: uniqueId(),
+            name: 'Timeline',
+            url: 'https://tailwind-admin.com/components/flowbite/timeline',
+          },
+          {
+            id: uniqueId(),
+            name: 'KBD',
+            url: 'https://tailwind-admin.com/components/flowbite/kbd',
+          },
+        ],
+      },
+      {
+        name: 'Headless',
         id: uniqueId(),
         icon: 'solar:pip-2-linear',
-        url: 'https://tailwind-admin.com/components/headlessui/buttons',
-        isPro: false,
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Popover',
+            url: 'https://tailwind-admin.com/components/headlessui/popover',
+          },
+          {
+            id: uniqueId(),
+            name: 'Disclosure',
+            url: 'https://tailwind-admin.com/components/headlessui/disclosure',
+          },
+          {
+            id: uniqueId(),
+            name: 'Transition',
+            url: 'https://tailwind-admin.com/components/headlessui/transition',
+          },
+          {
+            id: uniqueId(),
+            name: 'Dialog',
+            url: 'https://tailwind-admin.com/components/headlessui/dialog',
+          },
+          {
+            id: uniqueId(),
+            name: 'Dropdown',
+            url: 'https://tailwind-admin.com/components/headlessui/dropdown',
+          },
+          {
+            id: uniqueId(),
+            name: 'Tabs',
+            url: 'https://tailwind-admin.com/components/headlessui/tabs',
+          },
+        ],
+      },
+      {
+        name: 'Animated Comp',
+        id: uniqueId(),
+        icon: 'solar:reel-linear',
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Button',
+            url: 'https://tailwind-admin.com/animated-components/buttons',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Card',
+            url: 'https://tailwind-admin.com/animated-components/cards',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Text',
+            url: 'https://tailwind-admin.com/animated-components/text',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Tables',
+            url: 'https://tailwind-admin.com/animated-components/tables',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Tooltip',
+            url: 'https://tailwind-admin.com/animated-components/tooltip',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Lists',
+            url: 'https://tailwind-admin.com/animated-components/lists',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Links',
+            url: 'https://tailwind-admin.com/animated-components/links',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Slider',
+            url: 'https://tailwind-admin.com/animated-components/slider',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Forms',
+            url: 'https://tailwind-admin.com/animated-components/forms',
+            isPro: true,
+          },
+        ],
       },
     ],
   },
-
   {
     heading: 'FORM ELEMENTS',
     children: [
+      {
+        name: 'Shadcn Forms',
+        id: uniqueId(),
+        icon: 'solar:banknote-2-linear',
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Button',
+            url: 'https://tailwind-admin.com/components/shadcn/buttons',
+          },
+          {
+            id: uniqueId(),
+            name: 'Input',
+            url: 'https://tailwind-admin.com/components/shadcn/input',
+          },
+          {
+            id: uniqueId(),
+            name: 'Select',
+            url: 'https://tailwind-admin.com/components/shadcn/select',
+          },
+          {
+            id: uniqueId(),
+            name: 'Checkbox',
+            url: 'https://tailwind-admin.com/components/shadcn/checkbox',
+          },
+          {
+            id: uniqueId(),
+            name: 'Radio',
+            url: 'https://tailwind-admin.com/components/shadcn/radio',
+          },
+          {
+            id: uniqueId(),
+            name: 'Combobox',
+            url: 'https://tailwind-admin.com/components/shadcn/combobox',
+          },
+          {
+            id: uniqueId(),
+            name: 'Command',
+            url: 'https://tailwind-admin.com/components/shadcn/command',
+          },
+        ],
+      },
       {
         name: 'Flowbite Forms',
         id: uniqueId(),
@@ -388,10 +775,98 @@ const SidebarContent: MenuItem[] = [
         children: [
           {
             id: uniqueId(),
-            name: 'Forms Elements',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/forms/form-elements',
-            isPro: true,
+            name: 'Button',
+            url: 'https://tailwind-admin.com/components/flowbite/buttons',
           },
+          {
+            id: uniqueId(),
+            name: 'Button Group',
+            url: 'https://tailwind-admin.com/components/flowbite/button-group',
+          },
+          {
+            id: uniqueId(),
+            name: 'Checkbox',
+            url: 'https://tailwind-admin.com/components/flowbite/checkbox',
+          },
+          {
+            id: uniqueId(),
+            name: 'Radio',
+            url: 'https://tailwind-admin.com/components/flowbite/radio',
+          },
+          {
+            id: uniqueId(),
+            name: 'Rating',
+            url: 'https://tailwind-admin.com/components/flowbite/rating',
+          },
+          {
+            id: uniqueId(),
+            name: 'Toggle Switch',
+            url: 'https://tailwind-admin.com/components/flowbite/toggle-switch',
+          },
+          {
+            id: uniqueId(),
+            name: 'Input',
+            url: 'https://tailwind-admin.com/components/flowbite/input',
+          },
+        ],
+      },
+      {
+        name: 'Headless Forms',
+        id: uniqueId(),
+        icon: 'solar:code-file-linear',
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Button',
+            url: 'https://tailwind-admin.com/components/headlessui/buttons',
+          },
+          {
+            id: uniqueId(),
+            name: 'Input',
+            url: 'https://tailwind-admin.com/components/headlessui/input',
+          },
+          {
+            id: uniqueId(),
+            name: 'Textarea',
+            url: 'https://tailwind-admin.com/components/headlessui/textarea',
+          },
+          {
+            id: uniqueId(),
+            name: 'Checkbox',
+            url: 'https://tailwind-admin.com/components/headlessui/checkbox',
+          },
+          {
+            id: uniqueId(),
+            name: 'Radio Group',
+            url: 'https://tailwind-admin.com/components/headlessui/radiogroup',
+          },
+          {
+            id: uniqueId(),
+            name: 'switch',
+            url: 'https://tailwind-admin.com/components/headlessui/switch',
+          },
+          {
+            id: uniqueId(),
+            name: 'Fieldset',
+            url: 'https://tailwind-admin.com/components/headlessui/fieldset',
+          },
+          {
+            id: uniqueId(),
+            name: 'Combobox',
+            url: 'https://tailwind-admin.com/components/headlessui/combobox',
+          },
+          {
+            id: uniqueId(),
+            name: 'Select',
+            url: 'https://tailwind-admin.com/components/headlessui/select',
+          },
+        ],
+      },
+      {
+        name: 'Form layouts',
+        id: uniqueId(),
+        icon: 'solar:documents-linear',
+        children: [
           {
             id: uniqueId(),
             name: 'Forms Layouts',
@@ -412,155 +887,51 @@ const SidebarContent: MenuItem[] = [
           },
           {
             id: uniqueId(),
-            name: 'Forms Custom',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/forms/form-custom',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
             name: 'Form Validation',
             url: 'https://tailwindadmin-reactjs-main.netlify.app/forms/form-validation',
             isPro: true,
           },
+          {
+            id: uniqueId(),
+            name: 'Form Examples',
+            url: 'https://tailwind-admin.com/components/shadcn/generated-forms/form-examples',
+          },
+          {
+            id: uniqueId(),
+            name: 'Repeater Forms',
+            url: 'https://tailwind-admin.com/components/shadcn/generated-forms/repeater-forms',
+          },
+          {
+            id: uniqueId(),
+            name: 'Form Wizard',
+            url: 'https://tailwind-admin.com/components/shadcn/generated-forms/form-wizard',
+          },
         ],
       },
       {
-        name: 'Shadcn Forms',
+        name: 'Form Addons',
         id: uniqueId(),
-        icon: 'solar:banknote-2-linear',
+        icon: 'solar:file-favourite-linear',
         children: [
           {
             id: uniqueId(),
-            name: 'Input',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/shadcn-form/input',
+            name: 'Select2',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/forms/form-select2',
             isPro: true,
           },
           {
             id: uniqueId(),
-            name: 'Select',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/shadcn-form/select',
+            name: 'Autocomplete',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/forms/form-autocomplete',
             isPro: true,
           },
           {
             id: uniqueId(),
-            name: 'Checkbox',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/shadcn-form/checkbox',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Radio',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/shadcn-form/radio',
+            name: 'Dropzone',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/forms/form-dropzone',
             isPro: true,
           },
         ],
-      },
-      {
-        name: 'Headless Forms',
-        id: uniqueId(),
-        icon: 'solar:code-file-linear',
-        children: [
-          {
-            id: uniqueId(),
-            name: 'Buttons',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/buttons',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Checkbox',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/checkbox',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Combobox',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/combobox',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Fieldset',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/fieldset',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Input',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/input',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Listbox',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/listbox',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Radio Group',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/radiogroup',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Select',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/select',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Switch',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/switch',
-            isPro: true,
-          },
-          {
-            id: uniqueId(),
-            name: 'Textarea',
-            url: 'https://tailwindadmin-reactjs-main.netlify.app/headless-form/textarea',
-            isPro: true,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    heading: 'pro Pages',
-    children: [
-      {
-        name: 'Account Setting',
-        icon: 'solar:settings-minimalistic-linear',
-        id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/account-settings',
-        isPro: true,
-      },
-      {
-        name: 'FAQ',
-        icon: 'solar:question-circle-linear',
-        id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/faq',
-        isPro: true,
-      },
-      {
-        name: 'Pricing',
-        icon: 'solar:tag-price-linear',
-        id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/pricing',
-        isPro: true,
-      },
-      {
-        name: 'Landingpage',
-        icon: 'solar:three-squares-linear',
-        id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/landingpage',
-        isPro: true,
-      },
-      {
-        name: 'Roll Base Access',
-        icon: 'solar:accessibility-linear',
-        id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/casl',
-        isPro: true,
       },
     ],
   },
@@ -568,25 +939,240 @@ const SidebarContent: MenuItem[] = [
     heading: 'Widgets',
     children: [
       {
-        id: uniqueId(),
         name: 'Cards',
+        id: uniqueId(),
         icon: 'solar:card-linear',
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/widgets/cards',
-        isPro: true,
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Top Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#topCards',
+          },
+          {
+            id: uniqueId(),
+            name: 'Best Selling Product Card',
+            url: 'https://tailwind-admin.com/ui-blocks/card#bestsellingproduct',
+          },
+          {
+            id: uniqueId(),
+            name: 'Payment Gatways Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#paymentgateway',
+          },
+          {
+            id: uniqueId(),
+            name: 'Blog Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#blogcards',
+          },
+          {
+            id: uniqueId(),
+            name: 'Products Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#productscards',
+          },
+          {
+            id: uniqueId(),
+            name: 'Music Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#musiccards',
+          },
+          {
+            id: uniqueId(),
+            name: 'Profile Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#profilecards',
+          },
+          {
+            id: uniqueId(),
+            name: 'User Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#usercards',
+          },
+          {
+            id: uniqueId(),
+            name: 'Social Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#socialcards',
+          },
+          {
+            id: uniqueId(),
+            name: 'Settings Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#settingscard',
+          },
+          {
+            id: uniqueId(),
+            name: 'Gift Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#giftcards',
+          },
+          {
+            id: uniqueId(),
+            name: 'Upcomming Activity Cards',
+            url: 'https://tailwind-admin.com/ui-blocks/card#upcommingactcard',
+          },
+          {
+            id: uniqueId(),
+            name: 'Recent Transaction Card',
+            url: 'https://tailwind-admin.com/ui-blocks/card#recenttransactioncard',
+          },
+          {
+            id: uniqueId(),
+            name: 'Recent Comment Card',
+            url: 'https://tailwind-admin.com/ui-blocks/card#recentcommentcard',
+          },
+          {
+            id: uniqueId(),
+            name: 'Task List',
+            url: 'https://tailwind-admin.com/ui-blocks/card#tasklist',
+          },
+          {
+            id: uniqueId(),
+            name: 'Recent Messages',
+            url: 'https://tailwind-admin.com/ui-blocks/card#recentmessages',
+          },
+          {
+            id: uniqueId(),
+            name: 'User info Card',
+            url: 'https://tailwind-admin.com/ui-blocks/card#userinfocard',
+          },
+          {
+            id: uniqueId(),
+            name: 'Social Card',
+            url: 'https://tailwind-admin.com/ui-blocks/card#socialcard',
+          },
+          {
+            id: uniqueId(),
+            name: 'Feed Card',
+            url: 'https://tailwind-admin.com/ui-blocks/card#feedcard',
+          },
+          {
+            id: uniqueId(),
+            name: 'Poll of Week Card',
+            url: 'https://tailwind-admin.com/ui-blocks/card#pollofweekcard',
+          },
+          {
+            id: uniqueId(),
+            name: 'Result of Poll',
+            url: 'https://tailwind-admin.com/ui-blocks/card#resultofpoll',
+          },
+          {
+            id: uniqueId(),
+            name: 'Social Post Card',
+            url: 'https://tailwind-admin.com/ui-blocks/card#socialpostcard',
+          },
+        ],
       },
       {
-        id: uniqueId(),
         name: 'Banners',
+        id: uniqueId(),
         icon: 'solar:object-scan-linear',
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/widgets/banners',
-        isPro: true,
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Greeting Banner',
+            url: 'https://tailwind-admin.com/ui-blocks/banner#greetingbanner',
+          },
+          {
+            id: uniqueId(),
+            name: 'Download Banner',
+            url: 'https://tailwind-admin.com/ui-blocks/banner#downloadbanner',
+          },
+          {
+            id: uniqueId(),
+            name: 'Empty Cart Banner',
+            url: 'https://tailwind-admin.com/ui-blocks/banner#emptybanner',
+          },
+          {
+            id: uniqueId(),
+            name: 'Error Banner',
+            url: 'https://tailwind-admin.com/ui-blocks/banner#errorbanner',
+          },
+          {
+            id: uniqueId(),
+            name: 'Notifications Banner',
+            url: 'https://tailwind-admin.com/ui-blocks/banner#notificationsbanner',
+          },
+          {
+            id: uniqueId(),
+            name: 'Greeting Banner 2',
+            url: 'https://tailwind-admin.com/ui-blocks/banner#greetingbanner2',
+          },
+        ],
       },
       {
-        id: uniqueId(),
         name: 'Charts',
+        id: uniqueId(),
         icon: 'solar:pie-chart-2-linear',
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/widgets/charts',
-        isPro: true,
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Revenue Updates Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#revenueupdateschart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Yarly Breakup Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#yarlybreakupchart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Monthly Earning Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#monthlyearning',
+          },
+          {
+            id: uniqueId(),
+            name: 'Yearly Sales Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#yearlysaleschart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Current Year Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#currentyear',
+          },
+          {
+            id: uniqueId(),
+            name: 'Weekly Stats Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#weeklystatschart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Expance Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#expancechart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Customers Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#customerschart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Earned Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#revenuechart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Follower Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#followerchart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Visit Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#visitchart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Income Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#incomechart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Impressions Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#impressionschart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Sales Overviewchart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#salesoverviewchart',
+          },
+          {
+            id: uniqueId(),
+            name: 'Total Earnings Chart',
+            url: 'https://tailwind-admin.com/ui-blocks/chart#totalearningschart',
+          },
+        ],
       },
     ],
   },
@@ -722,52 +1308,149 @@ const SidebarContent: MenuItem[] = [
     heading: 'Charts',
     children: [
       {
-        name: 'Line Chart',
-        icon: 'solar:chart-square-linear',
+        name: 'ApexCharts',
         id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/line',
-        isPro: true,
-      },
-      {
-        name: 'Area Chart',
-        icon: 'solar:maximize-square-3-linear',
-        id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/area',
-        isPro: true,
-      },
-      {
-        name: 'Gradient Chart',
-        icon: 'solar:graph-down-new-linear',
-        id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/gradient',
-        isPro: true,
-      },
-      {
-        name: 'Candlestick',
-        icon: 'solar:tuning-3-linear',
-        id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/candlestick',
-        isPro: true,
-      },
-      {
-        name: 'Column',
-        icon: 'solar:chart-linear',
-        id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/column',
-        isPro: true,
-      },
-      {
-        name: 'Doughnut & Pie',
         icon: 'solar:pie-chart-3-linear',
+        children: [
+          {
+            name: 'Line Chart',
+            id: uniqueId(),
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/line',
+            isPro: true,
+          },
+          {
+            name: 'Area Chart',
+            id: uniqueId(),
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/area',
+            isPro: true,
+          },
+          {
+            name: 'Gradient Chart',
+            id: uniqueId(),
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/gradient',
+            isPro: true,
+          },
+          {
+            name: 'Candlestick',
+            id: uniqueId(),
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/candlestick',
+            isPro: true,
+          },
+          {
+            name: 'Column',
+            id: uniqueId(),
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/column',
+            isPro: true,
+          },
+          {
+            name: 'Doughnut & Pie',
+            id: uniqueId(),
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/doughnut',
+            isPro: true,
+          },
+          {
+            name: 'Radialbar & Radar',
+            id: uniqueId(),
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/radialbar',
+            isPro: true,
+          },
+        ],
+      },
+      {
+        name: 'Shadcn Charts',
         id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/doughnut',
+        icon: 'solar:chart-2-linear',
+        children: [
+          {
+            id: uniqueId(),
+            name: 'Line Chart',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/shadcn/line',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Area Chart',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/shadcn/area',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Radar',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/shadcn/radar',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Bar',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/shadcn/bar',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Doughnut & Pie',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/shadcn/pie',
+            isPro: true,
+          },
+          {
+            id: uniqueId(),
+            name: 'Radialbar & Radar',
+            url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/shadcn/radial',
+            isPro: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    heading: 'pro Pages',
+    children: [
+      {
+        name: 'Account Setting',
+        icon: 'solar:settings-minimalistic-linear',
+        id: uniqueId(),
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/account-settings',
         isPro: true,
       },
       {
-        name: 'Radialbar & Radar',
-        icon: 'solar:round-graph-linear',
+        name: 'FAQ',
+        icon: 'solar:question-circle-linear',
         id: uniqueId(),
-        url: 'https://tailwindadmin-reactjs-main.netlify.app/charts/radialbar',
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/faq',
+        isPro: true,
+      },
+      {
+        name: 'Pricing',
+        icon: 'solar:tag-price-linear',
+        id: uniqueId(),
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/pricing',
+        isPro: true,
+      },
+      {
+        name: 'Landingpage',
+        icon: 'solar:three-squares-linear',
+        id: uniqueId(),
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/landingpage',
+        isPro: true,
+      },
+      {
+        name: 'Roll Base Access',
+        icon: 'solar:accessibility-linear',
+        id: uniqueId(),
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/casl',
+        isPro: true,
+      },
+      {
+        id: uniqueId(),
+        name: 'Integrations',
+        icon: 'solar:home-add-linear',
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/integration',
+        isPro: true,
+      },
+      {
+        id: uniqueId(),
+        name: 'API Keys',
+        icon: 'solar:key-linear',
+        url: 'https://tailwindadmin-reactjs-main.netlify.app/theme-pages/apikey',
         isPro: true,
       },
     ],
