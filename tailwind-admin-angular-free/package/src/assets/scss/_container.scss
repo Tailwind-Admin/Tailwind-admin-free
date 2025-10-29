@@ -205,36 +205,3 @@ td.hljs-ln-line.hljs-ln-numbers {
 .rounded-bars .apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path {
   clip-path: inset(0 0 5% round 20px);
 }
-
-// slider
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee-content {
-  display: flex;
-  width: max-content;
-  animation: marquee 25s linear infinite;
-}
-
-.marquee-item {
-  flex: 0 0 calc(100% / 13); /* only 6 visible at once */
-  padding: 0 12px;
-  box-sizing: border-box;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* Optional: smooth scroll pause on hover */
-.marquee-container:hover .marquee-content {
-  animation-play-state: paused;
-}
