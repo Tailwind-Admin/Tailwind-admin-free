@@ -207,30 +207,34 @@ td.hljs-ln-line.hljs-ln-numbers {
 }
 
 // slider
-.marquee-carousel .owl-stage {
-  transition-timing-function: linear !important;
-}
-
 .marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
   width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
-.marquee-track {
-  display: inline-flex;
-  gap: 24px;
+.marquee-content {
+  display: flex;
+  width: max-content;
   animation: marquee 25s linear infinite;
 }
 
-/* The magic animation */
+.marquee-item {
+  flex: 0 0 calc(100% / 13); /* only 6 visible at once */
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Optional: smooth scroll pause on hover */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
 }

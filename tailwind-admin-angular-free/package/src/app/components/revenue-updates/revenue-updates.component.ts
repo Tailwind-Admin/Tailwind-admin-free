@@ -30,7 +30,7 @@ export interface revenueChart {
   plotOptions: ApexPlotOptions;
   yaxis: ApexYAxis;
   xaxis: ApexXAxis;
-  fill: ApexFill; 
+  fill: ApexFill;
   tooltip: ApexTooltip;
   stroke: ApexStroke;
   legend: ApexLegend;
@@ -59,12 +59,12 @@ export class AppRevenueUpdatesComponent {
       series: [
         {
           name: 'Eanings this month',
-          data: [1.5, 2.7, 2.2, 3.6, 1.5, 1.0],
+          data: [1500, 2700, 2200, 3000, 1500, 1000, 1400, 2400, 1900, 2300, 1400, 1100],
           color: 'var(--mat-sys-primary)',
         },
         {
           name: 'Expense this month',
-          data: [-1.8, -1.1, -2.5, -1.5, -0.6, -1.8],
+          data: [-1800, -1100, -2500, -1500, -600, -1800, -1200, -2300, -1900, -2300, -1200, -2500],
           color: 'var(--mat-sys-secondary)',
         },
       ],
@@ -83,8 +83,9 @@ export class AppRevenueUpdatesComponent {
       plotOptions: {
         bar: {
           horizontal: false,
-          columnWidth: '20%',
-          borderRadius: [6],
+          barHeight: "60%",
+          columnWidth: "20%",
+          borderRadius: 6,
           borderRadiusApplication: 'end',
           borderRadiusWhenStacked: 'all',
         },
@@ -109,27 +110,28 @@ export class AppRevenueUpdatesComponent {
         },
       },
       yaxis: {
-        min: -5,
-        max: 5,
-        tickAmount: 4,
+        min: -3000,
+        max: 3000,
+        tickAmount: 6,
+        labels: {
+          formatter: (val: number) => {
+            return `${val / 1000}k`;
+          }
+        }
       },
       xaxis: {
-        categories: [
-          '16/08',
-          '17/08',
-          '18/08',
-          '19/08',
-          '20/08',
-          '21/08',
-          '22/08',
-        ],
+        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         axisBorder: {
           show: false,
         },
       },
       tooltip: {
-        theme: 'dark',
-        fillSeriesColor: false,
+        theme: "dark",
+        y: {
+          formatter: (val: number) => {
+            return `${val}k`;
+          }
+        }
       },
     };
   }
