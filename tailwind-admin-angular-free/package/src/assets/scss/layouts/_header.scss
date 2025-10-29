@@ -1,0 +1,68 @@
+@use "../variables" as *;
+
+html .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  height: $header-height;
+
+  i-tabler {
+    stroke-width: 1.5px;
+  }
+
+  .notification-badge{
+    .mat-badge-content{
+      left: 80%;
+      bottom: 85%;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.topbar-dd {
+  min-width: 360px !important;
+}
+
+.apps-dd {
+  min-width: 830px !important;
+  overflow: unset !important;
+
+  .mat-mdc-menu-content {
+    padding: 0;
+  }
+}
+
+.text-hover-primary:hover {
+  .hover-text {
+    color: $primary;
+  }
+}
+
+.upgrade-bg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.profile-dd {
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.dark-theme {
+  .topbar {
+    .mat-mdc-icon-button {
+      color: $dark-text-secondary !important;
+    }
+
+    .mdc-button {
+      --mat-button-text-label-text-color: $dark-text-secondary !important;
+    }
+  }
+}

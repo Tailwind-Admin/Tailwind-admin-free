@@ -1,0 +1,172 @@
+<mat-card class="cardWithShadow theme-card">
+  <div class="p-24 hstack">
+    <mat-card-title class="m-b-0">Chips</mat-card-title>
+  </div>
+  <mat-card-content class="b-t-1 p-t-24">
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- basic -->
+        <!-- ------------------------------------------------------------------------- -->
+
+        <mat-card class="b-1 shadow-none">
+          <div class="p-16">
+            <mat-card-title>Basic</mat-card-title>
+          </div>
+          <mat-card-content class="b-t-1">
+            <mat-chip-listbox aria-label="Fish selection">
+              <mat-chip-option class="f-s-14" color="primary">One fish</mat-chip-option>
+              <mat-chip-option class="f-s-14">Two fish</mat-chip-option>
+              <mat-chip-option class="f-s-14" color="accent" selected>Accent fish</mat-chip-option>
+              <mat-chip-option class="f-s-14" color="warn">Warn fish</mat-chip-option>
+            </mat-chip-listbox>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-lg-6">
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- avatar -->
+        <!-- ------------------------------------------------------------------------- -->
+
+        <mat-card class="b-1 shadow-none">
+          <div class="p-16">
+            <mat-card-title>Avatar</mat-card-title>
+          </div>
+          <mat-card-content class="b-t-1">
+            <mat-chip-set aria-label="Dog selection">
+              <mat-chip class="f-s-14">
+                <img matChipAvatar src="/assets/images/profile/user-1.jpg" alt="Photo of a Shiba Inu" />
+                Anderson
+              </mat-chip>
+              <mat-chip class="f-s-14" color="primary">
+                <img matChipAvatar src="/assets/images/profile/user-2.jpg" alt="Photo of a Shiba Inu" />
+                Monty
+              </mat-chip>
+              <mat-chip class="f-s-14" color="accent">
+                <img matChipAvatar src="/assets/images/profile/user-3.jpg" alt="Photo of a Shiba Inu" />
+                Mathew
+              </mat-chip>
+            </mat-chip-set>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-lg-6">
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- Drag n Drop -->
+        <!-- ------------------------------------------------------------------------- -->
+
+        <mat-card class="b-1 shadow-none">
+          <div class="p-16">
+            <mat-card-title>Drag n Drop</mat-card-title>
+          </div>
+          <mat-card-content class="b-t-1">
+            <mat-chip-set class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
+              (cdkDropListDropped)="drop($event)">
+              @for (vegetable of vegetables(); track vegetable.name) {
+              <mat-chip class="example-box" cdkDrag>{{
+                vegetable.name
+                }}</mat-chip>
+              }
+            </mat-chip-set>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-lg-6">
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- Stacked  -->
+        <!-- ------------------------------------------------------------------------- -->
+        <mat-card class="b-1 shadow-none">
+          <div class="p-16">
+            <mat-card-title>Stacked </mat-card-title>
+          </div>
+          <mat-card-content class="b-t-1">
+            <mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Color selection">
+              @for(chip of availableColors; track chip.color) {
+              <mat-chip-option selected [color]="chip.color">
+                {{ chip.name }}
+              </mat-chip-option>
+              }
+            </mat-chip-listbox>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-12">
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- Input -->
+        <!-- ------------------------------------------------------------------------- -->
+
+        <mat-card class="b-1 shadow-none">
+          <div class="p-16">
+            <mat-card-title>Input</mat-card-title>
+          </div>
+          <mat-card-content class="b-t-1">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Favorite Fruits</mat-label>
+              <mat-chip-grid #chipGrid aria-label="Enter fruits">
+                @for(fruit of fruits; track fruit.name) {
+                <mat-chip-row (removed)="remove(fruit)" [editable]="true" (edited)="edit(fruit, $event)"
+                  [aria-description]="'press enter to edit ' + fruit.name" class="f-s-14">
+                  {{ fruit.name }}
+                  <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
+                    <mat-icon>cancel</mat-icon>
+                  </button>
+                </mat-chip-row>
+                }
+
+                <input placeholder="New fruit..." [matChipInputFor]="chipGrid"
+                  [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+                  (matChipInputTokenEnd)="add($event)" />
+              </mat-chip-grid>
+            </mat-form-field>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-12">
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- Form Control -->
+        <!-- ------------------------------------------------------------------------- -->
+
+        <mat-card class="b-1 shadow-none">
+          <div class="p-16">
+            <mat-card-title>Form Control</mat-card-title>
+          </div>
+          <mat-card-content class="b-t-1">
+            <div class="d-flex gap-8">
+              <button mat-stroked-button color="primary" (click)="formControl.disable()">
+                Disable form control
+              </button>
+              <button mat-raised-button color="primary" (click)="formControl.enable()">
+                Enable form control
+              </button>
+            </div>
+            <mat-form-field appearance="outline" class="w-100 m-t-20">
+              <mat-label>Video keywords</mat-label>
+              <mat-chip-grid #formChip aria-label="Enter keywords" [formControl]="formControl">
+                @for (keyword of keywords(); track keyword) {
+                <mat-chip-row (removed)="removeKeyword(keyword)">
+                  {{ keyword }}
+                  <button matChipRemove aria-label="'remove ' + keyword">
+                    <mat-icon>cancel</mat-icon>
+                  </button>
+                </mat-chip-row>
+                }
+              </mat-chip-grid>
+              <input placeholder="New keyword..." [matChipInputFor]="formChip"
+                (matChipInputTokenEnd)="addForm($event)" />
+            </mat-form-field>
+
+            <p>
+              <span class="f-w-600">The following keywords are entered:</span>
+              {{ formControl.value }}
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

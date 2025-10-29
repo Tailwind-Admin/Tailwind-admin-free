@@ -1,0 +1,219 @@
+@use "../variables" as *;
+
+.sidebarNav-horizontal {
+  .childBox {
+    background: var(--mat-sys-surface);
+  }
+
+  // header
+  .horizontal-topbar {
+    box-shadow: var(--mat-sys-level2);
+
+    .branding {
+      padding-left: 0;
+    }
+
+    .container {
+      max-width: $boxedWidth;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  // horizontal-sidebar
+
+  .horizontal-sidebar{
+    .container {
+      max-width: $boxedWidth;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  // sidebar
+  .horizontal-navbar {
+    position: relative;
+    gap: 8px !important;
+
+    .parentBox {
+      position: relative;
+      z-index: 5;
+      margin: 5px 0;
+
+      &.mega-menu {
+        position: static;
+
+        &:hover {
+          >.childBox>.ddmenu {
+            display: inline-block;
+          }
+        }
+
+        >.childBox {
+          width: 100%;
+          left: 0;
+
+          >.ddmenu {
+            width: 24%;
+          }
+        }
+      }
+
+      &.two-column {
+        &:hover {
+          >.childBox>.ddmenu {
+            display: inline-block;
+          }
+        }
+
+        >.childBox {
+          width: 600px;
+
+          >.ddmenu {
+            width: 49%;
+            border-radius: $border-radius;
+          }
+        }
+      }
+
+      .menuLink {
+        padding: 10px;
+        border-radius: $border-radius;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        gap: 10px;
+        font-size: 14px;
+      }
+
+      &:hover>.menuLink {
+        background-color: var(--mat-sys-surface-bright);
+      }
+
+      &:hover>.activeMenu,
+      .activeMenu {
+        color: $white !important;
+        background-color: $primary;
+      }
+
+      .down-icon .mat-icon {
+        width: 18px;
+        height: 18px;
+        font-size: 18px;
+      }
+
+      .childBox {
+        border-radius: $border-radius;
+        box-shadow: var(--mat-sys-level1);
+        position: absolute;
+        width: 250px;
+        background-color: var(--mat-sys-surface);
+
+        .ddmenu {
+          display: none;
+          padding: 10px;
+          margin: 6px;
+          position: relative;
+          border-radius: $border-radius;
+        }
+      }
+
+      &:hover>.childBox>.ddmenu:hover {
+        background-color: var(--mat-sys-surface-bright);
+
+        &:hover>.childBox>.ddmenu:hover {
+          background-color: var(--mat-sys-surface-bright);
+        }
+      }
+
+      &:hover>.childBox>.ddmenu:hover>.childBox {
+        left: 230px;
+        top: 0px;
+        z-index: 9;
+
+        >.ddmenu:hover>.childBox {
+          left: 235px;
+          top: 0;
+        }
+      }
+
+      &:hover>.childBox>.ddmenu {
+        display: block;
+        padding: 0;
+
+        &:hover>.childBox>.ddmenu {
+          display: block;
+          padding: 0;
+
+          &:hover>.childBox>.ddmenu {
+            display: block;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebarNav-horizontal {   
+
+  .topbar,
+  .mainWrapper {
+    width: 100%;
+  }
+
+  .horizontal-navbar {
+    .parentBox {
+
+      &.pactive>a,
+      &.pactive>a:hover,
+      &.pactive:hover>a {
+        background-color: var(--mat-sys-primary);
+        color: $white !important;
+        border-radius: $border-radius;
+      }
+    }
+  }
+}
+
+.ltr {
+  .sidebarNav-horizontal {
+    .horizontal-navbar {
+      .parentBox {
+        &:last-child:hover>.childBox>.ddmenu {
+          &:hover>.childBox {
+            right: 250px;
+            left: unset;
+
+            >.ddmenu:hover>.childBox {
+              right: 250px;
+              left: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.rtl {
+  .sidebarNav-horizontal {
+    .horizontal-navbar {
+      .parentBox {
+        &:last-child:hover>.childBox>.ddmenu {
+          &:hover>.childBox {
+            left: 250px;
+            right: unset;
+
+            >.ddmenu:hover>.childBox {
+              left: 250px;
+              right: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+}

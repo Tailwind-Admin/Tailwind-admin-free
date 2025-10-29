@@ -1,0 +1,8 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+@include mat.table-overrides(
+  (
+    background-color: var(--mat-card-elevated-container-color),
+  )
+);

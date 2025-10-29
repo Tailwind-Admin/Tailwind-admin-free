@@ -1,0 +1,9 @@
+@use "../variables" as *;
+html {
+  .mdc-list-item__primary-text,
+  .mat-drawer-container,
+  .mat-drawer,
+  .text-body {
+    color: $text-color;
+  }
+}

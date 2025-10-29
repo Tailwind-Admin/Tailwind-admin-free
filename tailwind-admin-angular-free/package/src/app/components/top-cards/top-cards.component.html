@@ -1,0 +1,17 @@
+<owl-carousel-o [options]="customOptions" class="marquee-carousel">
+  @for (topcard of topcards; track topcard.title) {
+  <ng-template carouselSlide>
+    <mat-card class="shadow-none text-center bg-light-{{ topcard.color }}">
+      <mat-card-content>
+        <img [src]="topcard.img" alt="{{ topcard.title }}" width="40" class="m-x-auto w-auto" />
+        <h4 class="f-s-14 f-w-600 text-{{ topcard.color }} m-t-8">
+          {{ topcard.title }}
+        </h4>
+        <h6 class="f-s-21 f-w-600 text-{{ topcard.color }} m-t-8">
+          {{ topcard.subtitle }}
+        </h6>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+  }
+</owl-carousel-o>

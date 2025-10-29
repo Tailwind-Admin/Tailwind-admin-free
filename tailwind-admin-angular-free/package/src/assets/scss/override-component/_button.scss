@@ -1,0 +1,144 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "../variables" as *;
+
+@include mat.button-overrides(
+  (
+    protected-hover-container-elevation-shadow: var(--mat-sys-level1),
+    filled-horizontal-padding: 15px,
+    outlined-horizontal-padding: 15px,
+    protected-horizontal-padding: 15px,
+    text-horizontal-padding: 15px,
+    filled-container-shape: var(--mat-sys-corner-small),
+    outlined-container-shape: var(--mat-sys-corner-small),
+    protected-container-shape: var(--mat-sys-corner-small),
+    text-container-shape: var(--mat-sys-corner-small),
+  )
+);
+
+@include mat.icon-button-overrides(
+  (
+    icon-color: $text-color,
+  )
+);
+
+// styles
+html {
+  .mat-mdc-button-base.bg-light-primary:hover,
+  .mat-mdc-button-base.bg-light-secondary:hover,
+  .mat-mdc-button-base.bg-light-error:hover,
+  .mat-mdc-button-base.bg-light-warning:hover,
+  .mat-mdc-button-base.bg-light-success:hover {
+    color: $white !important;
+  }
+
+  .mat-mdc-button-base.bg-light-primary {
+    &:hover {
+      background-color: var(--mat-sys-primary) !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-secondary {
+    &:hover {
+      background-color: var(--mat-sys-secondary) !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-error {
+    &:hover {
+      background-color: var(--mat-sys-error) !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-warning {
+    &:hover {
+      background-color: $warning !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-success {
+    &:hover {
+      background-color: $success !important;
+    }
+  }
+
+  .mat-mdc-outlined-button:not(:disabled) {
+    border-color: inherit !important;
+  }
+
+  .mat-mdc-button-base.text-secondary:hover {
+    .mat-mdc-button-persistent-ripple::before {
+      background-color: $secondary;
+    }
+  }
+
+  .mat-mdc-button-base.text-error:hover {
+    .mat-mdc-button-persistent-ripple::before {
+      background-color: $error;
+    }
+  }
+
+  .mat-mdc-button-base.text-warning:hover {
+    .mat-mdc-button-persistent-ripple::before {
+      background-color: $warning;
+    }
+  }
+
+  .mat-mdc-button-base.text-success:hover {
+    .mat-mdc-button-persistent-ripple::before {
+      background-color: $success;
+    }
+  }
+
+  .mat-mdc-outlined-button:not(:disabled).mat-secondary {
+    color: var(--mat-sys-secondary);
+    border-color: var(--mat-sys-secondary);
+
+    &:hover {
+      .mat-mdc-button-persistent-ripple::before {
+        background-color: $secondary;
+      }
+    }
+  }
+
+  .mat-mdc-outlined-button:not(:disabled).mat-success {
+    color: $success;
+    border-color: $success;
+
+    &:hover {
+      .mat-mdc-button-persistent-ripple::before {
+        background-color: $success;
+      }
+    }
+  }
+
+  .mat-mdc-outlined-button:not(:disabled).mat-error {
+    color: $error;
+    border-color: $error;
+
+    &:hover {
+      .mat-mdc-button-persistent-ripple::before {
+        background-color: $error;
+      }
+    }
+  }
+
+  .mat-mdc-outlined-button:not(:disabled).mat-warning {
+    color: $warning;
+    border-color: $warning;
+
+    &:hover {
+      .mat-mdc-button-persistent-ripple::before {
+        background-color: $warning;
+      }
+    }
+  }
+
+  &.dark-theme .mat-mdc-icon-button:hover,
+  &.light-theme .mat-mdc-icon-button:hover {
+    color: var(--mat-sys-primary);
+    .mat-mdc-button-persistent-ripple::before {
+      background-color: var(--mat-sys-primary);
+    }
+  }
+}

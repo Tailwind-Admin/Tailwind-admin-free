@@ -1,0 +1,28 @@
+<mat-card class="cardWithShadow overflow-hidden">
+  <mat-card-header class="d-flex align-items-center">
+    <mat-card-title>Monthly Earnings</mat-card-title>
+    <div class="m-l-auto">
+      <button mat-fab class="bg-secondary shadow-none icon-48">
+        <i-tabler name="currency-dollar" class="text-white d-flex"></i-tabler>
+      </button>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <h4 class="f-s-20">$6,820</h4>
+    <div class="d-flex align-items-center m-t-10">
+      <button mat-mini-fab class="bg-light-error text-error shadow-none icon-22">
+        <i-tabler name="arrow-down-right" class="icon-16 d-flex"></i-tabler>
+      </button>
+      <div class="f-s-14 f-w-600 m-l-12">+9%</div>
+      <div class="f-s-14 f-w-400 m-l-4 text-muted">last year</div>
+    </div>
+  </mat-card-content>
+
+  <!-- ---------------------------- -->
+  <!-- charts here -->
+  <!-- ---------------------------- -->
+  <apx-chart [series]="monthlyChart.series" [dataLabels]="monthlyChart.dataLabels" [chart]="monthlyChart.chart"
+    [legend]="monthlyChart.legend" [colors]="monthlyChart.colors" [stroke]="monthlyChart.stroke"
+    [tooltip]="monthlyChart.tooltip" [plotOptions]="monthlyChart.plotOptions" [fill]="monthlyChart.fill"
+    [responsive]="monthlyChart.responsive"></apx-chart>
+</mat-card>

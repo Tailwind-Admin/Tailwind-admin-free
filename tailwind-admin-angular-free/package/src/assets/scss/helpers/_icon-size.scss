@@ -1,0 +1,15 @@
+@use "sass:meta";
+
+$columns: 70;
+
+@mixin icon_size {
+  @for $i from 1 through $columns {
+    .icon-#{$i} {
+      height: #{$i}px !important;
+      width: #{$i}px !important;
+      line-height: #{$i + 8}px !important;
+    }
+  }
+}
+
+@include icon_size;

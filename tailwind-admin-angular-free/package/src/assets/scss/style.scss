@@ -1,0 +1,39 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+@use "themecolors/blue_theme";
+@use "themecolors/orange_theme";
+@use "themecolors/aqua_theme";
+@use "themecolors/cyan_theme";
+@use "themecolors/green_theme";
+@use "themecolors/purple_theme";
+
+@use "variables" as *;
+@use "override-component";
+@use "theme-variables/default-variables";
+@use "theme-variables/light-theme-variables";
+@use "theme-variables/dark-theme-variables";
+
+//container layout
+@use "layouts/transitions";
+@use "helpers/color";
+@use "helpers/border-color";
+@use "helpers/icon-size";
+@use "container";
+@use "layouts/layouts";
+@use "grid/grid";
+@use "helpers/custom-flex"; 
+@use "helpers";
+
+// horizontal
+@use "horizontal/horizontal";
+@use "dark/dark";
+
+@use "pages/auth";
+@use "pages/dashboards";
+
+// RTL Theme
+@use "rtl/rtl";
+
+@use 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel' as *;
+@use 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default' as *;

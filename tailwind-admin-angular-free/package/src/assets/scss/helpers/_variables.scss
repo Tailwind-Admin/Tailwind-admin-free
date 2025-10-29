@@ -1,0 +1,103 @@
+@use "functions" as *;
+
+// Utility Map
+
+$utilities: () !default;
+
+// Spacing
+
+$spacer: 16px !default;
+$spacers: (
+  0: 0,
+  2: $spacer * 0.125,
+  4: $spacer * 0.25,
+  5: 5px,
+  6: 7px,
+  8: $spacer * 0.5,
+  10: 10px,
+  12: $spacer * 0.75,
+  14: 14px,
+  15: 15px,
+  16: $spacer,
+  20: 20px,
+  24: $spacer * 1.5,
+  30: 30px,
+  32: $spacer * 2,
+  40: 40px,
+  44: 44px,
+  48: $spacer * 3,
+  60: 60px,
+  66: 66px,
+  80: 80px,
+) !default;
+$negative-spacers: negativify-map($spacers) !default;
+
+// Border
+
+$border-color: var(--mat-sys-outline-variant) !default;
+$borders: (
+  0: 0,
+  1: 1px solid $border-color,
+  2: 2px solid $border-color,
+  4: 4px solid $border-color,
+  8: 8px solid $border-color,
+) !default;
+
+// Border radius
+
+$radius-base: 7px !default;
+$radius: (
+  0: 0,
+  7: $radius-base,
+  8: $radius-base * 2,
+  12: $radius-base * 3,
+  16: $radius-base * 4,
+  full: 9999px,
+) !default;
+
+// Text
+
+$font-wieghts: (
+  100: 100,
+  200: 200,
+  300: 300,
+  400: 400,
+  500: 500,
+  600: 600,
+  700: 700,
+  800: 800,
+  900: 900,
+) !default;
+
+$font-sizes: (
+  0: 0,
+  10: 10px,
+  12: 12px,
+  14: 14px,
+  15: 15px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  21: 21px,
+  24: 24px,
+  28: 28px,
+  30: 30px,
+  36: 36px,
+  40: 40px,
+  48: 48px,
+) !default;
+
+// Sizing
+
+$sizes: (
+  0: 0,
+  20: 20%,
+  25: 25%,
+  40: 40%,
+  50: 50%,
+  60: 60%,
+  75: 75%,
+  80: 80%,
+  full: 100%,
+  auto: auto,
+) !default;

@@ -1,0 +1,64 @@
+<mat-card class="cardWithShadow">
+  <mat-card-header class="p-b-12">
+    <div class="d-flex w-100">
+      <div>
+        <mat-card-title>Revenue Updates</mat-card-title>
+        <mat-card-subtitle>Overview of Profit</mat-card-subtitle>
+      </div>
+      <div class="m-l-auto">
+        <mat-form-field class="theme-select" appearance="outline">
+          <mat-select value="mar">
+            @for(month of months; track month.viewValue ) {
+            <mat-option [value]="month.value">
+              {{ month.viewValue }}
+            </mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="row align-items-center">
+      <div class="col-sm-8">
+        <!-- ---------------------------- -->
+        <!-- charts here -->
+        <!-- ---------------------------- -->
+        <apx-chart [series]="revenueChart.series" [dataLabels]="revenueChart.dataLabels" [chart]="revenueChart.chart"
+          [legend]="revenueChart.legend" [xaxis]="revenueChart.xaxis" [yaxis]="revenueChart.yaxis"
+          [grid]="revenueChart.grid" [stroke]="revenueChart.stroke" [tooltip]="revenueChart.tooltip"
+          [plotOptions]="revenueChart.plotOptions"></apx-chart>
+      </div>
+      <div class="col-sm-4">
+        <div class="d-flex align-items-center m-t-24">
+          <span class="text-primary bg-light-primary rounded icon-40 d-flex align-items-center justify-content-center">
+            <i-tabler name="grid-dots" class="icon-20"></i-tabler>
+          </span>
+
+          <div class="m-l-12">
+            <h5 class="f-s-24 m-b-4">$63,489</h5>
+            <span class="f-s-14 text-muted">Total Earnings</span>
+          </div>
+        </div>
+
+        <div class="d-flex m-t-32">
+          <i-tabler name="circle-filled" class="text-primary icon-10 m-t-4"></i-tabler>
+          <div class="m-l-12">
+            <span class="f-s-14 text-muted">Earnings this month</span>
+            <h3 class="f-s-18 f-w-600 m-t-4">$48,820</h3>
+          </div>
+        </div>
+
+        <div class="d-flex m-t-24">
+          <i-tabler name="circle-filled" class="text-secondary icon-10 m-t-4"></i-tabler>
+          <div class="m-l-12">
+            <span class="f-s-14 text-muted">Expense this month</span>
+            <h3 class="f-s-18 f-w-600 m-t-4">$26,498</h3>
+          </div>
+        </div>
+
+        <button mat-flat-button class="w-100 m-t-32">View Full Report</button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
