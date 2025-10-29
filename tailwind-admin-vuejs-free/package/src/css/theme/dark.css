@@ -1,0 +1,39 @@
+.dark:root {
+  --color-surface-ld: oklch(0.2633 0.0374 260);
+}
+
+/* ShadCN Compnent */
+
+.dark:root {
+  --background: oklch(0.2643 0.0345 262.71);
+  --foreground: var(--color-white);
+  --card: var(--color-dark);
+  --card-foreground: var(--color-white);
+  --popover: var(--color-dark);
+  --popover-foreground: var(--color-white);
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-white);
+  --secondary: var(--color-secondary);
+  --secondary-foreground: var(--color-white);
+  --muted: var(--color-muted);
+  --muted-foreground: var(--color-muted-foreground);
+  --accent: var(--color-lightprimary);
+  --accent-foreground: var(--color-primary);
+  --destructive: var(--color-error);
+  --border: var(--color-input);
+  --input: var(--color-darkborder);
+  --ring: var(--color-lightprimary);
+  --chart-1: var(--color-primary);
+  --chart-2: var(--color-secondary);
+  --chart-3: var(--color-success);
+  --chart-4: var(--color-warning);
+  --chart-5: var(--color-error);
+  --sidebar: var(--color-sidebar);
+  --sidebar-foreground: var(--color-sidebar-foreground);
+  --sidebar-primary: var(--color-sidebar-primary);
+  --sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+  --sidebar-accent: var(--color-sidebar-accent);
+  --sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+  --sidebar-border: var(--color-sidebar-border);
+  --sidebar-ring: var(--color-sidebar-ring);
+}

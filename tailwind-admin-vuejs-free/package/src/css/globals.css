@@ -1,0 +1,343 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import './app.css';
+@import "./layouts/container.css";
+@import "./layouts/sidebar.css";
+
+
+@import "./pages/dashboards.css";
+
+@import "./pages/app.css";
+
+@import "./theme/default-colors.css";
+@import "./theme/dark.css";
+
+@import "./override/reboot.css";
+
+@import "tw-animate-css";
+
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import "simplebar-vue/dist/simplebar.min.css";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-dark-md: var(--shadow-dark-md);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-btn-shadow: var(--shadow-btn-shadow);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+
+  --text-32: var(--text-32);
+  --text-40: var(--text-40);
+  --text-55: var(--text-55);
+  --text-fs_21: var(--text-fs_21);
+  --text-fs_13: var(--text-fs_13);
+  --text-fs_28: var(--text-fs_28);
+
+  --leading-21: var(--leading-21);
+
+  --color-cyan-500: var(--color-primary);
+  --color-cyan-600: var(--color-primary);
+  --color-cyan-700: var(--color-primary);
+
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-info: var(--color-info);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-error: var(--color-error);
+  --color-lightprimary: var(--color-lightprimary);
+  --color-lightsecondary: var(--color-lightsecondary);
+  --color-lightsuccess: var(--color-lightsuccess);
+  --color-lighterror: var(--color-lighterror);
+  --color-lightinfo: var(--color-lightinfo);
+  --color-lightwarning: var(--color-lightwarning);
+  --color-border: var(--color-border);
+  --color-bordergray: var(--color-bordergray);
+  --color-lightgray: var(--color-lightgray);
+  --color-muted: var(--color-muted);
+  --color-darkmuted: var(--color-darkmuted);
+  --color-bodytext: var(--color-bodytext);
+  --color-lightmuted: var(--color-lightmuted);
+  --color-grayemphasis: var(--color-gray-emphasis);
+  --color-lightemphasis: var(--color-light-emphasis);
+  --color-dark: var(--color-dark);
+  --color-link: var(--color-link);
+  --color-darklink: var(--color-darklink);
+  --color-darkborder: var(--color-darkborder);
+  --color-darkgray: var(--color-darkgray);
+  --color-darkinfo: var(--color-darkinfo);
+  --color-primaryemphasis: var(--color-primary-emphasis);
+  --color-secondaryemphasis: var(--color-secondary-emphasis);
+  --color-warningemphasis: var(--color-warning-emphasis);
+  --color-erroremphasis: var(--color-error-emphasis);
+  --color-successemphasis: var(--color-success-emphasis);
+  --color-infoemphasis: var(--color-info-emphasis);
+
+  /* ShadCN Compnent */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--color-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-white);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-white);
+  --color-muted: var(--color-muted);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--color-error);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--color-input);
+  --color-input: var(--color-darkborder);
+  --color-ring: var(--color-lightprimary);
+  --color-chart-1: var(--color-primary);
+  --color-chart-2: var(--color-secondary);
+  --color-chart-3: var(--color-success);
+  --color-chart-4: var(--color-warning);
+  --color-chart-5: var(--color-error);
+  --color-sidebar: var(--color-sidebar);
+  --color-sidebar-foreground: var(--color-sidebar-foreground);
+  --color-sidebar-primary: var(--color-sidebar-primary);
+  --color-sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+  --color-sidebar-accent: var(--color-sidebar-accent);
+  --color-sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+  --color-sidebar-border: var(--color-sidebar-border);
+  --color-sidebar-ring: var(--color-sidebar-ring);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 30px;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+body {
+   font-family: "DM Sans", sans-serif;
+   padding-right: 0 !important;
+  overflow: auto !important;
+
+}
+
+@utility container {
+  .landingpage & {
+    @apply max-w-[1320px];
+  }
+  .frontend-page & {
+    @apply max-w-[1410px];
+  }
+}
+
+@utility dropdown {
+  @apply shadow-md bg-white dark:bg-dark relative rounded-sm dark:shadow-dark-md;
+}
+
+@utility card-title {
+  @apply text-lg font-semibold text-dark dark:text-white;
+}
+
+@utility card-subtitle {
+  @apply text-sm text-bodytext dark:text-darklink font-normal;
+}
+
+@utility input-group {
+  & input {
+    @apply border border-border rounded-md border-r-0 rtl:border-r rtl:border-l-0 rounded-r-none rtl:rounded-r rtl:rounded-l-none dark:border-darkborder bg-transparent dark:bg-transparent w-full text-sm;
+  }
+
+  & input:focus {
+    @apply border-primary dark:border-primary outline-hidden shadow-none ring-offset-0 dark:ring-transparent ring-transparent;
+  }
+}
+
+
+
+
+@utility button-group {
+  & span {
+    @apply px-3 gap-1.5;
+  }
+}
+
+@utility border-ld {
+  @apply border-border dark:border-darkborder;
+}
+
+@utility bg-hover {
+  @apply hover:bg-lightprimary dark:hover:bg-lightprimary;
+}
+
+@utility form-control {
+  @apply !rounded-md border !border-border !bg-transparent w-full !py-5 !shadow-none;
+
+  &:focus {
+    @apply !border-primary !outline-hidden !shadow-none !ring-offset-0 !ring-transparent;
+  }
+
+  &.trans-input input {
+    @apply border rounded-md border-ld bg-transparent dark:bg-transparent w-full ps-11 py-2 text-sm placeholder:text-black/50 dark:placeholder:text-lightgray;
+  }
+
+  &.trans-input input:focus {
+    @apply border-primary dark:border-primary outline-hidden shadow-none ring-offset-0 ring-transparent;
+  }
+
+  & input {
+    @apply placeholder:text-black/50 dark:placeholder:text-lightgray;
+  }
+  &:focus {
+    @apply !border-primary !outline-hidden !shadow-none !ring-offset-0 !ring-transparent;
+  }
+  &.trans-input input {
+    @apply border rounded-md border-ld bg-transparent dark:bg-transparent w-full ps-11 py-2 text-sm placeholder:text-black/50 dark:placeholder:text-lightgray;
+  }
+
+  &.trans-input input:focus {
+    @apply border-primary dark:border-primary outline-hidden shadow-none ring-offset-0 ring-transparent;
+  }
+}
+
+
+
+@utility form-control-input {
+  @apply rounded-md border border-border dark:border-darkborder bg-transparent dark:bg-transparent w-full text-sm;
+
+  &:focus {
+    @apply border-primary dark:border-primary outline-hidden shadow-none ring-offset-0 ring-transparent;
+  }
+}
+
+
+
+@utility checkbox {
+  @apply !h-[20px] !w-[20px] !border !border-border dark:!border-darkborder !bg-transparent focus:!ring-0 focus:!ring-offset-0 checked:!bg-primary dark:checked:!bg-primary rounded cursor-pointer !shrink-0;
+}
+
+@utility text-primary-ld {
+  @apply hover:text-primary dark:hover:text-primary;
+}
+
+@utility text-ld {
+  @apply text-dark dark:text-white;
+}
+
+@utility sorting {
+  & button {
+    @apply bg-transparent text-dark dark:text-white p-0;
+  }
+
+  & button:hover {
+    @apply bg-transparent;
+  }
+
+  & button span {
+    @apply p-0;
+  }
+
+  & ul li {
+    @apply px-4 py-2;
+  }
+
+  & ul li button:hover {
+    @apply hover:text-primary;
+  }
+}
+
+@layer components {
+  body {
+    @apply text-sm overflow-x-hidden dark:bg-dark;
+  }
+
+  body {
+    @apply text-bodytext dark:text-darklink;
+  }
+  button {
+    @apply !cursor-pointer;
+  }
+  pre {
+    @apply !rounded-[12px];
+  }
+
+
+
+
+  /*heading text color*/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-dark dark:text-white font-semibold;
+  }
+
+  input[type="radio"]:focus {
+    @apply !ring-primary;
+  }
+  input[type="radio"]:checked {
+    @apply !bg-primary;
+  }
+
+  input::placeholder {
+    @apply text-darklink dark:text-darklink;
+  }
+  span {
+    @apply leading-none;
+  }
+
+}
+
+@theme inline {
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  @keyframes accordion-down {
+  from {
+    height: 0;
+    }
+  to {
+    height: var(--reka-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+  from {
+    height: var(--reka-accordion-content-height);
+    }
+  to {
+    height: 0;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

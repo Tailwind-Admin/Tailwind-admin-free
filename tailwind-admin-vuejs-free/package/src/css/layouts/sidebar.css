@@ -1,0 +1,101 @@
+
+
+.sidebar-wrapper [data-state="collapsed"] {
+  .logo {
+   width: 40px;
+    overflow: hidden;
+    padding-left: 5px;
+    transition: none;
+  }
+}
+
+.logo img {
+  max-width: unset;
+}
+
+.sidebar .caption {
+  padding: 20px 0 8px;
+  margin-top: 12px;
+}
+
+.sidebar-wrapper [data-state="collapsed"] .hide-block {
+  opacity: 0;
+}
+
+.sidebar-wrapper .sidebar [data-slot="sidebar-header"],
+.sidebar-wrapper .sidebar [data-slot="sidebar-menu"] {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.sidebar-wrapper [data-state="collapsed"] .sidebar [data-slot="sidebar-header"],
+.sidebar-wrapper [data-state="collapsed"] .sidebar [data-slot="sidebar-menu"] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.sidebar-wrapper [data-state="collapsed"] .sidebar .navtitle {
+  display: none;
+}
+
+.sidebar-wrapper .sidebar .dots_caption {
+  display: none !important;
+}
+
+.sidebar-wrapper [data-state="collapsed"] .sidebar .dots_caption {
+  display: block !important;
+}
+
+@media (min-width: 1280px) {
+  .sidebar-wrapper[data-state="collapsed"] .sidebar .dots_caption {
+    display: block !important;
+  }
+}
+
+.sidebar-wrapper [data-state="collapsed"] .sidebar .caption-text {
+  display: none !important;
+}
+
+.group-data-\[collapsible\=icon\]\:opacity-0 {
+  &:is(:where(.group)[data-collapsible="icon"] *) {
+    opacity: 1;
+  }
+}
+
+.sidebar ul li a {
+  padding: 22px 12px;
+  border-radius: var(--radius-md);
+}
+
+.sidebar ul li a.router-link-active {
+  background-color: var(--color-primary)!important;
+  color: white;
+}
+
+.sidebar .collapse-menu li button {
+  padding: 22px 12px;
+}
+
+.sidebar .collapse-menu li .collapse-content ul li a {
+  padding: 8px 20px;
+}
+
+.sidebar .collapse-menu li .collapse-content ul li a.router-link-active {
+  background-color: var(--color-lightprimary);
+  color: var(--color-primary);
+}
+
+.sidebar .collapse-menu li .collapse-content ul li a.router-link-active .dot {
+  border-color: var(--color-primary);
+}
+
+.sidebar .collapse-menu > li > .collapse-content > ul > li:hover {
+  background-color: var(--color-lightprimary);
+}
+
+.sidebar .collapse-menu > li > .collapse-content > ul > li:hover a {
+  color: var(--color-primary);
+}
+.sidebar .collapse-menu > li > .collapse-content > ul > li:hover a .dot {
+  border-color: var(--color-primary);
+}

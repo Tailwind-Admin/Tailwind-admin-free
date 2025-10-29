@@ -1,0 +1,6 @@
+.bg-primary-gt {
+    background: linear-gradient(261.23deg, var(--color-primary), #5a52ff 100%) !important;
+}
+.revenuechart .apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path {
+    clip-path: inset(0 0 5% 0 round 20px);
+}
