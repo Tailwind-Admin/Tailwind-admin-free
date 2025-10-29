@@ -1,0 +1,8 @@
+@use "variables";
+
+$utilities: (
+  "display": (property: display,
+    class: d,
+    values: inline inline-block block grid table table-row table-cell flex inline-flex none,
+  ),
+);

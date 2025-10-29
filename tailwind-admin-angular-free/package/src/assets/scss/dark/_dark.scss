@@ -1,0 +1,72 @@
+@use "sass:meta";
+@use "../variables" as *;
+
+.dark-theme {
+  //   typography
+  color: $dark-text-secondary;
+
+  .text-muted {
+    color: $dark-text-secondary !important;
+  }
+
+  .mat-mdc-menu-panel {
+    color: var(--mat-sys-on-background) !important;
+  }
+
+  .bg-white,
+  .mdc-menu-surface {
+    background-color: var(--mat-sys-surface) !important;
+  }
+
+  .topbar {
+    background-color: var(--mat-sys-surface);
+  }
+
+  .hljs {
+    background: var(--mat-sys-surface);
+  }
+
+  // -------------------------------------------------------
+  //   border
+  // -------------------------------------------------------
+
+  .b-1 {
+    border: 1px solid var(--mat-sys-outline-variant) !important;
+  }
+
+  .b-b-1 {
+    border-bottom: 1px solid var(--mat-sys-outline-variant) !important;
+  }
+
+  .b-t-1 {
+    border-top: 1px solid var(--mat-sys-outline-variant) !important;
+  }
+
+  .b-r-1 {
+    border-right: 1px solid var(--mat-sys-outline-variant) !important;
+  }
+
+  .b-l-1 {
+    border-left: 1px solid var(--mat-sys-outline-variant);
+  }
+
+  // fill
+  .customizer-button-group .mat-button-toggle-appearance-standard.mat-button-toggle-checked i-tabler.fill-icon {
+    fill: var(--mat-sys-primary-fixed-dim);
+  }
+
+}
+
+// horizontal + dark
+
+html.dark-theme {
+  .logodark {
+    display: none;
+  }
+}
+
+html.light-theme {
+  .logolight {
+    display: none;
+  }
+}

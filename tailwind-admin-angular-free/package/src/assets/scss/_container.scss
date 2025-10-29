@@ -1,0 +1,236 @@
+@use "variables" as *;
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.334rem;
+  overflow-x: hidden;
+  color: var(--mat-sys-on-background);
+}
+
+.mainWrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex: 1;
+  height: 100%;
+}
+
+.container {
+  max-width: 1320px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+
+  &.full-width {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.pageWrapper {
+  padding: 24px 24px 0px;
+  min-height: calc(100vh - 130px);
+
+  margin: 0 auto;
+
+  &.maxWidth {
+    max-width: $boxedWidth;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-muted {
+  color: var(--mat-sys-surface-container-lowest);
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.rounded {
+  border-radius: $border-radius !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-pill {
+  border-radius: 25px !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.table-responsive {
+  overflow-x: auto;
+
+  td,
+  mat-cell {
+    white-space: nowrap;
+    padding: 16px;
+  }
+}
+
+.op-5 {
+  opacity: 0.5;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.avatar-group {
+  img {
+    border: 2px solid $white;
+    margin-right: -5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+a {
+  color: var(--mat-sys-on-background);
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.checkpro-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  font-weight: 500;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(var(--mat-sys-surface-container-low), var(--mat-sys-surface-container-low)), linear-gradient(90deg, #15cebd, #548afe, #e02fd6, #fdb54e);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #000;
+    background-image: radial-gradient(100% 707.08% at 0 0, #15cebd36 0, #548afe36 33.82%, #e02fd636 72.12%, #fdb54e36 100%);
+  }
+}
+
+.filter-sidebar {
+  width: 290px;
+  position: fixed;
+  right: -290px;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--mat-sys-level1);
+  background-color: var(--mat-sys-background);
+
+  &.open {
+    right: 0;
+  }
+}
+
+pre {
+  margin: 0;
+  white-space: nowrap;
+}
+
+td.hljs-ln-line.hljs-ln-numbers {
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  html .flex-sm-row {
+    flex-direction: row !important;
+  }
+}
+
+.mat-drawer[style*="visibility: hidden"] {
+  display: none;
+}
+
+.ng-scroll-viewport[_nghost-ng-c2407083653]>.ng-scroll-content[_ngcontent-ng-c2407083653],
+.ng-scrollbar-external-viewport[_nghost-ng-c2407083653] .ng-scroll-viewport>.ng-scroll-content {
+  width: 100% !important;
+}
+
+.rounded-bars .apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path {
+  clip-path: inset(0 0 5% round 20px);
+}
+
+// slider
+.marquee-carousel .owl-stage {
+  transition-timing-function: linear !important;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-track {
+  display: inline-flex;
+  gap: 24px;
+  animation: marquee 25s linear infinite;
+}
+
+/* The magic animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

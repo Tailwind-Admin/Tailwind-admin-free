@@ -1,0 +1,27 @@
+<mat-card class="cardWithShadow">
+  <mat-card-content>
+    <mat-card-title>Recent Transactions</mat-card-title>
+    <mat-card-subtitle>How to secure recent transactions</mat-card-subtitle>
+
+    <div class="timeline m-t-40">
+      @for(stat of stats; track stat.title) {
+      <div class="timeline-item d-flex overflow-hidden">
+        <div class="time text-right f-s-14">{{ stat.time }}</div>
+        <div class="point d-flex align-items-center">
+          <span class="timeline-badge border-{{ stat.color }} m-y-8"></span>
+          <span class="timline-border d-block"></span>
+        </div>
+        <div class="desc">
+          @if(stat.subtext) {
+          <span class="f-s-14 lh-20">{{ stat.subtext }}</span>
+          } @if(stat.title) {
+          <span class="f-s-14 lh-20 f-w-600 d-block">{{ stat.title }}</span>
+          } @if(stat.link) {
+          <a href="#" class="text-primary text-decoration-none f-s-14 f-w-400">#ML-3467</a>
+          }
+        </div>
+      </div>
+      }
+    </div>
+  </mat-card-content>
+</mat-card>

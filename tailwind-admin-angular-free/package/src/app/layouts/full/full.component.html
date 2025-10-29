@@ -1,0 +1,62 @@
+<span [dir]="options.dir!">
+  <mat-sidenav-container class="mainWrapper blue_theme light-theme" autosize autoFocus dir="ltr">
+    <!-- ============================================================== -->
+    <!-- Vertical Sidebar -->
+    <!-- ============================================================== -->
+
+    <mat-sidenav #leftsidenav [mode]="isOver ? 'over' : 'side'" [opened]="!isOver"
+      (openedChange)="onSidenavOpenedChange($event)" (closedStart)="onSidenavClosedStart()" class="sidebarNav">
+      <div class="flex-layout">
+        <app-sidebar (toggleMobileNav)="sidenav.toggle()" [showToggle]="isOver"></app-sidebar>
+        <ng-scrollbar class="position-relative" style="height: 100%">
+          <mat-nav-list class="sidebar-list">
+            @for(item of navItems; track item) {
+            <app-nav-item [item]="item" (notify)="sidenav.toggle()" class="top-parent">
+            </app-nav-item>
+            }
+          </mat-nav-list>
+        </ng-scrollbar>
+        <div class="p-24">
+          <div class="bg-light-primary d-flex align-items-center gap-12 rounded p-20 m-t-20">
+            <div class="flex-shrink-0">
+              <h5 class="f-s-16 f-w-600 m-b-8">
+                Haven't <br> Account?
+              </h5>
+              <a mat-flat-button href="https://tailwind-admin.com/#pricing" target="_blank">
+                Get Pro
+              </a>
+            </div>
+            <img src="/assets/images/backgrounds/rocket.png" alt="imgae" class="side-img m-t--48" />
+          </div>
+        </div>
+      </div>
+    </mat-sidenav>
+
+    <!-- ============================================================== -->
+    <!-- Main Content -->
+    <!-- ============================================================== -->
+    <mat-sidenav-content class="contentWrapper" #content>
+
+      <app-header [showToggle]="!isOver" (toggleCollapsed)="toggleCollapsed()" (toggleMobileNav)="sidenav.toggle()"
+        (toggleMobileFilterNav)="toggleFilterNav()" (optionsChange)="receiveOptions($event)"></app-header>
+
+      <main class="pageWrapper" [ngClass]="{
+          maxWidth: options.boxed
+        }">
+
+        <!-- ============================================================== -->
+        <!-- Outlet -->
+        <!-- ============================================================== -->
+        <router-outlet></router-outlet>
+      </main>
+
+      <footer class="text-center text-muted p-t-10 p-b-24">
+        Design and Developed by
+        <a class="text-primary text-decoration-underline" href="https://tailwind-admin.com/"
+          target="_blank">tailwind-admin.com</a>
+      </footer>
+
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</span>

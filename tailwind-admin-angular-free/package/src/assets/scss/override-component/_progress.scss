@@ -1,0 +1,7 @@
+html {
+  .mat-secondary {
+    .mdc-linear-progress__bar-inner {
+      border-color: var(--mat-sys-secondary);
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@use "../variables" as *;
+
+html .customizerNav {
+  border-radius: 0px !important;
+  width: 100%;
+}
+
+.customizer-button-group {
+  &.two-row {
+    display: inline-block;
+
+    &.theme-colors {
+      .mat-button-toggle-appearance-standard {
+        margin-left: 16px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .mat-button-toggle-appearance-standard {
+      width: 80px;
+      height: 65px;
+      float: left;
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      .mat-button-toggle-button {
+        display: flex;
+        justify-content: center;
+      }
+
+      &:nth-child(4) {
+        margin-left: 0;
+      }
+
+      &.mat-button-toggle-checked {
+        .theme-circle {
+          .theme-icon {
+            display: flex;
+            color: $white;
+          }
+        }
+      }
+
+      .theme-circle {
+        width: 25px;
+        height: 25px;
+        border-radius: var(--mat-sys-corner-full);
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .theme-icon {
+          display: none;
+        }
+
+        &.orange_theme {
+          background-color: rgb(250, 137, 107);
+        }
+
+        &.blue_theme {
+          background-color: rgb(93, 135, 255);
+        }
+
+        &.aqua_theme {
+          background-color: rgb(0, 116, 186);
+        }
+
+        &.purple_theme {
+          background-color: rgb(118, 62, 189);
+        }
+
+        &.green_theme {
+          background-color: rgb(10, 126, 164);
+        }
+
+        &.cyan_theme {
+          background-color: rgb(1, 192, 200);
+        }
+      }
+    }
+  }
+
+  .mat-button-toggle-appearance-standard {
+    padding: 9px;
+    border: 1px solid var(--mat-sys-outline-variant) !important;
+    box-shadow: none;
+    border-radius: $border-radius;
+    transition: all 0.1s ease-in 0s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &.mat-button-toggle-checked {
+      background-color: var(--mat-sys-primary-fixed-dim);
+
+      i-tabler.fill-icon {
+        color: var(--mat-sys-primary);
+        fill: var(--mat-sys-on-primary);
+      }
+    }
+  }
+
+  &.mat-button-toggle-group {
+    overflow: unset;
+    border-radius: 0;
+  }
+
+  .mat-button-toggle-standalone.mat-button-toggle-appearance-standard,
+  &.mat-button-toggle-group-appearance-standard {
+    border: 0 !important;
+  }
+}

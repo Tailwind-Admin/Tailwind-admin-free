@@ -1,0 +1,27 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+@include mat.form-field-overrides(
+  (
+    container-height: 37px,
+    outlined-container-shape: var(--mat-sys-corner-small),
+    container-vertical-padding: 6px,
+  )
+);
+
+// forms
+html {
+  .hide-hint {
+    .mat-mdc-form-field-subscript-wrapper {
+      display: none;
+    }
+  }
+
+  .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+    top: calc(var(--mat-form-field-container-height) / 2.15);
+  }
+
+  .demo-inline-calendar-card {
+    width: 300px;
+  }
+}

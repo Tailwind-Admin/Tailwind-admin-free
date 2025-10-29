@@ -1,0 +1,61 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "../variables" as *;
+
+@include mat.card-overrides(
+  (
+    elevated-container-color: $white,
+    title-text-size: 1.125rem,
+    subtitle-text-size: 14px,
+    subtitle-text-color: var(--mat-sys-surface-container-lowest),
+    title-text-line-height: 1.6rem,
+    title-text-weight: 600,
+    subtitle-text-weight: 400,
+    elevated-container-shape: var(--mat-sys-corner-small),
+    outlined-container-shape: var(--mat-sys-corner-small),
+    elevated-container-elevation: var(--mat-sys-level1),
+  )
+);
+
+// styles
+html {
+  .mat-mdc-card {
+    margin-bottom: 24px;
+
+    .mat-mdc-card-header {
+      padding: $card-spacer $card-spacer 0 !important;
+    }
+
+    .mat-mdc-card-header + .mat-mdc-card-content {
+      padding: 0 $card-spacer $card-spacer;
+    }
+
+    > .mat-mdc-card-content {
+      padding: $card-spacer;
+    }
+
+    .mdc-card__actions {
+      padding: $card-spacer !important;
+    }
+  }
+
+  .card-hover {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    &:hover {
+      scale: 1.01;
+      transition: all 0.1s ease-in 0s;
+    }
+  }
+
+  .cardBorder {
+    .mdc-card {
+      box-shadow: none !important;
+      border: 1px solid $borderColor !important;
+
+      &.shadow-none {
+        border: 0 !important;
+      }
+    }
+  }
+}

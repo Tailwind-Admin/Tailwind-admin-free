@@ -1,0 +1,86 @@
+<mat-toolbar class="topbar gap-8">
+  
+
+  <!-- Mobile Menu -->
+  @if(!showToggle) {
+  <button mat-icon-button (click)="toggleMobileNav.emit()" class="d-flex justify-content-center">
+    <i class="iconify d-flex" data-icon="solar:hamburger-menu-linear"></i>
+  </button>
+  }
+
+  <mat-form-field appearance="outline" class="hide-hint d-none d-sm-flex">
+    <mat-icon class="d-flex align-items-center justify-content-center" matSuffix>
+      <i class="iconify f-s-20" data-icon="solar:magnifer-line-duotone"></i>
+    </mat-icon>
+    <input matInput placeholder="Search..." />
+  </mat-form-field>
+  <!-- --------------------------------------------------------------- -->
+
+
+  <span class="flex-1-auto"></span>
+
+  <a href="https://tailwind-admin.com/#pricing" target="_blank"
+    class="checkpro-btn rounded-pill f-s-16 p-x-16 p-y-4 f-w-600 body">Check Pro Version</a>
+
+
+  @if(options.theme=='light'){
+  <button mat-icon-button aria-label="lightdark" class="d-flex justify-content-center" (click)="setlightDark('dark')">
+    <i-tabler class="d-flex" [name]="'moon'"></i-tabler>
+  </button>
+  }@else{
+  <button mat-icon-button aria-label="lightdark" class="d-flex justify-content-center" (click)="setlightDark('light')">
+    <i-tabler class="d-flex" [name]="'sun'"></i-tabler>
+  </button>
+  }
+
+  <!-- --------------------------------------------------------------- -->
+  <!-- Notification Dropdown -->
+  <!-- --------------------------------------------------------------- -->
+  <button mat-icon-button matBadge="5" [matMenuTriggerFor]="notificationmenu" aria-label="Notifications"
+    class="notification-badge">
+    <i class="iconify" data-icon="solar:bell-line-duotone"></i>
+  </button>
+  <mat-menu #notificationmenu="matMenu" class="topbar-dd cardWithShadow">
+    <div class="d-flex align-items-center p-x-24 p-y-16">
+      <h6 class="f-s-18">Notifications</h6>
+
+    </div>
+
+    @for(notification of notifications; track notification.title) {
+    <button mat-menu-item class="p-x-24 p-y-8">
+      <div>
+        <h5 class="f-s-14 f-w-600 m-0 ">
+          {{ notification.title }}
+        </h5>
+        <span class="f-s-12 text-muted">{{ notification.subtitle }}</span>
+      </div>
+    </button>
+    }
+  </mat-menu>
+
+  <!-- --------------------------------------------------------------- -->
+  <!-- profile Dropdown -->
+  <!-- --------------------------------------------------------------- -->
+  <button mat-icon-button extended [matMenuTriggerFor]="profilemenu" aria-label="Notifications"
+    class="d-flex align-items-center justify-content-center profile-btn-dd">
+    <img src="/assets/images/profile/user-1.jpg" class="rounded-circle object-cover icon-35 profile-dd" width="35" />
+  </button>
+  <mat-menu #profilemenu="matMenu" class="cardWithShadow">
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"><i data-icon="solar:shield-user-line-duotone"
+          class="iconify icon-22"></i></mat-icon>My Profile
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"><i data-icon="solar:user-id-line-duotone"
+          class="iconify icon-22"></i></mat-icon>My Account
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"><i data-icon="solar:checklist-minimalistic-line-duotone"
+          class="iconify icon-22"></i> </mat-icon>My Task
+    </button>
+
+    <div class="p-x-12 m-t-12">
+      <a [routerLink]="['/authentication/login']" mat-stroked-button class="w-100">Logout</a>
+    </div>
+  </mat-menu>
+</mat-toolbar>

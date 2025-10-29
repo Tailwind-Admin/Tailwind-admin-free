@@ -1,0 +1,8 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+@include mat.chips-overrides(
+  (
+    focus-state-layer-color: var(--mat-option-focus-state-layer-color),
+  )
+);

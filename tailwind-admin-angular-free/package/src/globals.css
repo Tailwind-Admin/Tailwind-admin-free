@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+    --font-body: Onest, sans-serif;
+
+    --info-color: #539bff;
+    --warning-color: #ffae1f;
+    --success-color: #13deb9;
+
+    --lightsuccess-color: #13deb940;
+    --lightinfo-color: #8754ec26;
+    --lightwarning-color: #ffad1f40;
+}
+
+@theme {
+    /* Color */
+    --color-primary: var(--mat-sys-primary);
+    --color-secondary: var(--mat-sys-secondary);
+    --color-error: var(--mat-sys-error);
+    --color-info: var(--info-color);
+    --color-warning: var(--warning-color);
+    --color-success: var(--success-color);
+    --color-dark: var(--mat-sys-on-background);
+    --color-light: var(--mat-sys-surface-bright);
+
+    /* Light Color */
+    --color-lightprimary: var(--mat-sys-primary-fixed-dim);
+    --color-lightsecondary: var(--mat-sys-secondary-fixed-dim);
+    --color-lighterror: var(--mat-sys-error-fixed-dim);
+    --color-lightsuccess: var(--lightsuccess-color);
+    --color-lightinfo: var(--lightinfo-color);
+    --color-lightwarning: var(--lightwarning-color);
+
+    /* Border */
+    --color-border: var(--mat-sys-outline-variant);
+
+    /* Border Radius */
+    --radius-sm: var(--mat-sys-corner-small);
+    --radius-md: var(--mat-sys-corner-medium);
+
+    /* Shadow */
+    --shadow-sm: #919eab4d 0px 0px 2px 0px, #919eab1f 0px 12px 24px -4px;
+    --shadow-md: rgba(145, 158, 171, 0.12) 0px 1px 16px;
+}
+
+@layer base {
+
+    img,
+    video {
+        max-width: inherit;
+        height: revert-layer;
+    }
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        margin: revert-layer;
+
+    }
+
+    ol,
+    ul,
+    menu {
+        list-style-type: disc;
+        padding-inline-start: 40px;
+    }
+}

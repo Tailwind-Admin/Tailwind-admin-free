@@ -1,0 +1,76 @@
+@use "../variables" as *;
+
+.timeline {
+    position: relative;
+
+    .timeline-item {
+        position: relative;
+        height: 66px;
+
+        .time {
+            padding: 3px 16px 6px 0;
+            min-width: 90px;
+            flex-shrink: 0;
+        }
+
+        .desc {
+            padding: 3px 16px;
+        }
+
+        .timline-border {
+            width: 1px;
+            height: 100%;
+            background-color: $borderColor;
+            flex-shrink: 0;
+        }
+
+        .point {
+            flex-direction: column;
+
+            .timeline-badge {
+                width: 12px;
+                height: 12px;
+                border-radius: 50px;
+                background-color: transparent;
+                flex-shrink: 0;
+
+                &.border-primary {
+                    border: 2px solid $primary !important;
+                }
+
+                &.border-accent {
+                    border: 2px solid $accent !important;
+                }
+
+                &.border-success {
+                    border: 2px solid $success !important;
+                }
+
+                &.border-warning {
+                    border: 2px solid $warning !important;
+                }
+
+                &.border-error {
+                    border: 2px solid $error !important;
+                }
+            }
+
+            .timeline-border {
+                width: 1px;
+                height: 100%;
+                background-color: $borderColor;
+                flex-shrink: 0;
+            }
+        }
+
+        &:last-child {
+            .timeline-border {
+                display: none !important;
+            }
+        }
+
+        &:last-child {
+            height: auto;
+        }
+    }
+}

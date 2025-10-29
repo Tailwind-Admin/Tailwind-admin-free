@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+@include mat.radio-overrides(
+  (
+    unselected-icon-color: var(--mat-sys-outline-variant),
+  )
+);
+
+html {
+  .mat-mdc-radio-button .mdc-radio__outer-circle {
+    border-width: 1px;
+  }
+}

@@ -1,0 +1,44 @@
+<mat-card class="cardWithShadow">
+  <mat-card-header>
+    <mat-card-title>Yearly Breakup</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="row align-items-center">
+      <div class="col-7">
+        <h4 class="f-s-20">$36,358</h4>
+        <div class="d-flex align-items-center m-t-16">
+          <button mat-mini-fab
+            class="bg-light-success text-success shadow-none icon-22 d-flex align-items-center justify-content-center">
+            <i-tabler name="arrow-up-left" class="icon-16 d-flex"></i-tabler>
+          </button>
+          <div class="f-s-14 f-w-600 m-l-12">+9%</div>
+          <div class="f-s-14 f-w-400 m-l-4 text-muted">last year</div>
+        </div>
+
+        <div class="d-flex align-items-center m-t-20">
+          <div class="d-flex align-items-center">
+            <i-tabler name="circle-filled" class="text-primary icon-10 d-flex"></i-tabler>
+            <div class="f-s-12 f-w-400 m-l-8 text-muted">2023</div>
+          </div>
+          <div class="d-flex align-items-center m-l-16">
+            <i-tabler name="circle-filled" class="text-light-primary icon-10 d-flex"></i-tabler>
+            <div class="f-s-12 f-w-400 m-l-8 text-muted">2024</div>
+          </div>
+          <div class="d-flex align-items-center m-l-16">
+            <i-tabler name="circle-filled" class="text-secondary icon-10 d-flex"></i-tabler>
+            <div class="f-s-12 f-w-400 m-l-8 text-muted">2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <!-- ---------------------------- -->
+        <!-- charts here -->
+        <!-- ---------------------------- -->
+        <apx-chart [series]="yearlyChart.series" [dataLabels]="yearlyChart.dataLabels" [chart]="yearlyChart.chart"
+          [legend]="yearlyChart.legend" [colors]="yearlyChart.colors" [stroke]="yearlyChart.stroke"
+          [tooltip]="yearlyChart.tooltip" [plotOptions]="yearlyChart.plotOptions"
+          [responsive]="yearlyChart.responsive"></apx-chart>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

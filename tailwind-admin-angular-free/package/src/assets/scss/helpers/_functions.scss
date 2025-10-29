@@ -1,0 +1,25 @@
+@use "sass:map";
+
+// It makes the value negative.
+@function negativify-map($map) {
+  $result: ();
+
+  @each $key, $value in $map {
+    @if $key !=0 {
+      $result: map.merge($result, ("-" + $key: (-$value)));
+    }
+  }
+
+  @return $result;
+}
+
+// It allows to combine multiple maps together.
+@function map-collect($maps...) {
+  $collection: ();
+
+  @each $map in $maps {
+    $collection: map.merge($collection, $map);
+  }
+
+  @return $collection;
+}

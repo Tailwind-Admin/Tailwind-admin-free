@@ -1,0 +1,11 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+@include mat.datepicker-overrides(
+  (
+    calendar-container-background-color:
+      var(--mat-card-elevated-container-color),
+    calendar-container-touch-elevation-shadow: var(--mat-sys-level1),
+    calendar-container-elevation-shadow: var(--mat-sys-level1),
+  )
+);

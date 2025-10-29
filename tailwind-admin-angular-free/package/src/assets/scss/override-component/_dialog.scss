@@ -1,0 +1,15 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+@include mat.dialog-overrides(
+  (
+    container-shape: var(--mat-sys-corner-small),
+    subhead-size: 18px,
+    subhead-weight: 600,
+    content-padding: 20px 24px,
+    actions-padding: 20px 24px,
+    container-min-width: 300px,
+    subhead-tracking: unset,
+    supporting-text-tracking: unset,
+  )
+);

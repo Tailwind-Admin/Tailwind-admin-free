@@ -1,0 +1,83 @@
+<mat-card class="cardWithShadow">
+  <mat-card-content class="p-b-16">
+    <mat-card-title class="m-b-12">Product Performance</mat-card-title>
+    <div class="table-responsive">
+      <table mat-table [dataSource]="dataSource" class="w-100">
+        <!-- id Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef class="f-w-600 f-s-14">Id</th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.id }}
+          </td>
+        </ng-container>
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="assigned">
+          <th mat-header-cell *matHeaderCellDef class="f-w-600 f-s-14">
+            Assigned
+          </th>
+          <td mat-cell *matCellDef="let element">
+            <h6 class="f-s-14 f-w-600">
+              {{ element.uname }}
+            </h6>
+            <span class="f-w-400 f-s-12 text-muted">
+              {{ element.position }}
+            </span>
+          </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef class="f-w-600 f-s-14">Name</th>
+          <td class="text-muted" mat-cell *matCellDef="let element">
+            {{ element.productName }}
+          </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="priority">
+          <th mat-header-cell *matHeaderCellDef class="f-w-600 f-s-14">
+            Priority
+          </th>
+          <td mat-cell *matCellDef="let element">
+            @if(element.priority == 'low') {
+            <span class="bg-primary text-white rounded-pill f-w-600 p-x-6 p-y-4 f-s-12">
+              {{ element.priority | titlecase }}
+            </span>
+
+            } @if(element.priority == 'medium') {
+            <span class="bg-secondary text-white rounded-pill f-w-600 p-x-6 p-y-4 f-s-12">
+              {{ element.priority | titlecase }}
+            </span>
+            } @if(element.priority == 'high') {
+            <span class="bg-error text-white rounded-pill f-w-600 p-x-6 p-y-4 f-s-12">
+              {{ element.priority | titlecase }}
+            </span>
+            } @if(element.priority == 'critical') {
+            <span class="bg-success text-white rounded-pill f-w-600 p-x-6 p-y-4 f-s-12">
+              {{ element.priority | titlecase }}
+            </span>
+            } @if(element.priority == 'moderate') {
+            <span class="bg-primary text-white rounded-pill f-w-600 p-x-6 p-y-4 f-s-12">
+              {{ element.priority | titlecase }}
+            </span>
+            }
+          </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="budget">
+          <th mat-header-cell *matHeaderCellDef class="f-w-600 f-s-14">
+            Budget
+          </th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.budget }}k
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+  </mat-card-content>
+</mat-card>
