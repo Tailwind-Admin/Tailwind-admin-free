@@ -1,78 +1,125 @@
 :root {
-    --color-info: #8754ec;
-    --color-success: #13deb9;
-    --color-warning: #f6b51e;
-    --color-error: #ef4444;
-    --color-lightsuccess: #13DEB920;
-    --color-lighterror: #FA896B20;
-    --color-lightinfo: #8754ec1a;
-    --color-darkinfo: #223662;
-    --color-lightwarning: #FFAE1F20;
-    --color-white: #fff;
-    --color-dark: #1c2536;
-    --color-border: #dfe5ef;
-    --color-darkborder: #333f55;
-    --color-link: #2a3547;
-    --color-muted: #5a6a85;
-    --color-darkmuted: #2a3851;
-    --color-darklink: #7c8fac;
-    --color-lightgray: #f6f9fc;
-    --color-darkgray: #333f55;
-    --color-bodytext: #5a6a85bf;
-    --color-error-emphasis: #d5745b;
-    --color-warning-emphasis: #d9941a;
-    --color-success-emphasis: #10bd9d;
-    --color-primary: #5D87FF;
-    --color-primary-emphasis: #4f73d9;
-    --color-secondary: #49BEFF;
-    --color-secondary-emphasis: #3ea2d9;
-    --color-lightprimary: #5D87FF20;
-    --color-lightsecondary: #49BEFF20;
-    --color-input: #E5E7EB;
+  --color-info: #8754ec;
+  --color-success: #13deb9;
+  --color-warning: #f6b51e;
+  --color-error: #ef4444;  
+  --color-darkinfo: #223662;
+  --color-white: #fff;
+  --color-dark: #1c2536;
+  --color-border: #dfe5ef;
+  --color-darkborder: #333f55;
+  --color-link: #2a3547;
+  --color-muted: #5a6a85;
+  --color-darkmuted: #2a3851;
+  --color-darklink: #7c8fac;
+  --color-lightgray: #f6f9fc;
+  --color-darkgray: #333f55;
+  --color-bodytext: #5a6a85bf;
+  --color-primary: #5d87ff;
+  --color-secondary: #49beff;
+  --color-input: #e5e7eb;
+  /* --color-error-emphasis: #d5745b; */
+  /* --color-warning-emphasis: #d9941a; */
+  /* --color-success-emphasis: #10bd9d; */
+  /* --color-primary-emphasis: #4f73d9; */
+  /* --color-secondary-emphasis: #3ea2d9; */
+  /* --color-lightprimary: #5d87ff20; */
+  /* --color-lightsecondary: #49beff20; */
+  /* --color-lightsuccess: #13deb920; */
+  /* --color-lighterror: #fa896b20; */
+  /* --color-lightinfo: #8754ec1a; */
+  /* --color-lightwarning: #ffae1f20; */
 
-    /* common var for dark&light */
-    --color-charcoal: #2a3547;
-    --color-customdark: #1c2536;
-    --color-defaultBorder: #dfe5ef;
-    --color-slateGray: #5a6a85bf;
-    --color-breadcrumbColor: #49BEFF20;
+  /* Light Variants */
+  --color-lightprimary: color-mix(
+    in oklab,
+    var(--color-primary) 12%,
+    transparent
+  );
+  --color-lightsecondary: color-mix(
+    in oklab,
+    var(--color-secondary) 12%,
+    transparent
+  );
+  --color-lightsuccess: color-mix(
+    in oklab,
+    var(--color-success) 12%,
+    transparent
+  );  
+  --color-lightwarning: color-mix(
+    in oklab,
+    var(--color-warning) 12%,
+    transparent
+  );
+  --color-lighterror: color-mix(in oklab, var(--color-error) 12%, transparent);
+  --color-lightinfo: color-mix(in oklab, var(--color-info) 12%, transparent);
 
+  /* Emphasis Variants */
+  --color-primary-emphasis: color-mix(
+    in oklab,
+    var(--color-primary) 80%,
+    black
+  );
+  --color-secondary-emphasis: color-mix(
+    in oklab,
+    var(--color-secondary) 80%,
+    black
+  );
+  --color-success-emphasis: color-mix(
+    in oklab,
+    var(--color-success) 80%,
+    black
+  );
+  --color-warning-emphasis: color-mix(
+    in oklab,
+    var(--color-warning) 80%,
+    black
+  );
+  --color-error-emphasis: color-mix(in oklab, var(--color-error) 80%, black);
+  --color-info-emphasis: color-mix(in oklab, var(--color-info) 80%, black);
 
-    --shadow-md: 0px 1px 4px 0px rgba(133, 146, 173, 0.2);
+  /* common var for dark&light */
+  --color-charcoal: #2a3547;
+  --color-customdark: #1c2536;
+  --color-defaultBorder: #dfe5ef;
+  --color-slateGray: #5a6a85bf;
+  --color-breadcrumbColor: #49beff20;
 
-    /* shadCN Compnent */
+  --shadow-md: 0px 1px 4px 0px rgba(133, 146, 173, 0.2);
 
-    --radius: 10px;
-    --background: #ffff;
-    --foreground: var(--color-link);
-    --card: var(--color-white);
-    --card-foreground: var(--color-link);
-    --popover: var(--color-white);
-    --popover-foreground: var(--color-link);
-    --primary: var(--color-primary);
-    --primary-foreground: var(--color-white);
-    --secondary: var(--color-secondary);
-    --secondary-foreground: var(--color-white);
-    --muted: #f5f5f5;
-    --muted-foreground: #737373;
-    --accent: var(--color-lightprimary);
-    --accent-foreground: var(--color-primary);
-    --destructive: var(--color-error);
-    --destructive-foreground: var(--color-white);
-    --border: #e5e5e5;
-    --input: var(--color-input);
-    --ring: var(--color-lightprimary);
-    --chart-1: var(--color-primary);
-    --chart-2: var(--color-secondary);
-    --chart-3: var(--color-success);
-    --chart-4: var(--color-warning);
-    --chart-5: var(--color-error);
-    --sidebar: var(--color-white);
-    --sidebar-foreground: var(--color-link);
-    --sidebar-primary: var(--color-primary);
-    --sidebar-primary-foreground: var(--color-white);
-    --sidebar-accent: var(--color-lightprimary);
-    --sidebar-accent-foreground: var(--color-primary);
-    --sidebar-border: #e5e5e5;
-    --sidebar-ring: #a1a1a1;
+  /* shadCN Compnent */
+
+  --radius: 10px;
+  --background: #ffff;
+  --foreground: var(--color-link);
+  --card: var(--color-white);
+  --card-foreground: var(--color-link);
+  --popover: var(--color-white);
+  --popover-foreground: var(--color-link);
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-white);
+  --secondary: var(--color-secondary);
+  --secondary-foreground: var(--color-white);
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
+  --accent: var(--color-lightprimary);
+  --accent-foreground: var(--color-primary);
+  --destructive: var(--color-error);
+  --destructive-foreground: var(--color-white);
+  --border: #e5e5e5;
+  --input: var(--color-input);
+  --ring: var(--color-lightprimary);
+  --chart-1: var(--color-primary);
+  --chart-2: var(--color-secondary);
+  --chart-3: var(--color-success);
+  --chart-4: var(--color-warning);
+  --chart-5: var(--color-error);
+  --sidebar: var(--color-white);
+  --sidebar-foreground: var(--color-link);
+  --sidebar-primary: var(--color-primary);
+  --sidebar-primary-foreground: var(--color-white);
+  --sidebar-accent: var(--color-lightprimary);
+  --sidebar-accent-foreground: var(--color-primary);
+  --sidebar-border: #e5e5e5;
+  --sidebar-ring: #a1a1a1;
 }
