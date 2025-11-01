@@ -4,7 +4,7 @@
     --foreground: var(--color-white);
     --card: var(--color-dark);
     --card-foreground: var(--color-white);
-    --popover: var(--color-dark);
+    --popover: var(--color-darkgray);
     --popover-foreground: var(--color-white);
     --primary: var(--color-primary);
     --primary-foreground: var(--color-white);

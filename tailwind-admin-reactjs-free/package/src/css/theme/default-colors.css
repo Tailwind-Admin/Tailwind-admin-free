@@ -3,11 +3,7 @@
     --color-success: #13deb9;
     --color-warning: #f6b51e;
     --color-error: #ef4444;
-    --color-lightsuccess: #13DEB920;
-    --color-lighterror: #FA896B20;
-    --color-lightinfo: #8754ec1a;
     --color-darkinfo: #223662;
-    --color-lightwarning: #FFAE1F20;
     --color-white: #fff;
     --color-dark: #1c2536;
     --color-border: #dfe5ef;
@@ -18,16 +14,69 @@
     --color-lightgray: #f6f9fc;
     --color-darkgray: #333f55;
     --color-bodytext: #5a6a85bf;
-    --color-error-emphasis: #d5745b;
-    --color-warning-emphasis: #d9941a;
-    --color-success-emphasis: #10bd9d;
+    
     --color-primary: #5D87FF;
-    --color-primary-emphasis: #4f73d9;
     --color-secondary: #49BEFF;
-    --color-secondary-emphasis: #3ea2d9;
-    --color-lightprimary: #5D87FF20;
-    --color-lightsecondary: #49BEFF20;
     --color-input: #E5E7EB;
+    /* --color-lightsuccess: #13DEB920; */
+    /* --color-lighterror: #FA896B20; */
+    /* --color-lightinfo: #8754ec1a; */
+    /* --color-lightwarning: #FFAE1F20; */
+    /* --color-error-emphasis: #d5745b; */
+    /* --color-warning-emphasis: #d9941a; */
+    /* --color-success-emphasis: #10bd9d; */
+    /* --color-primary-emphasis: #4f73d9; */
+    /* --color-secondary-emphasis: #3ea2d9; */
+    /* --color-lightprimary: #5D87FF20; */
+    /* --color-lightsecondary: #49BEFF20; */
+
+    /* Light Variants */
+  --color-lightprimary: color-mix(
+    in oklab,
+    var(--color-primary) 12%,
+    transparent
+  );
+  --color-lightsecondary: color-mix(
+    in oklab,
+    var(--color-secondary) 12%,
+    transparent
+  );
+  --color-lightsuccess: color-mix(
+    in oklab,
+    var(--color-success) 12%,
+    transparent
+  );  
+  --color-lightwarning: color-mix(
+    in oklab,
+    var(--color-warning) 12%,
+    transparent
+  );
+  --color-lighterror: color-mix(in oklab, var(--color-error) 12%, transparent);
+  --color-lightinfo: color-mix(in oklab, var(--color-info) 12%, transparent);
+
+  /* Emphasis Variants */
+  --color-primary-emphasis: color-mix(
+    in oklab,
+    var(--color-primary) 80%,
+    black
+  );
+  --color-secondary-emphasis: color-mix(
+    in oklab,
+    var(--color-secondary) 80%,
+    black
+  );
+  --color-success-emphasis: color-mix(
+    in oklab,
+    var(--color-success) 80%,
+    black
+  );
+  --color-warning-emphasis: color-mix(
+    in oklab,
+    var(--color-warning) 80%,
+    black
+  );
+  --color-error-emphasis: color-mix(in oklab, var(--color-error) 80%, black);
+  --color-info-emphasis: color-mix(in oklab, var(--color-info) 80%, black);
 
     /* common var for dark&light */
     --color-charcoal: #2a3547;

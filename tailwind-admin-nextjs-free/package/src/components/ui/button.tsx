@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-primary text-white hover:bg-primary-emphasis',
+        default: 'bg-primary text-white hover:bg-primaryemphasis',
         destructive:
           'bg-destructive text-destructive-foreground hover:bg-destructive/90',
         outline:
@@ -24,11 +24,11 @@ const buttonVariants = cva(
           'border border-info bg-transparent hover:bg-info text-info hover:text-white',
         outlineerror:
           'border border-error bg-transparent hover:bg-error text-error hover:text-white',
-        secondary: 'bg-secondary text-white hover:bg-secondary-emphasis',
-        success: 'bg-success text-white hover:bg-success-emphasis',
-        warning: 'bg-warning text-white hover:bg-warning-emphasis',
-        info: 'bg-info text-white hover:bg-info-emphasis',
-        error: 'bg-error text-white hover:bg-error-emphasis',
+        secondary: 'bg-secondary text-white hover:bg-secondaryemphasis',
+        success: 'bg-success text-white hover:bg-successemphasis',
+        warning: 'bg-warning text-white hover:bg-warningemphasis',
+        info: 'bg-info text-white hover:bg-infoemphasis',
+        error: 'bg-error text-white hover:bg-erroremphasis',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         ghostprimary: 'hover:bg-lightprimary hover:text-primary text-primary',
         ghostsecondary:
