@@ -591,10 +591,10 @@ const customTheme = createTheme({
 
   sidebar: {
     root: {
-      inner: "bg-background rounded-none border border-defaultBorder px-0 py-0",
+      inner: "bg-white dark:bg-dark bg-background rounded-none border border-defaultBorder px-0 py-0",
     },
     item: {
-      base: "flex items-center justify-center rounded-md p-2.5 mb-0.5 gap-3  !text-sm text-start  leading-[normal] font-normal text-link hover:bg-lightprimary hover:text-primary dark:text-darklink  dark:hover:text-primary",
+      base: "flex items-center justify-center rounded-md p-2.5 mb-0.5 gap-3  !text-sm text-start  leading-[normal] font-normal text-link hover:bg-lightprimary hover:text-primary dark:text-darklink  dark:hover:bg-lightprimary dark:hover:text-primary",
       content: {
         base: "flex-1 whitespace-nowrap px-0 leading-21",
       },

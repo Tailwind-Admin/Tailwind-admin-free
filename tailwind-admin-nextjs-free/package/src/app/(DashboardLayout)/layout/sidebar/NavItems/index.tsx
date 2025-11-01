@@ -42,8 +42,8 @@ const NavItems: React.FC<NavItemsProps> = ({ item, onClose }) => {
         ) : (
           <span
             className={`${item.url == pathname
-              ? "dark:bg-white rounded-full mx-1.5 group-hover/link:bg-primary bg-primary! h-[6px] w-[6px]"
-              : "h-[6px] w-[6px] bg-darklink dark:bg-white rounded-full mx-1.5 group-hover/link:bg-primary"
+              ? "dark:bg-white rounded-full mx-1.5 group-hover/link:bg-primary dark:group-hover/link:bg-primary bg-primary! h-[6px] w-[6px]"
+              : "h-[6px] w-[6px] bg-link dark:bg-darklink rounded-full mx-1.5 group-hover/link:bg-primary dark:group-hover/link:bg-primary"
               } `}
           ></span>
         )}
