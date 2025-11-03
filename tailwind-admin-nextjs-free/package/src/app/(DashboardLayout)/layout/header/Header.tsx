@@ -1,14 +1,10 @@
 'use client'
-import 'flowbite'
-import React, { useState, useEffect } from 'react'
+
+import { useState, useEffect } from 'react'
+import { useTheme } from "next-themes"
 import {
-  Button,
-  DrawerItems,
   Navbar,
   NavbarCollapse,
-  Drawer,
-  useThemeMode,
-  TextInput,
 } from 'flowbite-react'
 import { Icon } from '@iconify/react'
 import Profile from './Profile'
@@ -17,14 +13,19 @@ import Notifications from './Notifications'
 import SidebarLayout from '../sidebar/Sidebar'
 import FullLogo from '../shared/logo/FullLogo'
 import { Input } from '@/components/ui/input'
+import {
+  Sheet,
+  SheetContent,
+} from "@/components/ui/sheet"
+
 
 const Header = () => {
+  const { theme, setTheme } = useTheme()
   const [isSticky, setIsSticky] = useState(false)
   const [mobileMenu, setMobileMenu] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const handleClose = () => setIsOpen(false)
-  const { mode, toggleMode } = useThemeMode()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,6 +48,10 @@ const Header = () => {
     } else {
       setMobileMenu('active')
     }
+  }
+
+  const toggleMode = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
   }
 
   return (
@@ -76,7 +81,7 @@ const Header = () => {
               className='hover:text-primary px-2 md:px-15 group focus:ring-0 rounded-full flex justify-center items-center cursor-pointer text-gray relative'
               onClick={toggleMode}>
               <span className='flex items-center justify-center relative after:absolute after:w-10 after:h-10 after:rounded-full after:-top-1/2   group-hover:after:bg-lightprimary'>
-                {mode === 'light' ? (
+                {theme === 'light' ? (
                   <Icon icon='tabler:moon' width='20' />
                 ) : (
                   <Icon
@@ -132,7 +137,7 @@ const Header = () => {
                   className='hover:text-primary px-15 group focus:ring-0 rounded-full flex justify-center items-center cursor-pointer text-gray relative'
                   onClick={toggleMode}>
                   <span className='flex items-center justify-center relative after:absolute after:w-10 after:h-10 after:rounded-full after:-top-1/2   group-hover:after:bg-lightprimary'>
-                    {mode === 'light' ? (
+                    {theme === 'light' ? (
                       <Icon icon='tabler:moon' width='20' />
                     ) : (
                       <Icon
@@ -160,12 +165,11 @@ const Header = () => {
       </header>
 
       {/* Mobile Sidebar */}
-
-      <Drawer open={isOpen} onClose={handleClose} className='w-64'>
-        <DrawerItems>
-          <SidebarLayout onClose={() => setIsOpen(false)} />
-        </DrawerItems>
-      </Drawer>
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <SheetContent side="left" className="w-64 p-0">
+        <SidebarLayout onClose={() => setIsOpen(false)} />
+      </SheetContent>
+    </Sheet>
     </>
   )
 }

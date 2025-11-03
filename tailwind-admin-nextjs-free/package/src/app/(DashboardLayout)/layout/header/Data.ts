@@ -10,28 +10,24 @@ interface ProfileType {
   icon:string
 }
 
-import acccountIcon from "/public/images/svgs/icon-account.svg";
-import inboxIcon from "/public/images/svgs/icon-inbox.svg";
-import taskIcon from "/public/images/svgs/icon-tasks.svg";
-import { ForwardRefExoticComponent, RefAttributes } from 'react';
 
 const profileDD: ProfileType[] = [
   {
-    img: acccountIcon,
+    img: "/images/svgs/icon-account.svg",
     title: "My Profile",
     subtitle: "Account settings",
     icon:"tabler:user",
     url: "/user-profile",
   },
   {
-    img: inboxIcon,
+    img: "/images/svgs/icon-inbox.svg",
     title: "My Account",
     subtitle: "My Daily Notes",
     icon:"tabler:mail",
     url: "/",
   },
   {
-    img: taskIcon,
+    img: "/images/svgs/icon-tasks.svg",
     title: "My Tasks",
     subtitle: "To-do and Daily tasks",
     icon:"tabler:list-check",

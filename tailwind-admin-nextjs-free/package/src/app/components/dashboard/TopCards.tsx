@@ -1,11 +1,6 @@
 "use client"
+
 import Image from "next/image"
-import iconConnect from "/public/images/svgs/icon-connect.svg"
-import iconSpeechBubble from "/public/images/svgs/icon-speech-bubble.svg"
-import iconFavorites from "/public/images/svgs/icon-favorites.svg"
-import iconMailbox from "/public/images/svgs/icon-mailbox.svg"
-import iconBriefcase from "/public/images/svgs/icon-briefcase.svg"
-import iconUser from "/public/images/svgs/icon-user-male.svg"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper/modules";
 
@@ -20,7 +15,7 @@ const TopCards = () => {
       key: "card1",
       title: "Notes",
       desc: "4+",
-      img: iconConnect,
+      img: "/images/svgs/icon-connect.svg",
       bgcolor: "bg-info/10 dark:bg-info/10",
       textclr: "text-info dark:text-info",
       url: "/apps/notes"
@@ -29,7 +24,7 @@ const TopCards = () => {
       key: "card2",
       title: "Icons",
       desc: "+1K",
-      img: iconSpeechBubble,
+      img: "/images/svgs/icon-speech-bubble.svg",
       bgcolor: "bg-success/10 dark:bg-success/10",
       textclr: "text-success dark:text-success",
       url: "/icons/iconify"
@@ -38,7 +33,7 @@ const TopCards = () => {
       key: "card3",
       title: "Blogs",
       desc: "10+",
-      img: iconFavorites,
+      img: "/images/svgs/icon-favorites.svg",
       bgcolor: "bg-error/10 dark:bg-error/10",
       textclr: "text-error dark:text-error",
       url: "/apps/blog/post"
@@ -47,7 +42,7 @@ const TopCards = () => {
       key: "card4",
       title: "Tickets",
       desc: "8+",
-      img: iconMailbox,
+      img: "/images/svgs/icon-mailbox.svg",
       bgcolor: "bg-secondary/10 dark:bg-secondary/10",
       textclr: "text-primary dark:text-primary",
       url: "/apps/tickets"
@@ -56,7 +51,7 @@ const TopCards = () => {
       key: "card5",
       title: "Products",
       desc: "$96k",
-      img: iconBriefcase,
+      img: "/images/svgs/icon-briefcase.svg",
       bgcolor: "bg-warning/10 dark:bg-warning/10",
       textclr: "text-warning dark:text-warning",
       url: "#product"
@@ -66,7 +61,7 @@ const TopCards = () => {
       key: "card7",
       title: "Employees",
       desc: "96",
-      img: iconUser,
+      img: "/images/svgs/icon-user-male.svg",
       bgcolor: "bg-primary/10 dark:bg-lightprimary",
       textclr: "text-primary dark:text-primary",
       url: "/utilities/table"
@@ -75,7 +70,7 @@ const TopCards = () => {
       key: "card8",
       title: "Blogs",
       desc: "696",
-      img: iconFavorites,
+      img: "/images/svgs/icon-favorites.svg",
       bgcolor: "bg-lighterror dark:bg-lighterror",
       textclr: "text-error dark:text-error",
       url: "/apps/blog/post"

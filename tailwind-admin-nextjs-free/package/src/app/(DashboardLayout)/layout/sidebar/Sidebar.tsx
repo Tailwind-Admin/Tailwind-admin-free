@@ -8,7 +8,6 @@ import SimpleBar from "simplebar-react";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import FullLogo from "../shared/logo/FullLogo";
-import rocket from "/public/images/backgrounds/rocket.png"
 import Link from "next/link";
 import NavCollapse from "./NavCollapse";
 
@@ -63,7 +62,7 @@ const SidebarLayout = ({ onClose }: { onClose?: () => void }) => {
                     <Button size={"xs"} color={"primary"} as={Link} target="_blank" href="https://tailwind-admin.com/#pricing" className="whitespace-nowrap mt-2 text-[13px]">Get Pro</Button>
                   </div>
                   <div className="lg:w-1/2 w-full -mt-4 ml-[26px] scale-[1.2] shrink-0">
-                    <Image src={rocket} alt="rocket" />
+                    <Image src={"/images/backgrounds/rocket.png"} alt="rocket" width={100} height={100} />
                   </div>
                 </div>
               </div>

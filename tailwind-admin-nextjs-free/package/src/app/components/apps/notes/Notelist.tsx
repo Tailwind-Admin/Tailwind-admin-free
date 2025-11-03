@@ -1,4 +1,5 @@
 "use client";
+
 import { Icon } from "@iconify/react";
 import React, { useState, useEffect } from "react";
 import { NotesType } from "@/app/(DashboardLayout)/types/apps/notes";

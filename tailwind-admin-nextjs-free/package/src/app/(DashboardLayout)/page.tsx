@@ -5,7 +5,6 @@ import { YearlyBreakup } from "../components/dashboard/YearlyBreakup";
 import { MonthlyEarning } from "../components/dashboard/MonthlyEarning";
 import { RecentTransaction } from "../components/dashboard/RecentTransaction";
 import { ProductPerformance } from "../components/dashboard/ProductPerformance";
-import { BestSeller } from "../components/dashboard/BestSeller";
 import { Footer } from "../components/dashboard/Footer";
 import { TopCards } from "../components/dashboard/TopCards";
 import ProfileWelcome from "../components/dashboard/ProfileWelcome";
@@ -39,9 +38,6 @@ const page = () => {
         <div className="lg:col-span-8 col-span-12 flex">
           <ProductPerformance />
         </div>
-        {/* <div className="col-span-12">
-          <BestSeller />
-        </div> */}
         <div className="col-span-12">
           <Footer />
         </div>
