@@ -1,13 +1,12 @@
-
-import { useState } from "react";
-import CardBox from "src/components/shared/CardBox";
-import NotesSidebar from "src/components/apps/notes/NotesSidebar";
-import NoteContent from "src/components/apps/notes/NoteContent";
-import AddNotes from "src/components/apps/notes/AddNotes";
-import { Icon } from "@iconify/react";
-import { Drawer } from "flowbite-react";
-import { NotesProvider } from 'src/context/NotesContext/index'
-import { Button } from "src/components/ui/button";
+import { useState } from 'react';
+import CardBox from 'src/components/shared/CardBox';
+import NotesSidebar from 'src/components/apps/notes/NotesSidebar';
+import NoteContent from 'src/components/apps/notes/NoteContent';
+import AddNotes from 'src/components/apps/notes/AddNotes';
+import { Icon } from '@iconify/react';
+import { NotesProvider } from 'src/context/NotesContext/index';
+import { Button } from 'src/components/ui/button';
+import { Sheet, SheetContent } from 'src/components/ui/sheet';
 
 interface colorsType {
   lineColor: string;
@@ -19,32 +18,31 @@ const NotesApp = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleClose = () => setIsOpen(false);
 
-
   const colorvariation: colorsType[] = [
     {
       id: 1,
-      lineColor: "warning",
-      disp: "warning",
+      lineColor: 'warning',
+      disp: 'warning',
     },
     {
       id: 2,
-      lineColor: "primary",
-      disp: "primary",
+      lineColor: 'primary',
+      disp: 'primary',
     },
     {
       id: 3,
-      lineColor: "error",
-      disp: "error",
+      lineColor: 'error',
+      disp: 'error',
     },
     {
       id: 4,
-      lineColor: "success",
-      disp: "success",
+      lineColor: 'success',
+      disp: 'success',
     },
     {
       id: 5,
-      lineColor: "secondary",
-      disp: "secondary",
+      lineColor: 'secondary',
+      disp: 'secondary',
     },
   ];
   return (
@@ -54,13 +52,24 @@ const NotesApp = () => {
           <div className="flex">
             {/* NOTES SIDEBAR */}
             <div>
-              <Drawer
+              {/* <Drawer
                 open={isOpen}
                 onClose={handleClose}
                 className="lg:relative lg:translate-none lg:h-auto lg:bg-transparent lg:z-[0]"
               >
                 <NotesSidebar />
-              </Drawer>
+              </Drawer> */}
+              <Sheet open={isOpen} onOpenChange={handleClose}>
+                <SheetContent
+                  side="left"
+                  className="max-w-[320px] sm:max-w-[320px] w-full h-full lg:z-0 lg:hidden block"
+                >
+                  <NotesSidebar />
+                </SheetContent>
+              </Sheet>
+              <div className="max-w-[320px] h-auto lg:block hidden">
+                <NotesSidebar />
+              </div>
             </div>
 
             {/* NOTES CONTENT */}
@@ -68,7 +77,7 @@ const NotesApp = () => {
               <div className="flex justify-between items-center border-b border-ld py-4 px-6">
                 <div className="flex gap-3 items-center">
                   <Button
-                    color={"lightprimary"}
+                    color={'lightprimary'}
                     onClick={() => setIsOpen(true)}
                     className="btn-circle p-0 lg:!hidden flex "
                   >

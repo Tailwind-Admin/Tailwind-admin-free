@@ -1,4 +1,6 @@
-import { Button, Label, TextInput } from "flowbite-react";
+import { Button } from "src/components/ui/button";
+import { Input } from "src/components/ui/input";
+import { Label } from "src/components/ui/label";
 
 
 const AuthRegister = () => {
@@ -9,36 +11,30 @@ const AuthRegister = () => {
           <div className="mb-2 block">
             <Label htmlFor="name" className="font-semibold" >Name</Label>
           </div>
-          <TextInput
+          <Input
             id="name"
             type="text"
-            sizing="md"
-            className="form-control"
           />
         </div>
         <div className="mb-4">
           <div className="mb-2 block">
             <Label htmlFor="emadd" className="font-semibold">Email Address</Label>
           </div>
-          <TextInput
+          <Input
             id="emadd"
             type="text"
-            sizing="md"
-            className="form-control"
           />
         </div>
         <div className="mb-6">
           <div className="mb-2 block">
             <Label htmlFor="userpwd" className="font-semibold">Password</Label>
           </div>
-          <TextInput
+          <Input
             id="userpwd"
             type="password"
-            sizing="md"
-            className="form-control"
           />
         </div>
-        <Button color={'primary'} className="w-full rounded-md">Sign Up</Button>
+        <Button className="w-full">Sign Up</Button>
       </form>
     </>
   )

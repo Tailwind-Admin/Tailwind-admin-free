@@ -1,4 +1,6 @@
-import { Button, Label, TextInput } from "flowbite-react";
+import { Label } from 'src/components/ui/label';
+import { Input } from 'src/components/ui/input';
+import { Button } from 'src/components/ui/button';
 
 const AuthTwoSteps = () => {
   return (
@@ -9,17 +11,15 @@ const AuthTwoSteps = () => {
             <Label>Type your 6 digits security code</Label>
           </div>
           <div className="flex gap-3.5">
-            <TextInput type="text" sizing="md" className="form-control input-center" />
-            <TextInput type="text" sizing="md" className="form-control input-center" />
-            <TextInput type="text" sizing="md" className="form-control input-center" />
-            <TextInput type="text" sizing="md" className="form-control input-center" />
-            <TextInput type="text" sizing="md" className="form-control input-center" />
-            <TextInput type="text" sizing="md" className="form-control input-center" />
+            <Input type="text" className="text-center" />
+            <Input type="text" className="text-center" />
+            <Input type="text" className="text-center" />
+            <Input type="text" className="text-center" />
+            <Input type="text" className="text-center" />
+            <Input type="text" className="text-center" />
           </div>
         </div>
-        <Button color={"primary"} className="w-full rounded-md">
-          Verify My Account
-        </Button>
+        <Button className="w-full">Verify My Account</Button>
       </form>
     </>
   );

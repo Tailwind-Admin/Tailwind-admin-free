@@ -1,33 +1,19 @@
+import { useState, useEffect } from 'react';
+import { Icon } from '@iconify/react';
+import Messages from './Messages';
+import FullLogo from '../../shared/logo/FullLogo';
+import Profile from './Profile';
+import SidebarLayout from '../sidebar/Sidebar';
+import { Sheet, SheetContent } from 'src/components/ui/sheet';
+import { Input } from 'src/components/ui/input';
+import { useTheme } from 'src/components/provider/theme-provider';
 
-import "flowbite";
-import { useState, useEffect } from "react";
-import { DrawerItems, Navbar, NavbarCollapse, TextInput, useThemeMode } from "flowbite-react";
-import { Icon } from "@iconify/react";
-import Messages from "./Messages";
-import FullLogo from "../../shared/logo/FullLogo";
-import { Drawer } from "flowbite-react";
-import HorizontalMenu from "../../horizontal/header/HorizontalMenu";
-
-import Profile from "./Profile";
-import SidebarLayout from "../sidebar/Sidebar";
-
-interface HeaderPropsType {
-  layoutType: string;
-}
-
-const Header = ({ layoutType }: HeaderPropsType) => {
+const Header = () => {
+  const { theme, setTheme } = useTheme();
   const [isSticky, setIsSticky] = useState(false);
-  const { mode, toggleMode } = useThemeMode();
-
-  useEffect(() => {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const theme = prefersDark ? "dark" : "light";
-    document.documentElement.setAttribute("lang", "en");
-    document.documentElement.classList.remove("dark", "light");
-    document.documentElement.classList.add(theme);
-    localStorage.setItem("flowbite-theme-mode", theme);
-  }, []);
-
+  const [mobileMenu, setMobileMenu] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,40 +24,33 @@ const Header = ({ layoutType }: HeaderPropsType) => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const [mobileMenu, setMobileMenu] = useState("");
-
-  const handleMobileMenu = () => {
-    if (mobileMenu === "active") {
-      setMobileMenu("");
-    } else {
-      setMobileMenu("active");
-    }
+  const toggleMode = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  const [isOpen, setIsOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
-  const handleClose = () => setIsOpen(false);
+  const handleMobileMenu = () => {
+    if (mobileMenu === 'active') {
+      setMobileMenu('');
+    } else {
+      setMobileMenu('active');
+    }
+  };
 
   return (
     <>
       <header
-        className={`sticky top-0 z-[2] ${isSticky
-          ? "bg-white dark:bg-dark shadow-md fixed w-full"
-          : "bg-transparent"
-          }`}
+        className={`sticky top-0 z-[2] ${
+          isSticky ? 'bg-white dark:bg-dark shadow-md fixed w-full' : 'bg-transparent'
+        }`}
       >
-        <Navbar
-          fluid
-          className={`rounded-none bg-transparent dark:bg-transparent py-4 sm:px-6 ${layoutType == "horizontal" ? "container mx-auto" : ""
-            }  !max-w-full`}
-        >
+        <nav className="rounded-none bg-transparent dark:bg-transparent py-4 px-6 !max-w-full flex justify-between items-center">
           {/* Mobile Toggle Icon */}
           <span
             onClick={() => setIsOpen(true)}
@@ -79,9 +58,6 @@ const Header = ({ layoutType }: HeaderPropsType) => {
           >
             <Icon icon="tabler:menu-2" height={20} />
           </span>
-
-
-
 
           <div className="hidden xl:flex items-center gap-2">
             <button
@@ -91,65 +67,42 @@ const Header = ({ layoutType }: HeaderPropsType) => {
               <Icon icon="solar:magnifer-linear" width="20" height="20" />
             </button>
 
-            {searchOpen && (
-              <TextInput
-                id="search-input"
-                type="text"
-                placeholder="Search..."
-                className="form-control form-rounded-xl"
-              />
-            )}
+            {searchOpen && <Input id="search-input" type="text" placeholder="Search..." />}
           </div>
-
-
-          {/* Toggle Icon   */}
-          <NavbarCollapse className="xl:!block !hidden">
-            <div className="flex gap-0 items-center relative">
-              {layoutType == "horizontal" ? (
-                <div className="me-3">
-                  <FullLogo />
-                </div>
-              ) : null}
-
-            </div>
-          </NavbarCollapse>
 
           {/* mobile-logo */}
           <div className="block xl:hidden">
             <FullLogo />
           </div>
 
-          <NavbarCollapse className="xl:!block !hidden md:!hidden">
+          <div className="xl:!block !hidden md:!hidden">
             <div className="flex gap-0 items-center">
               <div className="relative lg:block hidden group w-fit shadow-grid-shadow bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD_0%,#548AFE_33.82%,#E02FD6_72.12%,#FDB54E_100%)] p-0.5 rounded-full">
-                <a href={"https://tailwind-admin.com/#pricing"} className="flex items-center gap-2.5 px-3 py-1.5 bg-white dark:bg-dark rounded-full transition-all dark:hover:bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD36_0%,#548AFE36_33.82%,#E02FD636_72.12%,#FDB54E36_100%)] group hover:bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD36_0%,#548AFE36_33.82%,#E02FD636_72.12%,#FDB54E36_100%)]">
+                <a
+                  href={'https://tailwind-admin.com/#pricing'}
+                  className="flex items-center gap-2.5 px-3 py-1.5 bg-white dark:bg-dark rounded-full transition-all dark:hover:bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD36_0%,#548AFE36_33.82%,#E02FD636_72.12%,#FDB54E36_100%)] group hover:bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD36_0%,#548AFE36_33.82%,#E02FD636_72.12%,#FDB54E36_100%)]"
+                >
                   <p className="card-title text-base">Check Pro Version</p>
                 </a>
               </div>
 
               {/* Theme Toggle */}
-              {mode === "light" ? (
+              {theme === 'light' ? (
                 <div
                   className=" hover:text-primary px-15 group  dark:hover:text-primary focus:ring-0 rounded-full flex justify-center items-center cursor-pointer text-link dark:text-darklink relative"
-
                   onClick={toggleMode}
                 >
                   <span className="flex items-center justify-center relative after:absolute after:w-10 after:h-10 after:rounded-full after:-top-1/2   group-hover:after:bg-lightprimary">
-                    <Icon
-                      icon="tabler:moon"
-                      width="20"
-                    />
+                    <Icon icon="tabler:moon" width="20" />
                   </span>
                 </div>
               ) : (
                 // Dark Mode Button
                 <div
                   className=" hover:text-primary px-15   dark:hover:text-primary focus:ring-0 rounded-full flex justify-center items-center cursor-pointer text-link dark:text-darklink group relative"
-
                   onClick={toggleMode}
                 >
                   <span className="flex items-center justify-center relative after:absolute after:w-10 after:h-10 after:rounded-full after:-top-1/2   group-hover:after:bg-lightprimary">
-
                     <Icon
                       icon="solar:sun-bold-duotone"
                       width="20"
@@ -165,36 +118,27 @@ const Header = ({ layoutType }: HeaderPropsType) => {
               {/* Profile Dropdown */}
               <Profile />
             </div>
-          </NavbarCollapse>
+          </div>
           {/* Mobile Toggle Icon */}
-          <span
-            className="flex xl:hidden "
-            onClick={handleMobileMenu}
-          >
+          <span className="flex xl:hidden " onClick={handleMobileMenu}>
             <div className="xl:hidden flex w-full">
               <div className="flex justify-center items-center">
-                {mode === "light" ? (
+                {theme === 'light' ? (
                   <div
                     className=" hover:text-primary px-1 sm:px-15 group  dark:hover:text-primary focus:ring-0 rounded-full flex justify-center items-center cursor-pointer text-link dark:text-darklink relative"
-
                     onClick={toggleMode}
                   >
                     <span className="flex items-center justify-center relative after:absolute after:w-10 after:h-10 after:rounded-full after:-top-1/2   group-hover:after:bg-lightprimary">
-                      <Icon
-                        icon="tabler:moon"
-                        width="20"
-                      />
+                      <Icon icon="tabler:moon" width="20" />
                     </span>
                   </div>
                 ) : (
                   // Dark Mode Button
                   <div
                     className=" hover:text-primary px-1 sm:px-15   dark:hover:text-primary focus:ring-0 rounded-full flex justify-center items-center cursor-pointer text-link dark:text-darklink group relative"
-
                     onClick={toggleMode}
                   >
                     <span className="flex items-center justify-center relative after:absolute after:w-10 after:h-10 after:rounded-full after:-top-1/2   group-hover:after:bg-lightprimary">
-
                       <Icon
                         icon="solar:sun-bold-duotone"
                         width="20"
@@ -208,26 +152,15 @@ const Header = ({ layoutType }: HeaderPropsType) => {
               </div>
             </div>
           </span>
-        </Navbar>
-
-        {/* Horizontal Menu  */}
-        {layoutType == "horizontal" ? (
-          <div className="xl:border-y xl:border-ld">
-            <div className={"w-full px-6"}>
-              <HorizontalMenu />
-            </div>
-          </div>
-        ) : null}
+        </nav>
       </header>
 
       {/* Mobile Sidebar */}
-      <Drawer open={isOpen} onClose={handleClose} className="w-[270px]">
-        <DrawerItems>
-          {/* <SidebarLayout onClose={() => setIsOpen(false)} /> */}
-          <SidebarLayout />
-
-        </DrawerItems>
-      </Drawer>
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
+        <SheetContent side="left" className="w-64 p-0">
+          <SidebarLayout onClose={() => setIsOpen(false)} />
+        </SheetContent>
+      </Sheet>
     </>
   );
 };

@@ -48,7 +48,7 @@ const FullLayout: FC = () => {
         </div>
         <div className='body-wrapper w-full bg-white dark:bg-dark'>
           {/* Top Header  */}
-          <Header layoutType='vertical' />
+          <Header />
 
           {/* Body Content  */}
           <div

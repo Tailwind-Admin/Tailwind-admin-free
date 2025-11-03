@@ -1,5 +1,6 @@
-import { Button, Label, TextInput } from "flowbite-react";
-
+import { Button } from 'src/components/ui/button';
+import { Input } from 'src/components/ui/input';
+import { Label } from 'src/components/ui/label';
 
 const AuthForgotPassword = () => {
   return (
@@ -9,17 +10,9 @@ const AuthForgotPassword = () => {
           <div className="mb-2 block">
             <Label htmlFor="emadd">Email Address</Label>
           </div>
-          <TextInput
-            id="emadd"
-            type="text"
-            sizing="md"
-            className="form-control"
-          />
+          <Input id="emadd" type="text" />
         </div>
-        <Button color={"primary"} className=" w-full rounded-md">
-          Forgot Password
-        </Button>
-
+        <Button className="w-full">Forgot Password</Button>
       </form>
     </>
   );

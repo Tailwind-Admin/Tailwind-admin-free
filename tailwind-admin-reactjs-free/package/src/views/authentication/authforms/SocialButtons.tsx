@@ -5,7 +5,6 @@ import Google from "/src/assets/images/svgs/google-icon.svg";
 
 import { Link } from "react-router";
 import FB from "/src/assets//images/svgs/icon-facebook.png";
-import { HRText } from "flowbite-react";
 
 
 interface MyAppProps {
@@ -31,7 +30,11 @@ const SocialButtons: React.FC<MyAppProps> = ({ title }) => {
         </Link>
       </div>
       {/* Divider */}
-      <HRText text={`${title}`} className="!border-t !border-ld !bg-transparent" />
+      <div className="flex items-center justify-center gap-2">
+        <hr className="grow border-ld" />
+        <p className="text-base text-ld font-medium">{title}</p>
+        <hr className="grow border-ld" />
+      </div>
     </>
   );
 };

@@ -1,8 +1,8 @@
-import { Button } from "flowbite-react";
-import AuthForgotPassword from "../authforms/AuthForgotPassword";
-import { Link } from "react-router";
-import FullLogo from "src/layouts/full/shared/logo/FullLogo";
-import LeftSidebarPart from "../LeftSidebarPart";
+import AuthForgotPassword from '../authforms/AuthForgotPassword';
+import { Link } from 'react-router';
+import FullLogo from 'src/layouts/full/shared/logo/FullLogo';
+import LeftSidebarPart from '../LeftSidebarPart';
+import { Button } from 'src/components/ui/button';
 
 const ForgotPassword = () => {
   return (
@@ -20,17 +20,12 @@ const ForgotPassword = () => {
               <div className="max-w-[420px] w-full mx-auto">
                 <h3 className="text-2xl font-bold my-3">Forgot Password</h3>
                 <p className="text-darklink text-sm font-medium">
-                  Please enter the email address associated with your account
-                  and We will email you a link to reset your password.
+                  Please enter the email address associated with your account and We will email you
+                  a link to reset your password.
                 </p>
                 <AuthForgotPassword />
-                <Button
-                  color={"lightprimary"}
-                  as={Link}
-                  to="/auth/auth1/login"
-                  className="w-full mt-4 rounded-md"
-                >
-                  Back to Login
+                <Button variant={'lightprimary'} className="w-full mt-4 rounded-md">
+                  <Link to={'/'}>Back to Login</Link>
                 </Button>
               </div>
             </div>
