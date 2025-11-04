@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useEffectEvent } from 'react';
 import { Icon } from '@iconify/react';
 import Messages from './Messages';
 import FullLogo from '../../shared/logo/FullLogo';
@@ -15,19 +15,31 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
+  const handleScroll = useEffectEvent(() => {
+    if (window.scrollY > 50) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  });
 
+  const handleResize = useEffectEvent(() => {
+    if (window.innerWidth > 1023) {
+      setIsOpen(false);
+    }
+  });
+
+  useEffect(() => {
+    // Use stable callbacks inside the effect
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    // Run once on mount
+    handleResize();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 

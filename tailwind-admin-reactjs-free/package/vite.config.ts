@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import fs from 'fs/promises';
 import svgr from '@svgr/rollup';
-import flowbiteReact from "flowbite-react/plugin/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -38,5 +37,5 @@ export default defineConfig({
     build: {
         outDir: 'dist', // ✅ this is required for Netlify
     },
-    plugins: [svgr(), react(), flowbiteReact()],
+    plugins: [svgr(), react()],
 });

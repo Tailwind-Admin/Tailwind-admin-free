@@ -10,10 +10,6 @@
 @import './override/reboot.css' layer(utilities);
 @import "tw-animate-css";
 
-@plugin 'flowbite-react/plugin/tailwindcss';
-@source '../../../node_modules/flowbite-react/dist/esm/**/*.mjs';
-@source '../../../.flowbite-react/class-list.json';
-
 @custom-variant dark (&:is(.dark *));
 
 html,

@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "postinstall": "flowbite-react patch"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
@@ -36,8 +35,6 @@
     "cmdk": "^1.1.1",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
-    "flowbite": "3.1.2",
-    "flowbite-react": "^0.11.7",
     "i18next": "^25.5.2",
     "input-otp": "^1.4.2",
     "lodash": "^4.17.21",
@@ -45,10 +42,10 @@
     "moment": "^2.30.1",
     "msw": "^2.11.2",
     "prop-types": "^15.8.1",
-    "react": "^19.1.1",
+    "react": "^19.2.0",
     "react-apexcharts": "^1.7.0",
     "react-day-picker": "^9.9.0",
-    "react-dom": "^19.1.1",
+    "react-dom": "^19.2.0",
     "react-i18next": "^15.7.3",
     "react-icons": "^5.5.0",
     "react-router": "^7.8.2",
@@ -58,6 +55,7 @@
     "stylis-plugin-rtl": "^2.1.1",
     "swiper": "^12.0.1",
     "tailwind-merge": "^3.3.1",
+    "tailwind-sidebar": "^1.3.2",
     "uuid": "^13.0.0",
     "vaul": "^1.1.2"
   },
@@ -74,6 +72,7 @@
     "@vitejs/plugin-react": "^5.0.2",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "eslint-plugin-react-hooks": "^6.1.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
     "tw-animate-css": "^1.3.8",
