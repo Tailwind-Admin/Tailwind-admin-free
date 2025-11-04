@@ -2,9 +2,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
 import './css/globals.css'
-import { ShadcnThemeProvider } from '@/components/theme-provider'
-import { ThemeProvider } from 'flowbite-react'
-import customTheme from '@/utils/theme/custom-theme'
+import { ThemeProvider } from '@/components/theme-provider'
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -26,16 +24,15 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <head>
         <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
-        {/* {typeof window !== 'undefined' && <ThemeModeScript />} */}
       </head>
       <body className={`${dmSans.className}`}>
-        <ShadcnThemeProvider
+        <ThemeProvider
           attribute='class'
           defaultTheme='system'
           enableSystem
           disableTransitionOnChange>
-          <ThemeProvider theme={customTheme}>{children}</ThemeProvider>
-        </ShadcnThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

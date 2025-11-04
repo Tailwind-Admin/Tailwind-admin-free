@@ -1,11 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useTheme } from "next-themes"
-import {
-  Navbar,
-  NavbarCollapse,
-} from 'flowbite-react'
+import { useTheme } from 'next-themes'
 import { Icon } from '@iconify/react'
 import Profile from './Profile'
 import Link from 'next/link'
@@ -13,19 +9,14 @@ import Notifications from './Notifications'
 import SidebarLayout from '../sidebar/Sidebar'
 import FullLogo from '../shared/logo/FullLogo'
 import { Input } from '@/components/ui/input'
-import {
-  Sheet,
-  SheetContent,
-} from "@/components/ui/sheet"
-
+import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet'
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const Header = () => {
   const { theme, setTheme } = useTheme()
   const [isSticky, setIsSticky] = useState(false)
   const [mobileMenu, setMobileMenu] = useState('')
   const [isOpen, setIsOpen] = useState(false)
-  const [searchOpen, setSearchOpen] = useState(false)
-  const handleClose = () => setIsOpen(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,14 +33,6 @@ const Header = () => {
     }
   }, [])
 
-  const handleMobileMenu = () => {
-    if (mobileMenu === 'active') {
-      setMobileMenu('')
-    } else {
-      setMobileMenu('active')
-    }
-  }
-
   const toggleMode = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
   }
@@ -60,9 +43,8 @@ const Header = () => {
         className={`sticky top-0 z-2 ${
           isSticky ? 'bg-background shadow-md fixed w-full' : 'bg-transparent'
         }`}>
-        <Navbar
-          fluid
-          className={`rounded-none  py-4 sm:ps-6 max-w-full! sm:pe-10 dark:bg-dark`}>
+        <nav
+          className={`rounded-none  py-4 sm:ps-6 max-w-full! sm:pe-10 dark:bg-dark flex justify-between items-center px-6`}>
           {/* Mobile Toggle Icon */}
           <div
             onClick={() => {
@@ -93,12 +75,12 @@ const Header = () => {
               </span>
             </div>
 
-            <NavbarCollapse className='xl:block '>
+            <div className='xl:block '>
               <div className='flex gap-0 items-center relative'>
                 {/* Chat */}
                 <Notifications />
               </div>
-            </NavbarCollapse>
+            </div>
 
             {/* Profile Dropdown */}
             <Profile />
@@ -149,27 +131,30 @@ const Header = () => {
                   </span>
                 </div>
 
-                <NavbarCollapse className='xl:block '>
+                <div className='xl:block '>
                   <div className='flex gap-0 items-center relative'>
                     {/* Chat */}
                     <Notifications />
                   </div>
-                </NavbarCollapse>
+                </div>
 
                 {/* Profile Dropdown */}
                 <Profile />
               </div>
             </div>
           </div>
-        </Navbar>
+        </nav>
       </header>
 
       {/* Mobile Sidebar */}
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetContent side="left" className="w-64 p-0">
-        <SidebarLayout onClose={() => setIsOpen(false)} />
-      </SheetContent>
-    </Sheet>
+        <SheetContent side='left' className='w-64 p-0'>
+          <VisuallyHidden>
+            <SheetTitle>sidebar</SheetTitle>
+          </VisuallyHidden>
+          <SidebarLayout onClose={() => setIsOpen(false)} />
+        </SheetContent>
+      </Sheet>
     </>
   )
 }

@@ -4,9 +4,10 @@ import Messages from './Messages';
 import FullLogo from '../../shared/logo/FullLogo';
 import Profile from './Profile';
 import SidebarLayout from '../sidebar/Sidebar';
-import { Sheet, SheetContent } from 'src/components/ui/sheet';
-import { Input } from 'src/components/ui/input';
 import { useTheme } from 'src/components/provider/theme-provider';
+import { Input } from 'src/components/ui/input';
+import { Sheet, SheetContent, SheetTitle } from 'src/components/ui/sheet';
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -170,6 +171,9 @@ const Header = () => {
       {/* Mobile Sidebar */}
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetContent side="left" className="w-64 p-0">
+          <VisuallyHidden>
+            <SheetTitle>sidebar</SheetTitle>
+          </VisuallyHidden>
           <SidebarLayout onClose={() => setIsOpen(false)} />
         </SheetContent>
       </Sheet>
