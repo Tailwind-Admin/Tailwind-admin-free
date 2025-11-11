@@ -190,3 +190,4 @@ Follow these simple steps to start contributing:
    git push origin feature/your-feature-name
 
 ---
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
