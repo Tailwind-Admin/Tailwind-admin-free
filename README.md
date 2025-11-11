@@ -111,9 +111,9 @@ npm run dev
 
 Welcome to the **Tailwind Admin Dashboard Template** documentation! Whether you're just getting started or looking to explore advanced features, this guide will help you set up and customize your project with ease.
 
-👉 **[Next.js :- Click here to read the full documentation](https://tailwind-admin.github.io/Tailwind-admin-documentation/free-documentation/nextjs/index.html)**
+👉 **[Next.js :- Click here to read the full documentation](https://tailwind-admin.github.io/tailwind-admin-documentation/free-documentation/nextjs/index.html)**
 
-👉 **[React.js :- Click here to read the full documentation](https://tailwind-admin.github.io/Tailwind-admin-documentation/free-documentation/react/index.html)**
+👉 **[React.js :- Click here to read the full documentation](https://tailwind-admin.github.io/tailwind-admin-documentation/free-documentation/react/index.html)**
 
 ---
 
