@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://tailwind-admin.com/" target="_blank">
-      <img src="https://tailwind-admin.github.io/tailwind-admin/assets/images/logo.svg" alt="tailwind-admin-logo" width="90px" height="90px">
+      <img src="https://tailwind-admin.github.io/tailwind-admin-documentation/assets/images/logo.svg" alt="tailwind-admin-logo" width="90px" height="90px">
    </a>
 </p>
 
@@ -13,7 +13,7 @@
 <p align="center">Download most useful and comprehensive 🚀 Free admin template built for developers 🛠</p>
 
 
-[![Tailwind Admin Template Demo Screenshot](https://tailwind-admin.github.io/tailwind-admin/assets/images/Free-dashboard.png)](https://tailwind-admin.com)
+[![Tailwind Admin Template Demo Screenshot](https://tailwind-admin.github.io/tailwind-admin-documentation/assets/images/Free-dashboard.png)](https://tailwind-admin.com)
 
 
 ## 👋 Introduction
@@ -111,9 +111,9 @@ npm run dev
 
 Welcome to the **Tailwind Admin Dashboard Template** documentation! Whether you're just getting started or looking to explore advanced features, this guide will help you set up and customize your project with ease.
 
-👉 **[Next.js :- Click here to read the full documentation](https://tailwind-admin.github.io/Tailwind-admin/free-documentation/nextjs/index.html)**
+👉 **[Next.js :- Click here to read the full documentation](https://tailwind-admin.github.io/Tailwind-admin-documentation/free-documentation/nextjs/index.html)**
 
-👉 **[React.js :- Click here to read the full documentation](https://tailwind-admin.github.io/Tailwind-admin/free-documentation/react/index.html)**
+👉 **[React.js :- Click here to read the full documentation](https://tailwind-admin.github.io/Tailwind-admin-documentation/free-documentation/react/index.html)**
 
 ---
 
@@ -130,7 +130,7 @@ The Pro Version of the **Tailwind Admin Dashboard Template** comes packed with e
   </a>
 </div>
 
-[![Tailwind Admin Dashboard Template Screenshot](https://tailwind-admin.github.io/tailwind-admin/assets/images/Premium-dashboard.png)](https://tailwind-admin.com/#demos)
+[![Tailwind Admin Dashboard Template Screenshot](https://tailwind-admin.github.io/tailwind-admin-documentation/assets/images/Premium-dashboard.png)](https://tailwind-admin.com/#demos)
 
 ---
 
