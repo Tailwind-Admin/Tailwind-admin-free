@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-color-theme="Blue_Theme" class="light selected" data-layout="vertical"
+	data-boxed-layout="boxed" data-card="shadow">
+
+<head>
+	<!-- Required meta tags -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+  rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<!-- Core Css -->
+<link rel="stylesheet" href="./assets/css/theme.css" />
+	<title>TailwindAdmin TailwindCSS HTML Admin Template</title>
+</head>
+
+<body class="DEFAULT_THEME  bg-white dark:bg-dark">
+
+	<main>
+		<!--start the project-->
+		<div id="main-wrapper" class="flex">
+
+			<aside id="application-sidebar-brand"
+				class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full xl:rtl:-translate-x-0 rtl:translate-x-full  left-0 rtl:left-auto rtl:right-0 transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed top-0 with-vertical  left-sidebar transition-all duration-300 h-screen z-20 flex-shrink-0 border-r rtl:border-l rtl:border-r-0 w-[270px] border-border dark:border-darkborder bg-white dark:bg-dark">
+				<!-- ---------------------------------- -->
+<!-- Start Vertical Layout Sidebar -->
+<!-- ---------------------------------- -->
+<div class="py-5 px-5 flex justify-between">
+  <div class="brand-logo d-flex align-items-center justify-center">
+  <a href="./index.html" class="text-nowrap logo-img">
+    <img src="./assets/images/logos/dark-logo.svg" class="dark:hidden block rtl:hidden" alt="Logo-Dark" />
+    <img src="./assets/images/logos/light-logo.svg" class="dark:block hidden rtl:hidden rtl:dark:hidden"
+      alt="Logo-light" />
+
+    <img src="./assets/images/logos/dark-logo-rtl.svg" class="dark:hidden hidden rtl:block rtl:dark:hidden"
+      alt="Logo-Dark" />
+    <img src="./assets/images/logos/light-logo-rtl.svg" class="dark:hidden hidden rtl:hidden rtl:dark:block"
+      alt="Logo-light" />
+  </a>
+</div>
+</div>
+<div class="scroll-sidebar" data-simplebar="">
+  <div class="px-6 mt-8 mini-layout" data-te-sidenav-menu-ref>
+    <nav class="hs-accordion-group w-full flex flex-col">
+      <ul data-te-sidenav-menu-ref id="sidebarnav">
+        <div class="caption">
+          <iconify-icon icon="solar:menu-dots-bold"
+            class="nav-small-cap-icon text-lg hidden text-center leading-[16px]"></iconify-icon>
+          <span class="hide-menu">Home</span>
+        </div>
+
+        <!---Dashboard Menu---->
+        <li class="sidebar-item">
+          <a class="sidebar-link dark-sidebar-link  
+          " href="./index.html">
+            <iconify-icon icon="solar:widget-linear" class="shrink-0 text-xl"></iconify-icon>
+            <span class="hide-menu shrink-0">Modern</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/index2.html">
+            <iconify-icon icon="solar:cart-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">eCommerce</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/index3.html">
+            <iconify-icon icon="solar:music-note-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Music</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/index4.html">
+            <iconify-icon icon="solar:chart-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">General</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+
+        <!---Frontend Pages---->
+        <li class="hs-accordion sidebar-item "
+          id="blog-accordion">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:home-angle-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Frontend Pages</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="blog-accordion"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-homepage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Homepage</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-aboutpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">About Us</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-blogpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Blog</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-blogdetailpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Blog Detail</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-portfoliopage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Portfolio</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-pricingpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Pricing</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-contactpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Contact</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!---Ui Elements---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">UI</span>
+        </div>
+
+        <li class="hs-accordion  sidebar-item   active " id="ui-elements">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link   active dropdown-menu-active dark:text-white">
+            <iconify-icon icon="solar:share-circle-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Ui Elements</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+          <div id="ui-elements" class="hs-accordion-content  active-menu h-full ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link  active text-primary dark:text-primary"
+                  href="./ui-badge.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Badge</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link "
+                  href="./ui-button.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Button</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link "
+                  href="./ui-lists.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Lists</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link "
+                  href="./ui-typography.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Typography</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link "
+                  href="./ui-tooltip-popover.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Tooltip & Popover</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-breadcrumb.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Breadcrumb</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-accordion.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Accordion</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-carousel.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Carousel</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-chat-bubbles.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Chat Bubbles</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-dropdowns.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Dropdowns</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-datepicker.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">DatePicker</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-devices.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Devices</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-grid.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Grid</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-link.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Link</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-modals.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Modals</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-notification.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Notification</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-offcanvas.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Offcanvas</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-progressbar.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Progressbar</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-pagination.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Pagination</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-ratings.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Ratings</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-scrollspy.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Scrollspy</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-spinner.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Spinner</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-stepper.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Stepper</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-skeleton.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Skeleton</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-tab.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Tab</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-timeline.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Timeline</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-toasts.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Toasts</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion  sidebar-item  " id="ui-card">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:bookmark-square-minimalistic-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Cards</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+          <div id="ui-card" class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-cards.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Basic Cards</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-card-customs.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Custom Cards</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-card-weather.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Weather Cards</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!---Apps Menu---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">apps</span>
+        </div>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/app-calendar.html">
+            <iconify-icon icon="solar:calendar-mark-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Calendar</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/app-kanban.html">
+            <iconify-icon icon="solar:clapperboard-edit-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Kanban</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/app-chat.html">
+            <iconify-icon icon="solar:chat-round-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Chat</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/app-email.html">
+            <iconify-icon icon="solar:letter-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Email</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/app-notes.html">
+            <iconify-icon icon="solar:document-text-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Notes</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/app-contact.html">
+            <iconify-icon icon="solar:iphone-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Contact
+              Table</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/app-contact2.html">
+            <iconify-icon icon="solar:phone-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Contact
+              List</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/app-invoice.html">
+            <iconify-icon icon="solar:bill-list-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Invoice</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/page-user-profile.html">
+            <iconify-icon icon="solar:shield-user-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">User
+              Profile</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="hs-accordion sidebar-item " id="blog-accordion">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:widget-4-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Blog</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="blog-accordion"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/blog-posts.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Posts</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/blog-detail.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Details</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion sidebar-item " id="ecom-accordion">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:cart-5-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Ecommerce</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="ecom-accordion"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/eco-shop.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Shop</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/eco-shop-detail.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Details</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/eco-product-list.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">List</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/eco-checkout.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Checkout</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!---Pages---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">Pages</span>
+        </div>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/page-pricing.html">
+            <iconify-icon icon="solar:dollar-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Pricing</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/page-faq.html">
+            <iconify-icon icon="solar:question-circle-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">FAQ</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/page-account-settings.html">
+            <iconify-icon icon="solar:settings-minimalistic-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Account
+              Setting</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/landingpage/index.html">
+            <iconify-icon icon="solar:notes-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Landing
+              Page</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="hs-accordion sidebar-item " id="widgets">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:widget-2-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Widgets</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="widgets" class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-cards.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Cards</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-banners.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Banner</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-charts.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-feeds.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Feeds Widgets</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-apps.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Apps Widgets</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-data.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Data Widgets</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!---Form Elements---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">FORMS</span>
+        </div>
+
+        <li class="hs-accordion  sidebar-item   " id="form-elements">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:password-minimalistic-input-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Form Elements</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+          <div id="form-elements"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-inputs.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Forms Input</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-input-groups.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Input Groups</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-checkbox-radio.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Checkbox & Radios</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-input-grid.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Input Grid</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-input-number.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Input Number</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-advanced-password.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Advanced Pwd</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!---Table Elements---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">TABLES</span>
+        </div>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/table-basic.html">
+            <iconify-icon icon="solar:bedside-table-2-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Basic
+              Table</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/table-layout-highlighted.html">
+            <iconify-icon icon="solar:bedside-table-3-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Highlighted
+            </span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/table-miscellaneous.html">
+            <iconify-icon icon="solar:bedside-table-4-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Miscellaneous</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/table-editable.html">
+            <iconify-icon icon="solar:bedside-table-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Editable
+            </span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <!---DataTable ---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">DATA TABLES</span>
+        </div>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/table-datatable-basic.html">
+            <iconify-icon icon="solar:database-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Basic Data
+              Table</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+
+        <!---Apexchart---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">CHARTS</span>
+        </div>
+
+        <li class="hs-accordion sidebar-item " id="charts">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:chart-square-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Apex Charts</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="charts" class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-line.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Line Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-area.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Area Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-bar.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Bar Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-pie.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Pie Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-radial.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Radial Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-radar.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Radar Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!---Icons---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">Icons</span>
+        </div>
+        <li class="sidebar-item">
+          <a class="sidebar-link dark-sidebar-link  
+        " href="./sample-page.html">
+            <iconify-icon icon="solar:planet-3-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Sample Page</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a class="sidebar-link dark-sidebar-link  
+        " href="./icon-solar.html">
+            <iconify-icon icon="solar:sticker-smile-circle-2-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Solar</span>
+          </a>
+        </li>
+
+        <!---Auth Pages---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">AUTH</span>
+        </div>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/authentication-error.html">
+            <iconify-icon icon="solar:bug-minimalistic-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Error</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="hs-accordion sidebar-item " id="auth-login">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:lock-keyhole-minimalistic-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Login</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="auth-login" class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-login.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Side Login</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link "
+                  href="./authentication-login.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Boxed Login</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion sidebar-item " id="auth-register">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:user-plus-rounded-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Register</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="auth-register" class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-register.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Side Register</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link "
+                  href="./authentication-register.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Boxed Register</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion sidebar-item" id="auth-forgot">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:password-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Forgot Password</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="auth-forgot" class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-forgot-password.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Side Forgot Password</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-forgot-password2.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Boxed Forgot Password</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion sidebar-item" id="auth-twostep">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:siderbar-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Two Steps</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="auth-twostep" class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-two-steps.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Side Two Steps</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link "
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-two-steps2.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Boxed Two Steps</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          "
+            href="https://demos.tailwind-admin.com/html/dist/main/authentication-maintenance.html">
+            <iconify-icon icon="solar:settings-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Maintenance</span>
+          </a>
+        </li>
+
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold"
+            class="nav-small-cap-icon text-lg hidden text-center leading-[16px]"></iconify-icon>
+          <span class="hide-menu">OTHERS</span>
+        </div>
+
+        <li class="hs-accordion  sidebar-item  " id="users-accordion">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <iconify-icon icon="solar:align-horizontal-center-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Menu Level </span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="users-accordion"
+            class="hs-accordion-content ">
+            <ul class="hs-accordion-group " data-hs-accordion-always-open>
+              <li class="hs-accordion pl-4 pr-3 py-1 transition-colors duration-150 text-link dark:text-darklink"
+                id="users-accordion-sub-1">
+
+                <ul class>
+                  <li class>
+                    <a class="dropdown-submenu-link" href="javascript:void(0)">
+                      <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                      <span class="hide-menu">Level 1</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <a class="hs-accordion-toggle py-2 w-full gap-2 flex dropdown-submenu-link" href="javascript:void(0)">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 me-3 text-xs"></iconify-icon>
+                  <span class="hide-menu">Level 2</span>
+                  <span class="hide-menu ms-auto flex items-center">
+                    <iconify-icon icon="solar:alt-arrow-down-linear"
+                      class="shrink-0 text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+                    <iconify-icon icon="solar:alt-arrow-up-linear"
+                      class="shrink-0 text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+                  </span>
+                </a>
+
+                <div id="users-accordion-sub-1" class="hs-accordion-content second-level">
+                  <ul class>
+                    <li class>
+                      <a class="w-full py-2 flex gap-2  dropdown-submenu-link" href="javascript:void(0)">
+                        <iconify-icon icon="tabler:circle" class="shrink-0 me-3 text-xs"></iconify-icon>
+                        <span class="hide-menu">Level 2.1</span>
+                      </a>
+                    </li>
+                    <li class>
+                      <a class="dropdown-submenu-link" href="javascript:void(0)">
+                        <iconify-icon icon="tabler:circle" class="shrink-0  me-3 text-xs"></iconify-icon>
+                        <span class="hide-menu">Level 2.2</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a class=" px-3 py-2 rounded-md text-link dark:text-darklink w-full flex items-center text-sm opacity-50"
+            href="javascript:void(0)">
+            <iconify-icon icon="solar:forbidden-circle-linear" class="shrink-0  me-3 text-xl"></iconify-icon>
+            <span class="hide-menu">Disabled</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class=" sidebar-link dark-sidebar-link  
+           " href="javascript:void(0)">
+            <span class="flex items-center">
+              <iconify-icon icon="solar:star-linear" class="shrink-0 me-3 text-xl"></iconify-icon>
+              <span class="hide-menu">Sub Caption <br>
+                <p class="text-xs  opacity-80">This is The subtitle</p>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class=" sidebar-link dark-sidebar-link " href="javascript:void(0)">
+            <iconify-icon icon="solar:medal-ribbons-star-linear" class="shrink-0 text-xl"></iconify-icon>
+            <span class="hide-menu">Chip</span>
+            <span
+              class="ms-auto bg-primary text-white h-6 w-6 rounded-full text-xs flex  items-center justify-center hide-menu-flex">9</span>
+
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class=" sidebar-link dark-sidebar-link  
+           " href="javascript:void(0)">
+            <iconify-icon icon="solar:smile-circle-linear" class="shrink-0 text-xl"></iconify-icon>
+            <span class="hide-menu">Outlined</span>
+            <span
+              class="ms-auto text-primary outline-1 rounded-full outline-primary text-center px-2 text-xs py-1 hide-menu">outline</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class=" sidebar-link dark-sidebar-link  
+           " href="javascript:void(0)">
+            <iconify-icon icon="solar:star-fall-minimalistic-2-linear" class="shrink-0 text-xl"></iconify-icon>
+            <span class="hide-menu">External Link</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Bottom User Profile -->
+<div class="px-6 pt-6  bg-surface  dark:bg-dark-surface relative">
+  <div class="bg-lightprimary flex items-center gap-3 rounded-lg p-5 mt-5">
+    <div class="shrink-0">
+      <h5 class="text-base font-semibold mb-2 leading-tight">
+        Haven't <br /> Account?
+      </h5>
+      <a href="https://tailwind-admin.com/#pricing" target="_blank" class="btn block">
+        Get Pro
+      </a>
+    </div>
+    <img src="./assets/images/background/rocket.png" alt="image"
+      class="mt-[-40px] w-25 h-auto object-contain" />
+  </div>
+
+</div>
+<!-- </aside> -->
+			</aside>
+			<div class="page-wrapper w-full" role="main">
+				<!--  Header Start -->
+				<header
+					class="sticky top-header top-0 inset-x-0 z-10 flex flex-wrap md:justify-start md:flex-nowrap text-sm bg-white dark:bg-dark ">
+					<div class="with-vertical w-full"><div class="w-full mx-auto px-4 lg:py-4 py-3 lg:px-4" aria-label="Global">
+  <div class="relative md:flex md:items-center md:justify-between">
+    <div class="hs-collapse  grow md:block">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <div class="relative xl:hidden">
+            <!-- Navigation Toggle -->
+            <a class="text-2xl icon-hover cursor-pointer text-link dark:text-darklink sidebartoggler h-10 w-10 hover:text-primary light-dark-hoverbg flex justify-center items-center rounded-full"
+              data-hs-overlay="#application-sidebar-brand" aria-controls="application-sidebar-brand"
+              aria-label="Toggle navigation">
+              <iconify-icon icon="solar:hamburger-menu-linear" class="relative z-1"></iconify-icon>
+            </a>
+            <!-- End Navigation Toggle -->
+          </div>
+
+          <form class="relative hidden lg:flex">
+            <input type="text" class="form-control ps-10" placeholder="Search...">
+            <iconify-icon icon="solar:minimalistic-magnifer-linear"
+              class="absolute inset-y-0 flex items-center text-lg ms-3"></iconify-icon>
+          </form>
+
+        </div>
+
+
+        <div class="icon-nav items-center gap-2 flex">
+          <div
+            class="relative hidden lg:block group w-fit shadow-grid-shadow bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD_0%,#548AFE_33.82%,#E02FD6_72.12%,#FDB54E_100%)] p-0.5 rounded-full">
+            <a href="https://tailwind-admin.com/#pricing"
+              class="flex items-center gap-2.5 px-4 py-1.5 bg-white dark:bg-darkinfo rounded-full transition-all dark:hover:bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD36_0%,#548AFE36_33.82%,#E02FD636_72.12%,#FDB54E36_100%)] group-hover:bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD36_0%,#548AFE36_33.82%,#E02FD636_72.12%,#FDB54E36_100%)]">
+              <p class="text-base font-semibold text-dark dark:text-white">Check Pro Version</p>
+            </a>
+          </div>
+
+          <!-- Theme Toggle  -->
+          <button type="button"
+            class="hs-dark-mode-active:hidden icon-hover flex cursor-pointer hs-dark-mode group items-center font-medium hover:text-primary text-link dark:text-darklink h-10 w-10 light-dark-hoverbg  justify-center rounded-full"
+            data-hs-theme-click-value="dark" id="dark-layout">
+            <iconify-icon icon="solar:moon-linear"
+              class="text-xl text-link dark:text-darklink relative hover:text-primary"></iconify-icon>
+          </button>
+          <button type="button"
+            class="hs-dark-mode-active:flex cursor-pointer icon-hover hidden hs-dark-mode group  items-center  font-medium hover:text-primary text-link dark:text-darklink h-10 w-10 light-dark-hoverbg  justify-center rounded-full"
+            data-hs-theme-click-value="light" id="light-layout">
+            <iconify-icon icon="solar:sun-2-linear"
+              class="text-xl text-link dark:text-darklink relative hover:text-primary"></iconify-icon>
+          </button>
+
+          <!-- Notifications DD -->
+          <div class="hs-dropdown [--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] sm:relative group/menu">
+    <a id="hs-dropdown-hover-event-notification"
+        class="relative hs-dropdown-toggle h-10 w-10 text-link dark:text-darklink cursor-pointer hover:bg-lightprimary  hover:text-primary dark:hover:bg-darkprimary flex justify-center items-center rounded-full group-hover/menu:bg-lightprimary group-hover/menu:text-primary">
+        <iconify-icon icon="solar:bell-linear" class="text-xl relative z-1"></iconify-icon>
+        <div
+            class="absolute inline-flex items-center justify-center  text-white text-[11px] font-medium  bg-primary p-[5px] rounded-full -top-[-5px] right-1">
+        </div>
+    </a>
+    <div class="card hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 right-0 rtl:right-auto rtl:left-0 mt-2 min-w-max top-auto w-full sm:w-[360px] hidden z-2"
+        aria-labelledby="hs-dropdown-hover-event-notification">
+        <div class="flex items-center py-3 px-6 justify-between">
+
+            <h3 class="mb-0 card-title">
+                Notifications</h3>
+        </div>
+        <div class="message-body max-h-[300px]" data-simplebar="">
+            <a href="javascript:void(0)" class="group flex items-center px-6 py-2 hover:bg-lightprimary">
+
+                <div>
+                    <h5 class="text-sm group-hover:text-primary">
+                        Roman Joined the Team!
+                    </h5>
+                    <span class="text-xs">Congratulate him</span>
+                </div>
+            </a>
+            <a href="javascript:void(0)" class="group flex items-center px-6 py-2 hover:bg-lightprimary">
+
+                <div>
+                    <h5 class="text-sm group-hover:text-primary">
+                        New message
+                    </h5>
+                    <span class="text-xs">Salma sent you new message</span>
+                </div>
+            </a>
+            <a href="javascript:void(0)" class="group flex items-center px-6 py-2 hover:bg-lightprimary">
+
+                <div>
+                    <h5 class="text-sm group-hover:text-primary">
+                        Bianca sent payment
+                    </h5>
+                    <span class="text-xs">Check your earnings</span>
+                </div>
+            </a>
+            <a href="javascript:void(0)" class="group flex items-center px-6 py-2 hover:bg-lightprimary">
+
+                <div>
+                    <h5 class="text-sm group-hover:text-primary">
+                        Jolly completed tasks
+                    </h5>
+                    <span class="text-xs">Assign her new tasks</span>
+                </div>
+            </a>
+            <a href="javascript:void(0)" class="group flex items-center px-6 py-2 hover:bg-lightprimary">
+
+                <div>
+                    <h5 class="text-sm group-hover:text-primary">
+                        John received payment
+                    </h5>
+                    <span class="text-xs">$230 deducted from account</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div> 
+          <!-- Profile DD -->
+          <div
+    class="hs-dropdown [--strategy:absolute] [--adaptive:none] [--placement:top-left] sm:[--trigger:hover] sm:relative group/menu">
+    <a id="hs-dropdown-hover-event-profile"
+        class="relative hs-dropdown-toggle cursor-pointer align-middle rounded-full group-hover/menu:bg-lightprimary group-hover/menu:text-primary">
+        <img class="object-cover w-9 h-9 rounded-full" src="./assets/images/profile/user-1.jpg" alt=""
+            aria-hidden="true">
+    </a>
+    <div class="card hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 mt-2 min-w-50 top-auto right-0 rtl:right-auto rtl:left-0 w-full hidden z-2"
+        aria-labelledby="hs-dropdown-hover-event-profile">
+        <div class="p-1 space-y-0.5">
+            <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm font-medium hover:bg-lightprimary hover:text-primary focus:outline-hidden"
+                href="#">
+                <iconify-icon icon="solar:user-circle-linear" class="relative text-lg"></iconify-icon>
+                My Profile
+            </a>
+            <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm font-medium hover:bg-lightprimary hover:text-primary focus:outline-hidden"
+                href="#">
+                <iconify-icon icon="solar:user-id-linear" class="relative text-lg"></iconify-icon>
+                My Account
+            </a>
+            <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm font-medium hover:bg-lightprimary hover:text-primary focus:outline-hidden"
+                href="#">
+                <iconify-icon icon="solar:checklist-minimalistic-linear" class="relative text-lg"></iconify-icon>
+                My Tasks
+            </a>
+        </div>
+        <div class="p-4 border-t border-border dark:border-darkborder">
+            <a href="./main/authentication-login.html" class="btn btn-outline-primary block w-full">
+                Logout
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div></div>
+				</header>
+				<!--  Header End -->
+
+				<!-- Main Content -->
+				<main class="max-w-full pt-6">
+					<div class="container full-container py-5">
+						<div class="grid grid-cols-12 gap-6">
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Rounded badges</h5>
+
+										</div>
+										<span
+											class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-lightprimary text-primary dark:bg-darkprimary ">Badge</span>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Max width</h5>
+
+										</div>
+										<span
+											class="max-w-[10rem] truncate whitespace-nowrap inline-block py-1.5 px-3 rounded-md text-xs font-medium bg-lightprimary dark:bg-darkprimary text-primary">This
+											content is a little bit longer.</span>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Badge with indicator</h5>
+
+										</div>
+										<span
+											class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightprimary text-primary dark:bg-darkprimary">
+											<span
+												class="w-1.5 h-1.5 inline-block rounded-full  bg-primary dark:bg-primary"></span>
+											Badge
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Working with icons</h5>
+
+										</div>
+										<div class="flex gap-2 flex-wrap">
+											<span
+												class="py-1 px-2 inline-flex items-center gap-x-1 text-xs font-medium bg-lightsuccess text-success rounded-full  dark:bg-darksuccess dark:text-success">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path
+														d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+													<path d="m9 12 2 2 4-4" />
+												</svg>
+												Connected
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-lighterror text-error rounded-full  dark:bg-darkerror dark:text-error">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path
+														d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+													<path d="M12 9v4" />
+													<path d="M12 17h.01" />
+												</svg>
+												Attention
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-lightprimary text-primary rounded-full  dark:bg-darkprimary dark:text-primary">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<line x1="12" x2="12" y1="2" y2="6" />
+													<line x1="12" x2="12" y1="18" y2="22" />
+													<line x1="4.93" x2="7.76" y1="4.93" y2="7.76" />
+													<line x1="16.24" x2="19.07" y1="16.24" y2="19.07" />
+													<line x1="2" x2="6" y1="12" y2="12" />
+													<line x1="18" x2="22" y1="12" y2="12" />
+													<line x1="4.93" x2="7.76" y1="19.07" y2="16.24" />
+													<line x1="16.24" x2="19.07" y1="7.76" y2="4.93" />
+												</svg>
+												Loading
+											</span>
+
+											<span
+												class="py-1 px-2 inline-flex items-center gap-x-1 text-xs bg-lightgray rounded-full text-dark dark:bg-darkborder dark:text-darklink">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path d="M18.36 6.64a9 9 0 1 1-12.73 0" />
+													<line x1="12" x2="12" y1="2" y2="12" />
+												</svg>
+												Disabled
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-lightsuccess text-success rounded-full  dark:bg-darksuccess dark:text-success">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+													<polyline points="16 7 22 7 22 13" />
+												</svg>
+												14.5%
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-lighterror text-error rounded-full  dark:bg-darkerror dark:text-error">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<polyline points="22 17 13.5 8.5 8.5 13.5 2 7" />
+													<polyline points="16 17 22 17 22 11" />
+												</svg>
+												2%
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs bg-lightgray text-dark dark:bg-darkborder dark:text-darklink rounded-md">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+													<polyline points="16 7 22 7 22 13" />
+												</svg>
+												37.3%
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs bg-lightgray text-dark dark:bg-darkborder dark:text-darklink rounded-md">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<polyline points="22 17 13.5 8.5 8.5 13.5 2 7" />
+													<polyline points="16 17 22 17 22 11" />
+												</svg>
+												56%
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Badge with remove button</h5>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 ps-3 pe-2 rounded-full  text-xs font-medium bg-lightprimary text-primary dark:bg-darkprimary dark:text-primary">
+												Badge
+												<button type="button"
+													class="flex-shrink-0 h-4 w-4 inline-flex items-center justify-center rounded-full  hover:bg-primary hover:text-white focus:outline-none">
+													<span class="sr-only">Remove badge</span>
+													<svg class="flex-shrink-0 h-3 w-3"
+														xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+														<path d="M18 6 6 18" />
+														<path d="m6 6 12 12" />
+													</svg>
+												</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Badge with avatar</h5>
+
+										</div>
+										<div class="flex gap-2">
+											<div
+												class="inline-flex flex-nowrap items-center bg-white border border-border rounded-full p-1.5 pe-3 dark:bg-transparent dark:border-darkborder">
+												<img class="me-1.5 inline-block h-6 w-6 rounded-full "
+													src="./assets/images/profile/user-4.jpg"
+													alt="Image Description">
+												<div
+													class="whitespace-nowrap text-sm font-medium text-dark dark:text-white">
+													Christina
+												</div>
+											</div>
+
+											<div
+												class="inline-flex flex-nowrap items-center bg-white border border-border rounded-full p-1.5 dark:bg-transparent dark:border-darkborder">
+												<img class="me-1.5 inline-block h-6 w-6 rounded-full "
+													src="./assets/images/profile/user-2.jpg">
+												<div
+													class="whitespace-nowrap text-sm font-medium text-dark dark:text-white">
+													Mark
+												</div>
+												<div
+													class="ms-2.5 inline-flex justify-center items-center h-5 w-5 rounded-full text-dark bg-border hover:bg-gray-300 focus:outline-none focus:ring-2 dark:bg-slate-700/50 dark:hover:bg-slate-700 dark:text-slate-400 cursor-pointer">
+													<svg class="flex-shrink-0 w-3 h-3"
+														xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+														<path d="M18 6 6 18"></path>
+														<path d="m6 6 12 12"></path>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">With button</h5>
+
+										</div>
+										<button type="button"
+											class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-border bg-white text-dark  hover:bg-gray-50 dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+											Notifications
+											<span
+												class="inline-flex items-center py-0.5 px-1.5 rounded-full  text-xs font-medium bg-error text-white">5</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Positioned</h5>
+
+										</div>
+										<button type="button"
+											class="relative inline-flex justify-center items-center h-[3.375rem] w-[3.375rem] text-sm font-semibold rounded-md border border-border bg-white text-dark  hover:bg-gray-50  dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+											<svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+												width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round">
+												<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+												<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+											</svg>
+											<span
+												class="absolute top-0 end-0 inline-flex items-center py-0.5 px-1.5 rounded-full  text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-error text-white">99+</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Profile</h5>
+
+										</div>
+										<button type="button"
+											class="relative inline-flex justify-center items-center h-[3.375rem] w-[3.375rem] text-sm font-semibold rounded-md border border-border bg-white text-dark  hover:bg-gray-50  dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+											<svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+												width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round">
+												<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+												<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+											</svg>
+											<span
+												class="absolute top-0 end-0 inline-flex items-center w-3.5 h-3.5 rounded-full  border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-success text-white dark:border-darkborder">
+												<span class="sr-only">Badge value</span>
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Ping</h5>
+
+										</div>
+										<div class="flex gap-2">
+											<button type="button"
+												class="m-1 ms-0 relative flex justify-center items-center h-[2.875rem] w-[2.875rem] text-sm font-semibold rounded-md border border-border bg-white text-dark  hover:bg-gray-50  dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+												<svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path d="m5 11 4-7" />
+													<path d="m19 11-4-7" />
+													<path d="M2 11h20" />
+													<path
+														d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8c.9 0 1.8-.7 2-1.6l1.7-7.4" />
+													<path d="m9 11 1 9" />
+													<path d="M4.5 15.5h15" />
+													<path d="m15 11-1 9" />
+												</svg>
+												<span class="flex absolute top-0 end-0 h-3 w-3 -mt-1.5 -me-1.5">
+													<span
+														class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75 dark:bg-error"></span>
+													<span
+														class="relative inline-flex rounded-full  h-3 w-3 bg-error"></span>
+												</span>
+											</button>
+											<button type="button"
+												class="m-1 ms-0 relative py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-border bg-white text-dark  hover:bg-gray-50  dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+												Notification
+												<span class="flex absolute top-0 end-0 -mt-2 -me-2">
+													<span
+														class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75 dark:bg-error"></span>
+													<span
+														class="relative inline-flex text-xs bg-error text-white rounded-full  py-0.5 px-1.5">
+														9+
+													</span>
+												</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<h5 class="text-lg font-semibold text-dark dark:text-white mb-6">Color variants
+										</h5>
+										<div class="flex justify-between items-center">
+											<h6 class="text-sm font-semibold text-dark dark:text-white ">Solid color
+												variants</h6>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-dark text-white dark:bg-white dark:text-dark">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-darkgray text-white">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-success text-white">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-primary text-white ">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-error text-white">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-warning text-white">Badge</span>
+										</div>
+										<div class="flex justify-between items-center mt-8">
+											<h6 class="text-sm font-semibold text-dark dark:text-white">Soft color
+												variants</h6>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightgray text-darkgray dark:bg-darkgray dark:text-lightgray">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightgray text-dark dark:bg-darkborder dark:text-lightgray">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightsuccess text-success dark:bg-darksuccess dark:text-success">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightprimary text-primary dark:bg-darkprimary dark:text-primary">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lighterror text-error dark:bg-darkerror dark:text-error">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightwarning text-warning dark:bg-darkwarning dark:text-warning">Badge</span>
+										</div>
+										<div class="flex justify-between items-center mt-8">
+											<h6 class="text-sm font-semibold text-dark dark:text-white ">Outline color
+												variants </h6>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-darkgray text-darkgray dark:border-lightgray dark:text-lightgray">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-link text-link dark:text-darklink dark:border-darklink">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-success text-success">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-primary text-primary ">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-error text-error">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-warning text-warning">Badge</span>
+										</div>
+										<div class="flex justify-between items-center mt-8">
+											<h6 class="text-sm font-semibold text-dark dark:text-white ">White color
+												variants </h6>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-md text-xs font-medium border border-border bg-transparent text-dark  dark:bg-transparent dark:border-darkborder dark:text-white">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-border bg-transparent text-dark  dark:bg-transparent dark:border-darkborder dark:text-white">Badge</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-span-12">
+								<p class="text-base text-center text-bodytext font-medium">Design and Developed by <a
+										target="_blank"
+										class="text-primary font-normal underline hover:text-primaryemphasis"
+										href="https://tailwind-admin.com/">tailwind-admin.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</main>
+				<!-- Main Content End -->
+			</div>
+		</div>
+		<!--end of project-->
+	</main>
+	<script src="./assets/js/vendor.min.js"></script>
+	<script src="./assets/js/theme/app.init.js"></script>
+<script src="./assets/js/theme/app.min.js"></script>
+<script src="./assets/js/theme.js"></script>
+<script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
+<script src="./assets/libs/preline/dist/preline.js"></script>
+<script src="./assets/libs/@preline/input-number/index.js"></script>
+<script src="./assets/libs/@preline/tooltip/index.js"></script>
+<script src="./assets/libs/@preline/stepper/index.js"></script>
+
+<!-- solar icons -->
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
