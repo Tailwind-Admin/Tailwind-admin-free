@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-color-theme="Blue_Theme" class="light selected" data-layout="vertical"
+	data-boxed-layout="boxed" data-card="shadow">
+
+<head>
+	@@include("partials/head.html")
+	<title>TailwindAdmin TailwindCSS HTML Admin Template</title>
+</head>
+
+<body class="DEFAULT_THEME bg-white dark:bg-dark">
+
+
+	<main>
+		<!--start the project-->
+		<div id="main-wrapper" class="flex">
+			<!-- Main Content -->
+			<main class="h-screen w-full bg-lightprimary">
+				<div class="h-full w-full flex justify-center items-center">
+					<div class="flex justify-center w-full">
+						<div class="sm:w-2/6 w-full">
+							<div class="max-w-[460px] px-3 mx-auto">
+								<div class="card">
+									<div class="card-body">
+										<div class="mx-auto mb-12">
+											<div class="flex justify-center"> @@include("partials/logo-sidebar.html")
+											</div>
+										</div>
+										<div class="grid grid-cols-2 gap-6 mb-4">
+											<a href="javascript:void(0)"
+												class="border border-light-dark rounded-md py-2.5 px-3 justify-center flex items-center hover:text-primary dark:hover:text-primary">
+												<img src="@@webRoot/assets/images/svgs/google-icon.svg" alt=""
+													class="me-2" width="18" height="18">
+												<span class="shrink-0">Google</span>
+											</a>
+											<a href="javascript:void(0)"
+												class="border border-light-dark rounded-md py-2.5 px-3 justify-center flex items-center hover:text-primary dark:hover:text-primary">
+												<img src="@@webRoot/assets/images/svgs/github-icon.svg" alt=""
+													class="me-2" width="18" height="18">
+												<span class="shrink-0">Github</span>
+											</a>
+										</div>
+										<div
+											class="flex items-center text-base  before:flex-[1_1_0%] before:border-t before:border-border before:me-6 after:flex-[1_1_0%] after:border-t after:border-border after:ms-6 dark:text-white dark:before:border-darkborder dark:after:border-darkborder">
+											or sign Up with</div>
+										<form>
+											<div class="flex flex-col gap-4 mt-4">
+												<div>
+													<label
+														class="text-dark dark:text-darklink font-semibold mb-2 block">Name</label>
+													<input type="text" class="form-control py-2" />
+												</div>
+												<div>
+													<label
+														class="text-dark dark:text-darklink font-semibold mb-2 block">Email</label>
+													<input type="email" class="form-control py-2" />
+												</div>
+												<div>
+													<label
+														class="text-dark dark:text-darklink font-semibold mb-2 block">Password</label>
+													<input type="password" class="form-control py-2" />
+												</div>
+												<button class="btn btn-md py-3 mt-3 cursor-pointer">Sign Up</button>
+												<div class="mt-2.5 text-center">
+													<span class="text-base font-medium ">Already have an Account? <a
+															href="@@webRoot/authentication-login.html"
+															class="text-primary font-medium text-sm ms-2">Sign
+															In</a></span>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- Main Content End -->
+		</div>
+		<!--end of project-->
+	</main>
+
+	@@include("partials/scripts.html")
+
+</body>
+
+</html>

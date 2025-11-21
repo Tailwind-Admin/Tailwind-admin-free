@@ -1,0 +1,33 @@
+<div
+    class="hs-dropdown [--strategy:absolute] [--adaptive:none] [--placement:top-left] sm:[--trigger:hover] sm:relative group/menu">
+    <a id="hs-dropdown-hover-event-profile"
+        class="relative hs-dropdown-toggle cursor-pointer align-middle rounded-full group-hover/menu:bg-lightprimary group-hover/menu:text-primary">
+        <img class="object-cover w-9 h-9 rounded-full" src="@@webRoot/assets/images/profile/user-1.jpg" alt=""
+            aria-hidden="true">
+    </a>
+    <div class="card hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 mt-2 min-w-50 top-auto right-0 rtl:right-auto rtl:left-0 w-full hidden z-2"
+        aria-labelledby="hs-dropdown-hover-event-profile">
+        <div class="p-1 space-y-0.5">
+            <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm font-medium hover:bg-lightprimary hover:text-primary focus:outline-hidden"
+                href="#">
+                <iconify-icon icon="solar:user-circle-linear" class="relative text-lg"></iconify-icon>
+                My Profile
+            </a>
+            <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm font-medium hover:bg-lightprimary hover:text-primary focus:outline-hidden"
+                href="#">
+                <iconify-icon icon="solar:user-id-linear" class="relative text-lg"></iconify-icon>
+                My Account
+            </a>
+            <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm font-medium hover:bg-lightprimary hover:text-primary focus:outline-hidden"
+                href="#">
+                <iconify-icon icon="solar:checklist-minimalistic-linear" class="relative text-lg"></iconify-icon>
+                My Tasks
+            </a>
+        </div>
+        <div class="p-4 border-t border-border dark:border-darkborder">
+            <a href="@@webRoot/main/authentication-login.html" class="btn btn-outline-primary block w-full">
+                Logout
+            </a>
+        </div>
+    </div>
+</div>

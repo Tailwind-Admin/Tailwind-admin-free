@@ -1,0 +1,332 @@
+@import 'tailwindcss';
+
+@import './utilities/header.css';
+@import './utilities/layout.css';
+@import './utilities/reboot.css';
+@import './utilities/sidebar.css';
+@import './components/simplebar.css';
+@import './utilities/default_theme.css';
+@import './utilities/dark.css';
+/* Preline plugin css */
+@import "../../../node_modules/preline/variants.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+
+    /* Fonts */
+    --font-*: initial;
+    --font-sans: var(--theme-font);
+
+    /* Shadows */
+    --shadow-md: var(--theme-shadow-md);
+    --shadow-sm: var(--theme-shadow-sm);
+    --shadow-dark-md: var(--theme-shadow-dark-md);
+
+    /* Radius */
+    --radius-md: var(--theme-radius-md);
+    --radius-sm: var(--theme-radius-sm);
+
+    /* Font Sizes */
+    --text-fs_21: var(--theme-text-fs_21);
+    --text-fs_28: var(--theme-text-28);
+    --text-fs_13: var(--theme-text-fs_13);
+    --text-fs_10: var(--theme-text-fs_10);
+
+    /* Colors  */
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+    --color-info: var(--info);
+    --color-success: var(--success);
+    --color-warning: var(--warning);
+    --color-error: var(--error);
+    --color-lightprimary: var(--lightprimary);
+    --color-lightsecondary: var(--lightsecondary);
+    --color-lightsuccess: var(--lightsuccess);
+    --color-lighterror: var(--lighterror);
+    --color-lightinfo: var(--lightinfo);
+    --color-lightwarning: var(--lightwarning);
+    --color-darkinfo: var(--darkinfo);
+    --color-darksuccess: var(--darksuccess);
+    --color-darkwarning: var(--darkwarning);
+    --color-darkerror: var(--darkerror);
+    --color-darksecondary: var(--darksecondary);
+    --color-white: var(--white);
+    --color-dark: var(--dark);
+    --color-border: var(--border);
+    --color-bordergray: var(--bordergray);
+    --color-darkborder: var(--darkborder);
+    --color-link: var(--link);
+    --color-bodytext: var(--bodytext);
+    --color-darklink: var(--darklink);
+    --color-lightgray: var(--lightgray);
+    --color-darkgray: var(--darkgray);
+    --color-primaryemphasis: var(--primary-emphasis);
+    --color-secondaryemphasis: var(--secondary-emphasis);
+    --color-warningemphasis: var(--warning-emphasis);
+    --color-erroremphasis: var(--error-emphasis);
+    --color-successemphasis: var(--success-emphasis);
+}
+
+
+@utility container {
+    @apply max-w-[1536px] mx-auto px-5;
+
+
+    .landingpage & {
+        @apply max-w-[1320px];
+    }
+}
+
+@utility container-xl {
+    @apply max-w-[1320px];
+}
+
+@utility frontend-page {
+    & .container {
+        @apply max-w-[1410px];
+    }
+}
+
+@utility frontend-page {
+    & .container-md {
+        @apply max-w-[1218px] ml-auto mr-auto;
+    }
+}
+
+@utility frontend-page {
+    & img {
+        @apply w-full;
+    }
+}
+
+@utility card {
+    @apply rounded-md dark:shadow-dark-md shadow-md bg-white dark:bg-dark relative w-full break-words;
+}
+
+@utility card-title {
+    @apply text-lg font-semibold text-dark dark:text-white
+}
+
+@utility card-subtitle {
+    @apply text-sm text-bodytext dark:text-darklink
+}
+
+
+
+@utility card-body {
+    @apply p-[30px];
+}
+
+@utility hs-dropdown-menu {
+    @apply shadow-md bg-white dark:bg-dark relative rounded-md dark:shadow-dark-md;
+}
+
+@utility form-control {
+    @apply rounded-md border border-bordergray dark:border-darkborder bg-transparent w-full text-sm py-2 px-3;
+}
+
+
+
+@utility form-check-input {
+    & [type=checkbox] {
+        @apply border border-bordergray h-5 w-5 dark:border-darkborder focus:ring-0 focus:ring-offset-0 checked:border-primary bg-transparent;
+    }
+}
+
+@utility form-check-input {
+    & [type=checkbox]:checked {
+        @apply bg-primary;
+    }
+}
+
+@utility form-check-input {
+    & [type=radio] {
+        @apply border border-bordergray dark:border-darkborder focus:ring-0 focus:ring-offset-0 checked:border-primary bg-transparent;
+    }
+}
+
+@utility form-check-input {
+    & [type=radio]:checked {
+        @apply bg-primary;
+    }
+}
+
+@utility btn {
+    @apply rounded-md bg-primary hover:bg-primaryemphasis text-white text-sm py-2 px-4 text-center capitalize font-medium;
+}
+
+@utility btn-secondary {
+    @apply rounded-md bg-secondary hover:bg-secondaryemphasis text-white text-sm py-2 px-4 text-center capitalize font-medium;
+}
+
+@utility btn-md {
+    @apply rounded-md text-white text-sm py-2 px-4;
+}
+
+@utility btn-outline {
+    @apply rounded-md bg-transparent border text-sm py-2 px-3 text-center hover:text-white dark:hover:text-white hover:bg-primary font-medium;
+}
+
+@utility btn-outline-primary {
+    @apply rounded-md border border-primary text-primary text-sm py-2 px-3 text-center bg-transparent hover:bg-primary hover:text-white dark:hover:text-white;
+}
+
+@utility btn-error {
+    @apply bg-error text-white hover:bg-erroremphasis
+} 
+
+@utility btn-light-primary {
+    @apply w-full bg-lightprimary text-primary hover:bg-primaryemphasis hover:text-white hover:dark:bg-primary hover:dark:text-white
+}
+
+@utility btn-light-error {
+    @apply bg-lighterror text-error hover:text-white hover:bg-error dark:bg-darkerror dark:hover:bg-error dark:hover:text-white dark:text-error
+}
+
+@utility btn-light-warning {
+    @apply bg-lightwarning text-warning hover:text-white hover:bg-warning dark:bg-darkwarning dark:hover:bg-warning dark:hover:text-white dark:text-warning
+}
+
+@utility btn-light-success {
+    @apply bg-lightsuccess text-success hover:text-white hover:bg-success dark:bg-darksuccess dark:hover:bg-success dark:hover:text-white dark:text-success  
+}
+
+@utility btn-light-info {
+    @apply bg-lightinfo text-info hover:text-white hover:bg-info dark:bg-darkinfo dark:hover:bg-info dark:hover:text-white dark:text-info
+}
+
+@utility btn-light-secondary {
+    @apply bg-lightsecondary text-secondary hover:text-white hover:bg-secondary dark:hover:bg-secondary dark:hover:text-white dark:text-secondary
+}
+
+@utility badge-md {
+    @apply rounded-md text-sm px-3 py-1 font-semibold text-primary
+}
+
+@utility sidebar-link {
+    @apply text-link rounded-md w-full flex items-center text-sm hover:bg-lightprimary hover:text-primary
+}
+
+@utility dark-sidebar-link {
+    @apply dark:text-darklink
+}
+
+@utility activemenu {
+    @apply bg-primary text-white hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white
+}
+
+@utility dropdown-menu-link {
+    @apply text-link dark:text-darklink w-full flex cursor-pointer items-center text-sm hover:bg-lightprimary hover:text-primary
+}
+
+@utility dropdown-menu-active {
+    @apply bg-primary dark:bg-primary text-white hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white
+}
+
+@utility dropdown-submenu-link {
+    @apply w-full py-2 flex gap-2 items-center text-sm text-link dark:text-darklink hover:text-primary dark:hover:text-primary
+}
+
+
+@utility caption {
+    @apply text-xs text-link dark:text-darklink font-bold pb-4 uppercase
+}
+
+@utility horizontal-menu {
+    @apply text-sm text-link dark:text-darklink hover:text-primary hover:bg-lightprimary rounded-md flex items-center py-2 px-3 gap-2
+}
+
+@utility horizontal-items {
+    @apply z-10 sm:mt-4 top-full start-0 min-w-64 lg:bg-white bg-transparent dark:bg-dark lg:shadow-md shadow-none
+}
+
+@utility horizontal-link {
+    @apply flex items-center dark:hover:text-primary gap-2 py-2 px-3 rounded-lg text-sm text-link dark:text-darklink hover:text-primary
+}
+
+@utility horizontal-link-active {
+    @apply text-primary hover:text-primary dark:text-primary
+}
+
+@utility nav-small-cap-icon {
+    @apply text-lg hidden text-center leading-[16px]
+}
+
+
+@utility apps-icons {
+    @apply bg-lightgray dark:bg-darkgray h-11 w-11 flex justify-center items-center rounded-md
+}
+
+@utility header-link-btn {
+    @apply lg:w-auto w-full gap-2 lg:text-sm text-link dark:text-darklink hover:text-primary hover:bg-lightprimary lg:py-1 lg:px-3 py-2 px-3 rounded-md flex items-center
+}
+
+/* Other css*/
+@utility bg-overlay {
+    @apply absolute top-0 bottom-0 left-0 h-full w-full bg-lightprimary mix-blend-multiply invisible group-hover:visible
+}
+
+@utility preview-btn {
+    @apply btn text-xs absolute left-0 right-0 flex justify-center items-center w-fit mx-auto invisible group-hover:visible z-[1]
+}
+
+@utility border-light-dark {
+    @apply border-border dark:border-darkborder
+}
+
+@utility light-dark-hoverbg {
+    @apply hover:bg-lightgray dark:hover:bg-darkgray/30
+}
+
+@utility tooltip {
+    @apply rounded-md absolute invisible z-10 text-[12px] py-1 px-2 bg-dark dark:bg-darkgray text-white dark:text-gray-300 opacity-0
+}
+
+
+
+@utility animate-card {
+    @apply transition-all relative transform translate-y-0 hover:-translate-y-1.5 duration-300 ease-in-out
+}
+
+/*Datatable*/
+@utility datatable {
+    & .dt-search {
+        @apply flex items-center gap-1 sm:mt-0 mt-3
+    }
+}
+
+
+
+@layer components {
+
+    html[data-card='border'] .card {
+        @apply border border-border dark:border dark:border-darkborder !shadow-none;
+    }
+
+    /*heading text color*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-dark dark:text-white font-semibold;
+    }
+
+    input {
+        @apply text-bodytext dark:text-darklink
+    }
+
+    #sidebarnav .hs-accordion-content {
+        @apply w-full overflow-hidden transition-[height] duration-300 hidden
+    }
+
+    body {
+        @apply text-sm text-bodytext dark:text-darklink
+    }
+
+    select {
+        @apply rounded-md border border-border dark:border-darkborder bg-white dark:bg-dark text-link dark:text-darklink text-sm py-2 px-2.5;
+    }
+}

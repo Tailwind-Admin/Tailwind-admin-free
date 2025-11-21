@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-color-theme="Blue_Theme" class="light selected" data-layout="vertical"
+	data-boxed-layout="boxed" data-card="shadow">
+
+<head>
+	@@include("partials/head.html")
+	<title>TailwindAdmin TailwindCSS HTML Admin Template</title>
+	<link rel="stylesheet" href="@@webRoot/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+</head>
+
+<body class="DEFAULT_THEME  bg-white dark:bg-dark">
+
+	<main>
+		<!--start the project-->
+		<div id="main-wrapper" class="flex">
+
+			<aside id="application-sidebar-brand"
+				class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full xl:rtl:-translate-x-0 rtl:translate-x-full  left-0 rtl:left-auto rtl:right-0 transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed top-0 with-vertical  left-sidebar transition-all duration-300 h-screen z-20 flex-shrink-0 border-r rtl:border-l rtl:border-r-0 w-[270px] border-border dark:border-darkborder bg-white dark:bg-dark">
+				@@include("partials/sidebar.html",{ "page": "modern" })
+			</aside>
+			<div class="page-wrapper w-full" role="main">
+				<!--  Header Start -->
+				<header
+					class="sticky top-header top-0 inset-x-0 z-10 flex flex-wrap md:justify-start md:flex-nowrap text-sm bg-white dark:bg-dark ">
+					<div class="with-vertical w-full">@@include("./partials/header.html")</div>
+				</header>
+				<!--  Header End -->
+
+				<!-- Main Content -->
+				<main class="max-w-full pt-6">
+					<div class="container full-container py-5">
+
+						<div class="relative flex items-center justify-between bg-lightsecondary rounded-lg p-6 mb-6">
+							<div class="flex items-center gap-3">
+								<div>
+									<img src="@@webRoot/assets/images/profile/user-1.jpg" alt="user-img"
+										class="w-[50px] h-[50px] rounded-full" />
+								</div>
+
+								<div class="flex flex-col gap-0.5">
+									<h5 class="text-lg font-semibold">Welcome back! John 👋</h5>
+									<p class="text-link/80 dark:text-white/80">Check your reports</p>
+								</div>
+							</div>
+
+							<div class="hidden sm:block absolute right-8 bottom-0">
+								<img src="@@webRoot/assets/images/background/customer-support-img.png" alt="support-img"
+									class="w-[145px] h-[95px]" />
+							</div>
+						</div>
+
+						<div class="grid grid-cols-12 gap-6">
+							<!---Top Cards--->
+							<div class="col-span-12">
+								<div class="owl-carousel counter-carousel owl-theme ">
+									<div class="item">
+										<div class="card mb-0 shadow-none bg-lightprimary dark:bg-lightprimary w-full">
+											<div class="card-body">
+												<div class="text-center">
+													<div class="flex justify-center">
+														<img src="@@webRoot/assets/images/svgs/icon-user-male.svg"
+															width="50" height="50" class="mb-3" alt="image">
+													</div>
+													<p class="font-semibold  text-primary mb-1">
+														Employees
+													</p>
+													<h5 class="text-lg font-semibold text-primary mb-0">96</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="card mb-0 shadow-none bg-lightwarning dark:bg-darkwarning w-full">
+											<div class="card-body">
+												<div class="text-center">
+													<div class="flex justify-center">
+														<img src="@@webRoot/assets/images/svgs/icon-briefcase.svg"
+															width="50" height="50" class="mb-3" alt="image">
+													</div>
+													<p class="font-semibold  text-warning mb-1">
+														Clients
+													</p>
+													<h5 class="text-lg font-semibold text-warning mb-0">3,650</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="card mb-0 shadow-none bg-lightinfo dark:bg-darkinfo w-full">
+											<div class="card-body">
+												<div class="text-center">
+													<div class="flex justify-center">
+														<img src="@@webRoot/assets/images/svgs/icon-mailbox.svg"
+															width="50" height="50" class="mb-3" alt="image">
+													</div>
+													<p class="font-semibold  text-info mb-1">
+														Projects
+													</p>
+													<h5 class="text-lg font-semibold text-info mb-0">356</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="card mb-0 shadow-none bg-lighterror dark:bg-darkerror w-full">
+											<div class="card-body">
+												<div class="text-center">
+													<div class="flex justify-center">
+														<img src="@@webRoot/assets/images/svgs/icon-favorites.svg"
+															width="50" height="50" class="mb-3" alt="image">
+													</div>
+													<p class="font-semibold  text-error mb-1">
+														Events
+													</p>
+													<h5 class="text-lg font-semibold text-error mb-0">696</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="card mb-0 shadow-none bg-lightsuccess dark:bg-darksuccess w-full">
+											<div class="card-body">
+												<div class="text-center">
+													<div class="flex justify-center">
+														<img src="@@webRoot/assets/images/svgs/icon-speech-bubble.svg"
+															width="50" height="50" class="mb-3" alt="image">
+													</div>
+													<p class="font-semibold  text-success mb-1">
+														Payroll
+													</p>
+													<h5 class="text-lg font-semibold text-success mb-0">$96k</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="card mb-0 shadow-none bg-lightinfo dark:bg-darkinfo w-full">
+											<div class="card-body">
+												<div class="text-center">
+													<div class="flex justify-center">
+														<img src="@@webRoot/assets/images/svgs/icon-connect.svg"
+															width="50" height="50" class="mb-3" alt="image">
+													</div>
+													<p class="font-semibold  text-info mb-1">
+														Reports
+													</p>
+													<h5 class="text-lg font-semibold text-info mb-0">59</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!---Top Cards End--->
+
+							<!---Revenu Update / Yearly Breakups Cards--->
+							<div class="lg:col-span-8 md:col-span-12 sm:col-span-12 col-span-12">
+								<div class="card ">
+									<div class="card-body">
+										<div class="sm:flex items-center justify-between mb-6">
+											<div>
+												<h5 class="card-title">Revenue Updates</h5>
+												<p class="card-subtitle">Overview of Profit</p>
+											</div>
+											<div class="sm:mt-0 mt-4">
+												<select>
+													<option selected>Year 2025</option>
+													<option>Year 2024</option>
+													<option>Year 2023</option>
+												</select>
+											</div>
+										</div>
+										<div class="-me-6">
+											<div id="revenue-updates"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!---Revenu Update / Yearly Breakups Cards End--->
+
+							<!---Yearly Breakups Cards--->
+							<div class="lg:col-span-4 md:col-span-12 sm:col-span-12 col-span-12">
+								<div class="grid grid-cols-12 gap-6">
+									<div class="lg:col-span-12 md:col-span-6 sm:col-span-12 col-span-12">
+										<div class="card">
+											<div class="card-body">
+												<div class="grid grid-cols-12 items-center">
+													<div class="lg:col-span-8 md:col-span-8 col-span-8">
+														<h5 class="card-title mb-4">
+															Yearly
+															Breakup
+														</h5>
+														<h4 class="text-xl mb-3">$36,358</h4>
+														<div class="flex items-center mb-3 gap-2">
+															<span
+																class="rounded-full p-1 bg-lightsuccess dark:bg-darksuccess flex items-center justify-center ">
+																<i class="ti ti-arrow-up-left text-success"></i>
+															</span>
+															<p class="text-dark dark:text-white  mb-0">+9%</p>
+															<p class=" dark:text-darklink mb-0 ">last
+																year</p>
+														</div>
+														<div class="flex gap-4 items-center">
+															<div class="flex items-center">
+																<i
+																	class="ti ti-point-filled text-primary text-xl me-1"></i>
+																<span class="text-xs dark:text-darklink">2023</span>
+															</div>
+															<div class="flex items-center">
+																<i
+																	class="ti ti-point-filled text-gray-300 text-xl me-1"></i>
+																<span class="text-xs dark:text-darklink">2024</span>
+															</div>
+															<div class="flex items-center">
+																<i
+																	class="ti ti-point-filled text-secondary text-xl me-1"></i>
+																<span class="text-xs dark:text-darklink">2025</span>
+															</div>
+														</div>
+													</div>
+													<div class="lg:col-span-4 md:col-span-4 col-span-4">
+														<div class="flex justify-center items-center">
+															<div id="breakup"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="lg:col-span-12 md:col-span-6 sm:col-span-12 col-span-12">
+										<div class="card">
+											<div class="card-body pb-3">
+												<div class="grid grid-cols-12 gap-6">
+													<div class="lg:col-span-8 md:col-span-8  col-span-8">
+														<h5 class="card-title mb-4">
+															Monthly
+															Earnings
+														</h5>
+														<h4 class="text-xl mb-3">$6,820</h4>
+														<div class="flex items-center mb-3 gap-2">
+															<span
+																class="rounded-full p-1 bg-lighterror dark:bg-darkerror flex items-center justify-center ">
+																<i class="ti ti-arrow-down-right text-error"></i>
+															</span>
+															<p class="text-dark dark:text-white  mb-0">+9%</p>
+															<p class=" dark:text-darklink mb-0 ">last
+																year</p>
+														</div>
+													</div>
+													<div class="lg:col-span-4 md:col-span-4 col-span-4">
+														<div class="flex justify-end">
+															<div
+																class="text-white bg-secondary rounded-full h-11 w-11 flex items-center justify-center">
+																<i class="ti ti-currency-dollar text-xl"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="earning"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!---Yearly Breakups Cards End--->
+
+							<!--Recent Transactions Card -->
+							<div class="lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body pb-8">
+										<h5 class="card-title">Recent Transactions
+										</h5>
+										<p class="card-subtitle mb-11 block">How to Secure Recent
+											Transactions</p>
+
+										<div class="mt-6">
+											<!-- Item -->
+											<div class="flex gap-x-3" data-aos="fade-up" data-aos-delay="100"
+												data-aos-duration="1000">
+												<div class="w-1/4 text-end">
+													<span class="">09:30</span>
+												</div>
+												<div
+													class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-border dark:after:bg-darkborder">
+													<div class="relative z-10 w-7 h-7 flex justify-center items-center">
+														<div
+															class="h-3 w-3 rounded-full bg-transparent border-2 border-primary">
+														</div>
+													</div>
+												</div>
+												<div class="w-1/4 grow pt-0.5 pb-6">
+													<p class="">
+														Payment received from John Doe of $385.90
+													</p>
+												</div>
+											</div>
+											<!-- End Item -->
+											<!-- Item -->
+											<div class="flex gap-x-3" data-aos="fade-up" data-aos-delay="200"
+												data-aos-duration="1000">
+												<div class="w-1/4 text-end">
+													<span class="">10:00 am
+													</span>
+												</div>
+												<div
+													class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-border dark:after:bg-darkborder">
+													<div class="relative z-10 w-7 h-7 flex justify-center items-center">
+														<div
+															class="h-3 w-3 rounded-full bg-transparent border-2 border-info">
+														</div>
+													</div>
+												</div>
+												<div class="w-1/4 grow pt-0.5 pb-6">
+													<h6>New sale
+														recorded </h6>
+													<a href="javascript:void(0)" class=" text-primary">
+														#ML-3467
+													</a>
+												</div>
+											</div>
+											<!-- End Item -->
+											<!-- Item -->
+											<div class="flex gap-x-3" data-aos="fade-up" data-aos-delay="300"
+												data-aos-duration="1000">
+												<div class="w-1/4 text-end">
+													<span class="">12:00 am</span>
+												</div>
+												<div
+													class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-border dark:after:bg-darkborder">
+													<div class="relative z-10 w-7 h-7 flex justify-center items-center">
+														<div
+															class="h-3 w-3 rounded-full bg-transparent border-2 border-success">
+														</div>
+													</div>
+												</div>
+												<div class="w-1/4 grow pt-0.5 pb-6">
+													<p class="">
+														Payment was made of $64.95 to Michael
+													</p>
+												</div>
+											</div>
+											<!-- End Item -->
+											<!-- Item -->
+											<div class="flex gap-x-3" data-aos="fade-up" data-aos-delay="400"
+												data-aos-duration="1000">
+												<div class="w-1/4 text-end">
+													<span class="">09:30 am</span>
+												</div>
+												<div
+													class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-border dark:after:bg-darkborder">
+													<div class="relative z-10 w-7 h-7 flex justify-center items-center">
+														<div
+															class="h-3 w-3 rounded-full bg-transparent border-2 border-warning">
+														</div>
+													</div>
+												</div>
+												<div class="w-1/4 grow pt-0.5 pb-6">
+													<h6>New sale
+														recorded </h6>
+													<a href="javascript:void(0)" class=" text-primary">
+														#ML-3467
+													</a>
+												</div>
+											</div>
+											<!-- End Item -->
+											<!-- Item -->
+											<div class="flex gap-x-3" data-aos="fade-up" data-aos-delay="500"
+												data-aos-duration="1000">
+												<div class="w-1/4 text-end">
+													<span class="">09:30 am</span>
+												</div>
+												<div
+													class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-border dark:after:bg-darkborder">
+													<div class="relative z-10 w-7 h-7 flex justify-center items-center">
+														<div
+															class="h-3 w-3 rounded-full bg-transparent border-2 border-error">
+														</div>
+													</div>
+												</div>
+												<div class="w-1/4 grow pt-0.5 pb-6">
+													<h6>New sale
+														recorded </h6>
+													<a href="javascript:void(0)" class=" text-primary">
+														#ML-3467
+													</a>
+												</div>
+											</div>
+											<!-- End Item -->
+											<!-- Item -->
+											<div class="flex gap-x-3" data-aos="fade-up" data-aos-delay="600"
+												data-aos-duration="1000">
+												<div class="w-1/4 text-end">
+													<span class="">12:00 am</span>
+												</div>
+												<div
+													class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px]  ">
+													<div class="relative z-10 w-7 h-7 flex justify-center items-center">
+														<div
+															class="h-3 w-3 rounded-full bg-transparent border-2 border-success">
+														</div>
+													</div>
+												</div>
+												<div class="w-1/4 grow pt-0.5">
+													<p class="">
+														Payment Done
+													</p>
+												</div>
+											</div>
+											<!-- End Item -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Recent Transactions Card End-->
+
+							<!---Product Performance Cards--->
+							<div class="lg:col-span-8 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body pb-1">
+										<h5 class="card-title mb-4">Product Performance</h5>
+
+										<div class="flex flex-col">
+											<div class="-m-1.5 overflow-x-auto">
+												<div class="p-1.5 min-w-full inline-block align-middle">
+													<div class="overflow-hidden">
+														<table
+															class="min-w-full divide-y divide-border dark:divide-darkborder">
+															<thead>
+																<tr>
+																	<th scope="col"
+																		class="text-left rtl:text-right p-4 ps-0 font-semibold text-dark dark:text-white ">
+																		Id</th>
+																	<th scope="col"
+																		class="text-left rtl:text-right p-4 font-semibold text-dark dark:text-white ">
+																		Assigned</th>
+																	<th scope="col"
+																		class="text-left rtl:text-right p-4 font-semibold text-dark dark:text-white ">
+																		Name</th>
+																	<th scope="col"
+																		class="text-left rtl:text-right p-4 font-semibold text-dark dark:text-white ">
+																		Priority</th>
+																	<th scope="col"
+																		class="text-right rtl:text-left p-4 font-semibold text-dark dark:text-white ">
+																		Budget</th>
+																</tr>
+															</thead>
+															<tbody
+																class="divide-y divide-border dark:divide-darkborder">
+																<tr>
+																	<td class="p-4 ps-0 whitespace-nowrap">
+																		<h6>1</h6>
+																	</td>
+																	<td class="p-4 whitespace-nowrap">
+																		<div>
+																			<h6 class="mb-1">
+																				Sunil Joshi</h6>
+																			<p class="text-xs  dark:text-darklink">
+																				Web Designer
+																			</p>
+																		</div>
+																	</td>
+																	<td
+																		class=" whitespace-nowrap  dark:text-darklink p-4">
+																		Elite Admin
+																	</td>
+																	<td class="p-4">
+																		<span
+																			class="badge-md bg-primary rounded-full text-white">Low</span>
+																	</td>
+																	<td
+																		class=" whitespace-nowrap  dark:text-darklink p-4 text-right rtl:text-left">
+																		$3.9K</td>
+																</tr>
+																<tr>
+																	<td class="p-4 ps-0 whitespace-nowrap">
+																		<h6>2</h6>
+																	</td>
+																	<td class="p-4 whitespace-nowrap">
+																		<div>
+																			<h6 class="mb-1">
+																				Andrew McDownland</h6>
+																			<p class="text-xs  dark:text-darklink">
+																				Project Manager
+																			</p>
+																		</div>
+																	</td>
+																	<td
+																		class=" whitespace-nowrap  dark:text-darklink p-4">
+																		Real Homes WP Theme
+																	</td>
+																	<td class="p-4">
+																		<span
+																			class="badge-md bg-secondary rounded-full text-white">Medium</span>
+																	</td>
+																	<td
+																		class="  whitespace-nowrap  dark:text-darklink p-4 text-right rtl:text-left">
+																		$24.5K</td>
+																</tr>
+																<tr>
+																	<td class="p-4 ps-0 whitespace-nowrap">
+																		<h6>3</h6>
+																	</td>
+																	<td class="p-4 whitespace-nowrap">
+																		<div>
+																			<h6 class="mb-1">
+																				Christopher Jamil</h6>
+																			<p class="text-xs  dark:text-darklink">
+																				Project Manager
+																			</p>
+																		</div>
+																	</td>
+																	<td
+																		class=" whitespace-nowrap  dark:text-darklink p-4">
+																		MedicalPro WP Theme
+																	</td>
+																	<td class="p-4">
+																		<span
+																			class="badge-md bg-error rounded-full text-white">High</span>
+																	</td>
+																	<td
+																		class=" whitespace-nowrap  dark:text-darklink p-4 text-right rtl:text-left">
+																		$12.8K</td>
+																</tr>
+																<tr>
+																	<td class="p-4 ps-0 whitespace-nowrap">
+																		<h6>4</h6>
+																	</td>
+																	<td class="p-4 whitespace-nowrap">
+																		<div>
+																			<h6 class="mb-1">
+																				Nirav Joshi</h6>
+																			<p class="text-xs  dark:text-darklink">
+																				Frontend Engineer
+																			</p>
+																		</div>
+																	</td>
+																	<td
+																		class=" whitespace-nowrap  dark:text-darklink p-4">
+																		Hosting Press HTML
+																	</td>
+																	<td class="p-4">
+																		<span
+																			class="badge-md bg-success rounded-full text-white">Critical
+																		</span>
+																	</td>
+																	<td
+																		class=" whitespace-nowrap  dark:text-darklink p-4 text-right rtl:text-left">
+																		$4.8K</td>
+																</tr>
+																<tr>
+																	<td class="p-4 ps-0 whitespace-nowrap">
+																		<h6>5</h6>
+																	</td>
+																	<td class="p-4 whitespace-nowrap">
+																		<div>
+																			<h6 class="mb-1">
+																				Micheal Doe</h6>
+																			<p class="text-xs  dark:text-darklink">
+																				Content Writer
+																			</p>
+																		</div>
+																	</td>
+																	<td
+																		class=" whitespace-nowrap  dark:text-darklink p-4">
+																		Helping Hands WP Theme</td>
+																	<td class="p-4">
+																		<span
+																			class="badge-md bg-primary rounded-full text-white">High</span>
+																	</td>
+																	<td
+																		class=" whitespace-nowrap  dark:text-darklink p-4 text-right rtl:text-left">
+																		$9.3K</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!---Product Performance Cards End--->
+
+							<div class="col-span-12">
+								<p class="text-base text-center text-bodytext font-medium">Design and Developed by <a
+										target="_blank"
+										class="text-primary font-normal underline hover:text-primaryemphasis"
+										href="https://tailwind-admin.com/">tailwind-admin.com</a>
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</main>
+				<!-- Main Content End -->
+			</div>
+		</div>
+		<!--end of project-->
+	</main>
+	<script src="@@webRoot/assets/js/vendor.min.js"></script>
+	@@include("partials/scripts.html")
+	<script src="@@webRoot/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
+	<script src="@@webRoot/assets/js/dashboards/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+
+
+
+/* Overlay bg */
+.hs-overlay-backdrop {
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-check {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+
+html[data-card='border'].dark .card {
+  border: 1px solid var(--color-darkborder);
+}
+
+.owl-carousel {
+  z-index: 0 !important;
+}
+
+@media screen and (max-width:1200px) {
+  .apps-scroll {
+    height: calc(100vh - 80px)
+  }
+}
+
+
+[type='text']:focus,
+input:where(:not([type])):focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='week']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid var(--color-primary);
+  box-shadow: none;
+  outline: none;
+}
+
+.linear-gradient {
+  background-image: linear-gradient(rgb(80, 178, 252), rgb(244, 76, 102));
+}
+
+.selected.dark {
+  color-scheme: dark;
+}
+
+/* grid stripes */
+.bg-stripes-indigo {
+  background-image: linear-gradient(135deg, #6366f1 8.33%, #ffffff 8.33%, #ffffff 50%, #6366f1 50%, #6366f1 58.33%, #ffffff 58.33%, #ffffff 100%);
+  background-size: 8.49px 8.49px;
+}
+
+.no-focus[type='text']:focus {
+  border: 0 !important;
+}
+
+.mh-n100 {
+  max-height: calc(100vh - 100px);
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    max-width: fit-content;
+}
+
+.rounded-bars .apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path {
+  clip-path: inset(0 0 5% round 20px);
+}

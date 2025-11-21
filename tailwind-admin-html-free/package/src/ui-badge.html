@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-color-theme="Blue_Theme" class="light selected" data-layout="vertical"
+	data-boxed-layout="boxed" data-card="shadow">
+
+<head>
+	@@include("partials/head.html")
+	<title>TailwindAdmin TailwindCSS HTML Admin Template</title>
+</head>
+
+<body class="DEFAULT_THEME  bg-white dark:bg-dark">
+
+	<main>
+		<!--start the project-->
+		<div id="main-wrapper" class="flex">
+
+			<aside id="application-sidebar-brand"
+				class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full xl:rtl:-translate-x-0 rtl:translate-x-full  left-0 rtl:left-auto rtl:right-0 transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed top-0 with-vertical  left-sidebar transition-all duration-300 h-screen z-20 flex-shrink-0 border-r rtl:border-l rtl:border-r-0 w-[270px] border-border dark:border-darkborder bg-white dark:bg-dark">
+				@@include("partials/sidebar.html",{ "page": "ui-badge","page_group": "ui" })
+			</aside>
+			<div class="page-wrapper w-full" role="main">
+				<!--  Header Start -->
+				<header
+					class="sticky top-header top-0 inset-x-0 z-10 flex flex-wrap md:justify-start md:flex-nowrap text-sm bg-white dark:bg-dark ">
+					<div class="with-vertical w-full">@@include("./partials/header.html")</div>
+				</header>
+				<!--  Header End -->
+
+				<!-- Main Content -->
+				<main class="max-w-full pt-6">
+					<div class="container full-container py-5">
+						<div class="grid grid-cols-12 gap-6">
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Rounded badges</h5>
+
+										</div>
+										<span
+											class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-lightprimary text-primary dark:bg-darkprimary ">Badge</span>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Max width</h5>
+
+										</div>
+										<span
+											class="max-w-[10rem] truncate whitespace-nowrap inline-block py-1.5 px-3 rounded-md text-xs font-medium bg-lightprimary dark:bg-darkprimary text-primary">This
+											content is a little bit longer.</span>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Badge with indicator</h5>
+
+										</div>
+										<span
+											class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightprimary text-primary dark:bg-darkprimary">
+											<span
+												class="w-1.5 h-1.5 inline-block rounded-full  bg-primary dark:bg-primary"></span>
+											Badge
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Working with icons</h5>
+
+										</div>
+										<div class="flex gap-2 flex-wrap">
+											<span
+												class="py-1 px-2 inline-flex items-center gap-x-1 text-xs font-medium bg-lightsuccess text-success rounded-full  dark:bg-darksuccess dark:text-success">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path
+														d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+													<path d="m9 12 2 2 4-4" />
+												</svg>
+												Connected
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-lighterror text-error rounded-full  dark:bg-darkerror dark:text-error">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path
+														d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+													<path d="M12 9v4" />
+													<path d="M12 17h.01" />
+												</svg>
+												Attention
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-lightprimary text-primary rounded-full  dark:bg-darkprimary dark:text-primary">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<line x1="12" x2="12" y1="2" y2="6" />
+													<line x1="12" x2="12" y1="18" y2="22" />
+													<line x1="4.93" x2="7.76" y1="4.93" y2="7.76" />
+													<line x1="16.24" x2="19.07" y1="16.24" y2="19.07" />
+													<line x1="2" x2="6" y1="12" y2="12" />
+													<line x1="18" x2="22" y1="12" y2="12" />
+													<line x1="4.93" x2="7.76" y1="19.07" y2="16.24" />
+													<line x1="16.24" x2="19.07" y1="7.76" y2="4.93" />
+												</svg>
+												Loading
+											</span>
+
+											<span
+												class="py-1 px-2 inline-flex items-center gap-x-1 text-xs bg-lightgray rounded-full text-dark dark:bg-darkborder dark:text-darklink">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path d="M18.36 6.64a9 9 0 1 1-12.73 0" />
+													<line x1="12" x2="12" y1="2" y2="12" />
+												</svg>
+												Disabled
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-lightsuccess text-success rounded-full  dark:bg-darksuccess dark:text-success">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+													<polyline points="16 7 22 7 22 13" />
+												</svg>
+												14.5%
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-lighterror text-error rounded-full  dark:bg-darkerror dark:text-error">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<polyline points="22 17 13.5 8.5 8.5 13.5 2 7" />
+													<polyline points="16 17 22 17 22 11" />
+												</svg>
+												2%
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs bg-lightgray text-dark dark:bg-darkborder dark:text-darklink rounded-md">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+													<polyline points="16 7 22 7 22 13" />
+												</svg>
+												37.3%
+											</span>
+
+											<span
+												class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs bg-lightgray text-dark dark:bg-darkborder dark:text-darklink rounded-md">
+												<svg class="flex-shrink-0 w-3 h-3" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<polyline points="22 17 13.5 8.5 8.5 13.5 2 7" />
+													<polyline points="16 17 22 17 22 11" />
+												</svg>
+												56%
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Badge with remove button</h5>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 ps-3 pe-2 rounded-full  text-xs font-medium bg-lightprimary text-primary dark:bg-darkprimary dark:text-primary">
+												Badge
+												<button type="button"
+													class="flex-shrink-0 h-4 w-4 inline-flex items-center justify-center rounded-full  hover:bg-primary hover:text-white focus:outline-none">
+													<span class="sr-only">Remove badge</span>
+													<svg class="flex-shrink-0 h-3 w-3"
+														xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+														<path d="M18 6 6 18" />
+														<path d="m6 6 12 12" />
+													</svg>
+												</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Badge with avatar</h5>
+
+										</div>
+										<div class="flex gap-2">
+											<div
+												class="inline-flex flex-nowrap items-center bg-white border border-border rounded-full p-1.5 pe-3 dark:bg-transparent dark:border-darkborder">
+												<img class="me-1.5 inline-block h-6 w-6 rounded-full "
+													src="@@webRoot/assets/images/profile/user-4.jpg"
+													alt="Image Description">
+												<div
+													class="whitespace-nowrap text-sm font-medium text-dark dark:text-white">
+													Christina
+												</div>
+											</div>
+
+											<div
+												class="inline-flex flex-nowrap items-center bg-white border border-border rounded-full p-1.5 dark:bg-transparent dark:border-darkborder">
+												<img class="me-1.5 inline-block h-6 w-6 rounded-full "
+													src="@@webRoot/assets/images/profile/user-2.jpg">
+												<div
+													class="whitespace-nowrap text-sm font-medium text-dark dark:text-white">
+													Mark
+												</div>
+												<div
+													class="ms-2.5 inline-flex justify-center items-center h-5 w-5 rounded-full text-dark bg-border hover:bg-gray-300 focus:outline-none focus:ring-2 dark:bg-slate-700/50 dark:hover:bg-slate-700 dark:text-slate-400 cursor-pointer">
+													<svg class="flex-shrink-0 w-3 h-3"
+														xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+														<path d="M18 6 6 18"></path>
+														<path d="m6 6 12 12"></path>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">With button</h5>
+
+										</div>
+										<button type="button"
+											class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-border bg-white text-dark  hover:bg-gray-50 dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+											Notifications
+											<span
+												class="inline-flex items-center py-0.5 px-1.5 rounded-full  text-xs font-medium bg-error text-white">5</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Positioned</h5>
+
+										</div>
+										<button type="button"
+											class="relative inline-flex justify-center items-center h-[3.375rem] w-[3.375rem] text-sm font-semibold rounded-md border border-border bg-white text-dark  hover:bg-gray-50  dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+											<svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+												width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round">
+												<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+												<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+											</svg>
+											<span
+												class="absolute top-0 end-0 inline-flex items-center py-0.5 px-1.5 rounded-full  text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-error text-white">99+</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Profile</h5>
+
+										</div>
+										<button type="button"
+											class="relative inline-flex justify-center items-center h-[3.375rem] w-[3.375rem] text-sm font-semibold rounded-md border border-border bg-white text-dark  hover:bg-gray-50  dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+											<svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+												width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round">
+												<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+												<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+											</svg>
+											<span
+												class="absolute top-0 end-0 inline-flex items-center w-3.5 h-3.5 rounded-full  border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-success text-white dark:border-darkborder">
+												<span class="sr-only">Badge value</span>
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Ping</h5>
+
+										</div>
+										<div class="flex gap-2">
+											<button type="button"
+												class="m-1 ms-0 relative flex justify-center items-center h-[2.875rem] w-[2.875rem] text-sm font-semibold rounded-md border border-border bg-white text-dark  hover:bg-gray-50  dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+												<svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path d="m5 11 4-7" />
+													<path d="m19 11-4-7" />
+													<path d="M2 11h20" />
+													<path
+														d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8c.9 0 1.8-.7 2-1.6l1.7-7.4" />
+													<path d="m9 11 1 9" />
+													<path d="M4.5 15.5h15" />
+													<path d="m15 11-1 9" />
+												</svg>
+												<span class="flex absolute top-0 end-0 h-3 w-3 -mt-1.5 -me-1.5">
+													<span
+														class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75 dark:bg-error"></span>
+													<span
+														class="relative inline-flex rounded-full  h-3 w-3 bg-error"></span>
+												</span>
+											</button>
+											<button type="button"
+												class="m-1 ms-0 relative py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-border bg-white text-dark  hover:bg-gray-50  dark:bg-transparent dark:border-darkborder dark:text-white dark:hover:bg-slate-900 ">
+												Notification
+												<span class="flex absolute top-0 end-0 -mt-2 -me-2">
+													<span
+														class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75 dark:bg-error"></span>
+													<span
+														class="relative inline-flex text-xs bg-error text-white rounded-full  py-0.5 px-1.5">
+														9+
+													</span>
+												</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<h5 class="text-lg font-semibold text-dark dark:text-white mb-6">Color variants
+										</h5>
+										<div class="flex justify-between items-center">
+											<h6 class="text-sm font-semibold text-dark dark:text-white ">Solid color
+												variants</h6>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-dark text-white dark:bg-white dark:text-dark">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-darkgray text-white">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-success text-white">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-primary text-white ">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-error text-white">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-warning text-white">Badge</span>
+										</div>
+										<div class="flex justify-between items-center mt-8">
+											<h6 class="text-sm font-semibold text-dark dark:text-white">Soft color
+												variants</h6>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightgray text-darkgray dark:bg-darkgray dark:text-lightgray">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightgray text-dark dark:bg-darkborder dark:text-lightgray">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightsuccess text-success dark:bg-darksuccess dark:text-success">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightprimary text-primary dark:bg-darkprimary dark:text-primary">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lighterror text-error dark:bg-darkerror dark:text-error">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium bg-lightwarning text-warning dark:bg-darkwarning dark:text-warning">Badge</span>
+										</div>
+										<div class="flex justify-between items-center mt-8">
+											<h6 class="text-sm font-semibold text-dark dark:text-white ">Outline color
+												variants </h6>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-darkgray text-darkgray dark:border-lightgray dark:text-lightgray">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-link text-link dark:text-darklink dark:border-darklink">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-success text-success">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-primary text-primary ">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-error text-error">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-warning text-warning">Badge</span>
+										</div>
+										<div class="flex justify-between items-center mt-8">
+											<h6 class="text-sm font-semibold text-dark dark:text-white ">White color
+												variants </h6>
+
+										</div>
+										<div class="flex gap-2">
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-md text-xs font-medium border border-border bg-transparent text-dark  dark:bg-transparent dark:border-darkborder dark:text-white">Badge</span>
+											<span
+												class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full  text-xs font-medium border border-border bg-transparent text-dark  dark:bg-transparent dark:border-darkborder dark:text-white">Badge</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-span-12">
+								<p class="text-base text-center text-bodytext font-medium">Design and Developed by <a
+										target="_blank"
+										class="text-primary font-normal underline hover:text-primaryemphasis"
+										href="https://tailwind-admin.com/">tailwind-admin.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</main>
+				<!-- Main Content End -->
+			</div>
+		</div>
+		<!--end of project-->
+	</main>
+	<script src="@@webRoot/assets/js/vendor.min.js"></script>
+	@@include("partials/scripts.html")
+</body>
+
+</html>

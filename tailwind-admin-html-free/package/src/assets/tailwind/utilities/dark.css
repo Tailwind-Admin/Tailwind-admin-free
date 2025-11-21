@@ -1,0 +1,62 @@
+.dark .app-calendar .fc .fc-button {
+    background-color: var(--color-dark);
+}
+.dark .app-calendar .fc-bg-danger{
+    background-color: var(--color-darkerror);
+}
+.dark .app-calendar .fc-bg-success{
+    background-color: var(--color-darksuccess); 
+}
+.dark .app-calendar .fc-bg-primary{
+    background-color: var(--color-darkprimary); 
+}
+.dark .app-calendar .fc-bg-warning{
+    background-color: var(--color-darkwarning); 
+}
+.dark .app-calendar .fc-theme-standard td{
+    border:1px solid var(--color-darkborder);
+}
+.dark .app-calendar .fc .fc-daygrid-day.fc-day-today{
+    background-color: var(--color-dark);
+}
+.dark .app-calendar .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
+    background-color: var(--color-darkwarning);
+    border-radius: 8px;
+}
+
+.dark .checkout .payment-method .btn-group-active .btn-group label {
+    border-color: var(--color-darkborder);
+}
+
+.dark .checkout .payment-method .btn-group-active .btn-group input:checked + label {
+    background-color: var(--color-darkprimary);
+    border-color: var(--color-primary);
+    box-shadow: inherit;
+}
+
+/*Notes App*/
+.dark .note-has-grid .single-note-item .category .category-business {
+    background-color: var(--color-darksuccess);
+    border: 2px solid var(--color-success);
+}
+.dark .note-has-grid .single-note-item .category .category-social {
+    background-color: var(--color-darkinfo);
+    border: 2px solid var(--color-info);
+}
+.dark .note-has-grid .single-note-item .category .category-important {
+    background-color: var(--color-darkerror);
+    border: 2px solid var(--color-error);
+}
+.dark .note-has-grid .single-note-item.note-business .point {
+    color: var(--color-darksuccess);
+}
+.dark .note-has-grid .single-note-item.note-social .point {
+    color: var(--color-darkinfo);
+}
+.dark .note-has-grid .single-note-item.note-important .point {
+    color: var(--color-darkerror);
+}
+
+.dark .icon-white {
+    filter: invert(99%) sepia(3%) saturate(693%) hue-rotate(328deg) brightness(118%) contrast(100%);
+  }

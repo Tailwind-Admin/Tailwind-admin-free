@@ -1,0 +1,23 @@
+@media (min-width: 1300px) {
+    [data-layout=vertical] body .page-wrapper {
+        margin-left: 270px;
+    }
+    [data-layout=vertical] body[data-sidebartype=mini-sidebar] .page-wrapper {
+        margin-left: 75px;
+    }
+}
+
+
+.toast-onload{
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 2;
+    max-width: 294px;
+    width: 100%;
+    transition: all .5s;
+  }
+.toast-onload.show-toast{
+    opacity:1;
+    transform: translateX(20);
+}

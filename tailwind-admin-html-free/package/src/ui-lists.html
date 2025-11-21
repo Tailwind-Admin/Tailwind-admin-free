@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-color-theme="Blue_Theme" class="light selected" data-layout="vertical"
+	data-boxed-layout="boxed" data-card="shadow">
+
+<head>
+	@@include("partials/head.html")
+	<title>TailwindAdmin TailwindCSS HTML Admin Template</title>
+</head>
+
+<body class="DEFAULT_THEME  bg-white dark:bg-dark">
+
+	<main>
+		<!--start the project-->
+		<div id="main-wrapper" class="flex">
+
+			<aside id="application-sidebar-brand"
+				class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full xl:rtl:-translate-x-0 rtl:translate-x-full  left-0 rtl:left-auto rtl:right-0 transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed top-0 with-vertical  left-sidebar transition-all duration-300 h-screen z-20 flex-shrink-0 border-r rtl:border-l rtl:border-r-0 w-[270px] border-border dark:border-darkborder bg-white dark:bg-dark">
+				@@include("partials/sidebar.html",{ "page": "ui-lists","page_group": "ui" })
+			</aside>
+			<div class="page-wrapper w-full" role="main">
+				<!--  Header Start -->
+				<header
+					class="sticky top-header top-0 inset-x-0 z-10 flex flex-wrap md:justify-start md:flex-nowrap text-sm bg-white dark:bg-dark ">
+					<div class="with-vertical w-full">@@include("./partials/header.html")</div>
+				</header>
+				<!--  Header End -->
+
+				<!-- Main Content -->
+				<main class="max-w-full pt-6">
+					<div class="container full-container py-5">
+						<div class="grid grid-cols-12 gap-6">
+							<div class="lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Basic List</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">The most basic list group is an unordered list.
+										</p>
+										<ul class="max-w-xs flex flex-col">
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-transparent dark:border-gray-700 dark:text-white">
+												Profile
+											</li>
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-transparent dark:border-gray-700 dark:text-white">
+												Settings
+											</li>
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-transparent dark:border-gray-700 dark:text-white">
+												Newsletter
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">List with Icon</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">The default list group with icons.</p>
+										<ul class="max-w-xs flex flex-col">
+											<li
+												class="inline-flex items-center gap-x-3.5 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-transparent dark:border-gray-700 dark:text-white">
+												<i class="ti ti-bell text-lg leading-tight font-medium"></i>
+												Newsletter
+											</li>
+											<li
+												class="inline-flex items-center gap-x-3.5 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-transparent dark:border-gray-700 dark:text-white">
+												<i class="ti ti-cloud-download text-lg leading-tight font-medium"></i>
+												Downloads
+											</li>
+											<li
+												class="inline-flex items-center gap-x-3.5 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-transparent dark:border-gray-700 dark:text-white">
+												<i class="ti ti-users text-lg leading-tight font-medium"></i>
+												Team Account
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Links</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Use the <code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'&#60;a&#62;'</code>
+											to create actionable
+											list group.</p>
+										<div class="max-w-xs flex flex-col">
+											<a class="inline-flex items-center gap-x-3.5 py-3 px-4 text-sm font-medium border border-gray-200 text-primary -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg focus:z-10 focus:outline-none focus:ring-2 focus:ring-primary dark:border-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+												href="javascript:void(0)">
+												<i class="ti ti-bell text-lg leading-tight font-medium"></i>
+												Active
+											</a>
+											<a class="inline-flex items-center gap-x-3.5 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg hover:text-primary focus:z-10 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-slate-700 dark:border-gray-700 dark:text-white dark:hover:text-primary dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+												href="javascript:void(0)">
+												<i class="ti ti-cloud-download text-lg leading-tight font-medium"></i>
+												Link
+											</a>
+											<a class="inline-flex items-center gap-x-3.5 py-3 px-4 text-sm font-medium border text-gray-400 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg cursor-not-allowed focus:z-10 focus:outline-none focus:ring-2 focus:ring-primary dark:border-gray-700 dark:text-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+												href="javascript:void(0)">
+												<i class="ti ti-users text-lg leading-tight font-medium"></i>
+												Disabled
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Flush</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Remove some borders and rounded corners to render
+											list group items
+											edge-to-edge.</p>
+										<ul
+											class="max-w-xs flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+												Profile
+											</li>
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+												Settings
+											</li>
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+												Newsletter
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Badges</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Add badges to any list group item to show unread
+											counts, activity,
+											and more.</p>
+										<ul class="max-w-xs flex flex-col">
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-transparent dark:border-gray-700 dark:text-white">
+												<div class="flex justify-between w-full">
+													Profile
+													<span
+														class="inline-flex items-center py-1 px-2 rounded-full text-xs font-medium bg-primary text-white">New</span>
+												</div>
+											</li>
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-transparent dark:border-gray-700 dark:text-white">
+												<div class="flex justify-between w-full">
+													Settings
+													<span
+														class="inline-flex items-center py-1 px-2 rounded-full text-xs font-medium bg-primary text-white">2</span>
+												</div>
+											</li>
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-transparent dark:border-gray-700 dark:text-white">
+												<div class="flex justify-between w-full">
+													Newsletter
+													<span
+														class="inline-flex items-center py-1 px-2 rounded-full text-xs font-medium bg-primary text-white">99+</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">List group invoice</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">A simple list group example with a highlighted
+											footer.</p>
+										<!-- List Group -->
+										<ul class="mt-3 flex flex-col">
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:border-gray-700 dark:text-gray-200">
+												<div class="flex items-center justify-between w-full">
+													<span>Payment to Front</span>
+													<span>$264.00</span>
+												</div>
+											</li>
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:border-gray-700 dark:text-gray-200">
+												<div class="flex items-center justify-between w-full">
+													<span>Tax fee</span>
+													<span>$52.8</span>
+												</div>
+											</li>
+											<li
+												class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-semibold bg-gray-50 border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-slate-800 dark:border-gray-700 dark:text-gray-200">
+												<div class="flex items-center justify-between w-full">
+													<span>Amount paid</span>
+													<span>$316.8</span>
+												</div>
+											</li>
+										</ul>
+										<!-- End List Group -->
+									</div>
+								</div>
+							</div>
+							<div class="lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">List marker</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Style the counters or bullets in lists using the
+											<code class="text-error bg-lightwarning dark:bg-darkwarning">'marker'</code>
+											modifier:
+										</p>
+										<ul role="list"
+											class="marker:text-primary list-disc ps-5 space-y-2 text-sm text-gray-600 dark:text-gray-400">
+											<li>
+												FAQ
+											</li>
+											<li>
+												License
+											</li>
+											<li>
+												Terms & Conditions
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Checked style</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Replacing the default list style check style
+											icons.</p>
+										<div class="flex flex-wrap  justify-between ">
+											<ul class="space-y-3 text-sm">
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base leading-tight font-medium text-primary"></i>
+													<span class="text-gray-800 dark:text-gray-400">
+														FAQ
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base leading-tight font-medium text-primary"></i>
+													<span class="text-gray-800 dark:text-gray-400">
+														License
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base leading-tight font-medium text-primary"></i>
+													<span class="text-gray-800 dark:text-gray-400">
+														Terms & Conditions
+													</span>
+												</li>
+											</ul>
+
+											<ul class="space-y-3 text-sm">
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-lightprimary text-primary dark:bg-darkprimary dark:text-primary">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-800 dark:text-gray-400">
+														FAQ
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-lightprimary text-primary dark:bg-darkprimary dark:text-primary">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-800 dark:text-gray-400">
+														License
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-lightprimary text-primary dark:bg-darkprimary dark:text-primary">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-800 dark:text-gray-400">
+														Terms & Conditions
+													</span>
+												</li>
+											</ul>
+
+											<ul class="space-y-3 text-sm">
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-primary text-white dark:bg-primary">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-800 dark:text-gray-400">
+														FAQ
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-primary text-white dark:bg-primary">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-800 dark:text-gray-400">
+														License
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-primary text-white dark:bg-primary">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-800 dark:text-gray-400">
+														Terms & Conditions
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">List checked color variations</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Predefined list checked color styles.</p>
+										<div class="flex justify-between">
+											<ul class="space-y-3 text-sm">
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base leading-tight text-gray-800 dark:text-white font-medium"></i>
+													<span class="text-gray-600 dark:text-white">
+														Dark
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base text-gray-500 leading-tight font-medium"></i>
+													<span class="text-gray-600 dark:text-white">
+														Gray
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base leading-tight text-success font-medium"></i>
+													<span class="text-gray-600 dark:text-white">
+														Green
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base leading-tight text-primary font-medium"></i>
+													<span class="text-gray-600 dark:text-white">
+														Blue
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base leading-tight text-error font-medium"></i>
+													<span class="text-gray-600 dark:text-white">
+														Red
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base leading-tight text-warning font-medium"></i>
+													<span class="text-gray-600 dark:text-white">
+														Yellow
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<i
+														class="ti ti-check text-base leading-tight text-white font-medium"></i>
+													<span class="text-gray-600 dark:text-white">
+														Light
+													</span>
+												</li>
+											</ul>
+
+											<ul class="space-y-3 text-sm">
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-600 dark:bg-gray-700 dark:text-gray-200">
+														<i
+															class="ti ti-check text-base leading-tight font-medium relative right-[1px]"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Dark
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-gray-700 dark:text-gray-400">
+														<i
+															class="ti ti-check text-base leading-tight font-medium relative right-[1px]"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Gray
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-lightsuccess text-success dark:bg-darksuccess dark:text-success">
+														<i
+															class="ti ti-check text-base leading-tight font-medium relative right-[1px]"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Green
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-lightprimary text-primary dark:bg-darkprimary dark:text-primary">
+														<i
+															class="ti ti-check text-base leading-tight font-medium relative right-[1px]"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Blue
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-lighterror text-error dark:bg-darkerror dark:text-error">
+														<i
+															class="ti ti-check text-base leading-tight font-medium relative right-[1px]"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Red
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-lightwarning text-warning dark:bg-darkwarning dark:text-warning">
+														<i
+															class="ti ti-check text-base leading-tight font-medium relative right-[1px]"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Yellow
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-white/10 text-white">
+														<i
+															class="ti ti-check text-base leading-tight font-medium relative right-[1px]"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Light
+													</span>
+												</li>
+											</ul>
+
+											<ul class="space-y-3 text-sm">
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Dark
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-gray-500 text-white">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Gray
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-success text-white">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Green
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-primary text-white dark:bg-primary">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Blue
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-error text-white">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Red
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-warning text-white">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Yellow
+													</span>
+												</li>
+
+												<li class="flex space-x-3">
+													<span
+														class="size-5 flex justify-center items-center rounded-full bg-white text-gray-800">
+														<i class="ti ti-check text-base leading-tight font-medium"></i>
+													</span>
+													<span class="text-gray-600 dark:text-white">
+														Light
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-span-12">
+								<p class="text-base text-center text-bodytext font-medium">Design and Developed by <a
+										target="_blank"
+										class="text-primary font-normal underline hover:text-primaryemphasis"
+										href="https://tailwind-admin.com/">tailwind-admin.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</main>
+				<!-- Main Content End -->
+			</div>
+		</div>
+		<!--end of project-->
+	</main>
+	<script src="@@webRoot/assets/js/vendor.min.js"></script>
+	@@include("partials/scripts.html")
+</body>
+
+</html>

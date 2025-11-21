@@ -1,0 +1,57 @@
+<div class="w-full mx-auto px-4 lg:py-4 py-3 lg:px-4" aria-label="Global">
+  <div class="relative md:flex md:items-center md:justify-between">
+    <div class="hs-collapse  grow md:block">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <div class="relative xl:hidden">
+            <!-- Navigation Toggle -->
+            <a class="text-2xl icon-hover cursor-pointer text-link dark:text-darklink sidebartoggler h-10 w-10 hover:text-primary light-dark-hoverbg flex justify-center items-center rounded-full"
+              data-hs-overlay="#application-sidebar-brand" aria-controls="application-sidebar-brand"
+              aria-label="Toggle navigation">
+              <iconify-icon icon="solar:hamburger-menu-linear" class="relative z-1"></iconify-icon>
+            </a>
+            <!-- End Navigation Toggle -->
+          </div>
+
+          <form class="relative hidden lg:flex">
+            <input type="text" class="form-control ps-10" placeholder="Search...">
+            <iconify-icon icon="solar:minimalistic-magnifer-linear"
+              class="absolute inset-y-0 flex items-center text-lg ms-3"></iconify-icon>
+          </form>
+
+        </div>
+
+
+        <div class="icon-nav items-center gap-2 flex">
+          <div
+            class="relative hidden lg:block group w-fit shadow-grid-shadow bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD_0%,#548AFE_33.82%,#E02FD6_72.12%,#FDB54E_100%)] p-0.5 rounded-full">
+            <a href="https://tailwind-admin.com/#pricing"
+              class="flex items-center gap-2.5 px-4 py-1.5 bg-white dark:bg-darkinfo rounded-full transition-all dark:hover:bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD36_0%,#548AFE36_33.82%,#E02FD636_72.12%,#FDB54E36_100%)] group-hover:bg-[radial-gradient(100%_707.08%_at_0%_0%,#15CEBD36_0%,#548AFE36_33.82%,#E02FD636_72.12%,#FDB54E36_100%)]">
+              <p class="text-base font-semibold text-dark dark:text-white">Check Pro Version</p>
+            </a>
+          </div>
+
+          <!-- Theme Toggle  -->
+          <button type="button"
+            class="hs-dark-mode-active:hidden icon-hover flex cursor-pointer hs-dark-mode group items-center font-medium hover:text-primary text-link dark:text-darklink h-10 w-10 light-dark-hoverbg  justify-center rounded-full"
+            data-hs-theme-click-value="dark" id="dark-layout">
+            <iconify-icon icon="solar:moon-linear"
+              class="text-xl text-link dark:text-darklink relative hover:text-primary"></iconify-icon>
+          </button>
+          <button type="button"
+            class="hs-dark-mode-active:flex cursor-pointer icon-hover hidden hs-dark-mode group  items-center  font-medium hover:text-primary text-link dark:text-darklink h-10 w-10 light-dark-hoverbg  justify-center rounded-full"
+            data-hs-theme-click-value="light" id="light-layout">
+            <iconify-icon icon="solar:sun-2-linear"
+              class="text-xl text-link dark:text-darklink relative hover:text-primary"></iconify-icon>
+          </button>
+
+          <!-- Notifications DD -->
+          @@include("./header-components/dd-notification.html")
+          <!-- Profile DD -->
+          @@include("./header-components/dd-profile.html")
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

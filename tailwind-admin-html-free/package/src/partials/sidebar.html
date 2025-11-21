@@ -1,0 +1,1374 @@
+<!-- ---------------------------------- -->
+<!-- Start Vertical Layout Sidebar -->
+<!-- ---------------------------------- -->
+<div class="py-5 px-5 flex justify-between">
+  @@include("./logo-sidebar.html")
+</div>
+<div class="scroll-sidebar" data-simplebar="">
+  <div class="px-6 mt-8 mini-layout" data-te-sidenav-menu-ref>
+    <nav class="hs-accordion-group w-full flex flex-col">
+      <ul data-te-sidenav-menu-ref id="sidebarnav">
+        <div class="caption">
+          <iconify-icon icon="solar:menu-dots-bold"
+            class="nav-small-cap-icon text-lg hidden text-center leading-[16px]"></iconify-icon>
+          <span class="hide-menu">Home</span>
+        </div>
+
+        <!---Dashboard Menu---->
+        <li class="sidebar-item">
+          <a class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'modern') { active activemenu dark:text-white }" href="@@webRoot/index.html">
+            <iconify-icon icon="solar:widget-linear" class="shrink-0 text-xl"></iconify-icon>
+            <span class="hide-menu shrink-0">Modern</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'eCommerce') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/index2.html">
+            <iconify-icon icon="solar:cart-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">eCommerce</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'music') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/index3.html">
+            <iconify-icon icon="solar:music-note-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Music</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'general') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/index4.html">
+            <iconify-icon icon="solar:chart-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">General</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+
+        <!---Frontend Pages---->
+        <li class="hs-accordion sidebar-item @@if (context.page_group == 'frontend-pages') { active }"
+          id="blog-accordion">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'frontend-pages') { active dropdown-menu-active dark:text-white }">
+            <iconify-icon icon="solar:home-angle-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Frontend Pages</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="blog-accordion"
+            class="hs-accordion-content @@if (context.page_group == 'frontend-pages') { active-menu h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'frontend-homepage') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-homepage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Homepage</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'frontend-aboutpage') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-aboutpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">About Us</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'frontend-blogpage') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-blogpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Blog</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'frontend-blogdetailpage') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-blogdetailpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Blog Detail</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'frontend-portfoliopage') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-portfoliopage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Portfolio</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'frontend-pricingpage') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-pricingpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Pricing</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'frontend-contactpage') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/frontend-contactpage.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Contact</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!---Ui Elements---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">UI</span>
+        </div>
+
+        <li class="hs-accordion  sidebar-item  @@if (context.page_group == 'ui') { active }" id="ui-elements">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'ui') { active dropdown-menu-active dark:text-white}">
+            <iconify-icon icon="solar:share-circle-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Ui Elements</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+          <div id="ui-elements" class="hs-accordion-content @@if (context.page_group == 'ui') { active-menu h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link @@if (context.page === 'ui-badge') { active text-primary dark:text-primary}"
+                  href="@@webRoot/ui-badge.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Badge</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link @@if (context.page === 'ui-button') { active text-primary dark:text-primary}"
+                  href="@@webRoot/ui-button.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Button</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link @@if (context.page === 'ui-lists') { active text-primary dark:text-primary}"
+                  href="@@webRoot/ui-lists.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Lists</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link @@if (context.page === 'ui-typography') { active text-primary dark:text-primary}"
+                  href="@@webRoot/ui-typography.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Typography</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link @@if (context.page === 'ui-tooltip-popover') { active text-primary dark:text-primary}"
+                  href="@@webRoot/ui-tooltip-popover.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Tooltip & Popover</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-breadcrumb') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-breadcrumb.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Breadcrumb</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-accordion') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-accordion.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Accordion</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-carousel') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-carousel.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Carousel</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-chat-bubbles') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-chat-bubbles.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Chat Bubbles</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-dropdowns') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-dropdowns.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Dropdowns</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-datepicker') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-datepicker.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">DatePicker</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-devices') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-devices.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Devices</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-grid') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-grid.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Grid</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-link') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-link.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Link</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-modals') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-modals.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Modals</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-notification') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-notification.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Notification</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-offcanvas') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-offcanvas.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Offcanvas</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-progressbar') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-progressbar.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Progressbar</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-pagination') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-pagination.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Pagination</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-ratings') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-ratings.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Ratings</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-scrollspy') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-scrollspy.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Scrollspy</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-spinner') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-spinner.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Spinner</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-stepper') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-stepper.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Stepper</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-skeleton') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-skeleton.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Skeleton</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-tab') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-tab.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Tab</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-timeline') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-timeline.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Timeline</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'ui-toasts') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-toasts.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Toasts</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion  sidebar-item  @@if (context.page_group == 'cards') { active }" id="ui-card">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'cards') { active dropdown-menu-active dark:text-white }">
+            <iconify-icon icon="solar:bookmark-square-minimalistic-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Cards</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+          <div id="ui-card" class="hs-accordion-content @@if (context.page_group == 'cards') { active-menu h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'base-cards') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-cards.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Basic Cards</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'custom-cards') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-card-customs.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Custom Cards</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'weather-cards') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/ui-card-weather.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Weather Cards</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!---Apps Menu---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">apps</span>
+        </div>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'calendar') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/app-calendar.html">
+            <iconify-icon icon="solar:calendar-mark-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Calendar</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'kanban') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/app-kanban.html">
+            <iconify-icon icon="solar:clapperboard-edit-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Kanban</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'chat') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/app-chat.html">
+            <iconify-icon icon="solar:chat-round-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Chat</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'email') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/app-email.html">
+            <iconify-icon icon="solar:letter-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Email</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'notes') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/app-notes.html">
+            <iconify-icon icon="solar:document-text-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Notes</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'contact') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/app-contact.html">
+            <iconify-icon icon="solar:iphone-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Contact
+              Table</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'contact-application') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/app-contact2.html">
+            <iconify-icon icon="solar:phone-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Contact
+              List</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'invoice') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/app-invoice.html">
+            <iconify-icon icon="solar:bill-list-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Invoice</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'user-profile') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/page-user-profile.html">
+            <iconify-icon icon="solar:shield-user-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">User
+              Profile</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="hs-accordion sidebar-item @@if (context.page_group == 'blog') { active }" id="blog-accordion">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'blog') { active dropdown-menu-active dark:text-white }">
+            <iconify-icon icon="solar:widget-4-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Blog</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="blog-accordion"
+            class="hs-accordion-content @@if (context.page_group == 'blog') { active-menu h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'blog-posts') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/blog-posts.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Posts</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'blog-detail') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/blog-detail.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Details</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion sidebar-item @@if (context.page_group == 'ecomm') { active }" id="ecom-accordion">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'ecomm') { active dropdown-menu-active dark:text-white}">
+            <iconify-icon icon="solar:cart-5-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Ecommerce</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="ecom-accordion"
+            class="hs-accordion-content @@if (context.page_group == 'ecomm') { active-menu h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'eco-shop') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/eco-shop.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Shop</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'eco-shop-detail') { active text-primary  dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/eco-shop-detail.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Details</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'eco-product-list') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/eco-product-list.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">List</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'eco-checkout') { active text-primary  dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/eco-checkout.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Checkout</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!---Pages---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">Pages</span>
+        </div>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'pricing') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/page-pricing.html">
+            <iconify-icon icon="solar:dollar-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Pricing</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'faq') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/page-faq.html">
+            <iconify-icon icon="solar:question-circle-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">FAQ</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'account-settings') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/page-account-settings.html">
+            <iconify-icon icon="solar:settings-minimalistic-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Account
+              Setting</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'lp') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/landingpage/index.html">
+            <iconify-icon icon="solar:notes-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Landing
+              Page</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="hs-accordion sidebar-item @@if (context.page_group == 'widgets') { active }" id="widgets">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'widgets') { active dropdown-menu-active dark:text-white}">
+            <iconify-icon icon="solar:widget-2-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Widgets</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="widgets" class="hs-accordion-content @@if (context.page_group == 'widgets') { active-menu h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'widget-cards') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-cards.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Cards</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'widget-banners') { active text-primary  dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-banners.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Banner</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'widget-charts') { active text-primary  dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-charts.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'widgets-feeds') { active text-primary  dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-feeds.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Feeds Widgets</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'widgets-apps') { active text-primary  dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-apps.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Apps Widgets</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'widgets-data') { active text-primary  dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/widgets-data.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Data Widgets</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!---Form Elements---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">FORMS</span>
+        </div>
+
+        <li class="hs-accordion  sidebar-item  @@if (context.page_group == 'form') { active } " id="form-elements">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'form') { active dropdown-menu-active dark:text-white}">
+            <iconify-icon icon="solar:password-minimalistic-input-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Form Elements</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+          <div id="form-elements"
+            class="hs-accordion-content @@if (context.page_group == 'form') { active-menu h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'form-inputs') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-inputs.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Forms Input</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'form-input-groups') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-input-groups.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Input Groups</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'form-checkbox-radio') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-checkbox-radio.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Checkbox & Radios</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'form-input-grid') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-input-grid.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Input Grid</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'form-input-number') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-input-number.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Input Number</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'form-advanced-password') { active text-primary dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/form-advanced-password.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Advanced Pwd</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!---Table Elements---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">TABLES</span>
+        </div>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'table-basic') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/table-basic.html">
+            <iconify-icon icon="solar:bedside-table-2-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Basic
+              Table</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'table-layout-highlighted') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/table-layout-highlighted.html">
+            <iconify-icon icon="solar:bedside-table-3-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Highlighted
+            </span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'table-miscellaneous') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/table-miscellaneous.html">
+            <iconify-icon icon="solar:bedside-table-4-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Miscellaneous</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'table-editable') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/table-editable.html">
+            <iconify-icon icon="solar:bedside-table-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Editable
+            </span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <!---DataTable ---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">DATA TABLES</span>
+        </div>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'table-dt-basic') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/table-datatable-basic.html">
+            <iconify-icon icon="solar:database-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Basic Data
+              Table</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+
+        <!---Apexchart---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">CHARTS</span>
+        </div>
+
+        <li class="hs-accordion sidebar-item @@if (context.page_group == 'charts') { active }" id="charts">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'charts') { active dropdown-menu-active dark:text-white}">
+            <iconify-icon icon="solar:chart-square-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Apex Charts</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="charts" class="hs-accordion-content @@if (context.page_group == 'charts') { active-menu h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'line-chart') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-line.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Line Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'area-chart') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-area.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Area Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'bar-chart') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-bar.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Bar Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'pie-chart') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-pie.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Pie Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'radial-chart') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-radial.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Radial Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'radar-chart') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/chart-apex-radar.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Radar Chart</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!---Icons---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">Icons</span>
+        </div>
+        <li class="sidebar-item">
+          <a class="sidebar-link dark-sidebar-link  
+        @@if (context.page === 'sample-page') { active activemenu dark:text-white}" href="@@webRoot/sample-page.html">
+            <iconify-icon icon="solar:planet-3-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Sample Page</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a class="sidebar-link dark-sidebar-link  
+        @@if (context.page === 'solar') { active activemenu dark:text-white}" href="@@webRoot/icon-solar.html">
+            <iconify-icon icon="solar:sticker-smile-circle-2-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu shrink-0">Solar</span>
+          </a>
+        </li>
+
+        <!---Auth Pages---->
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold" class="nav-small-cap-icon"></iconify-icon>
+          <span class="hide-menu">AUTH</span>
+        </div>
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'error') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/authentication-error.html">
+            <iconify-icon icon="solar:bug-minimalistic-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Error</span>
+            <span
+              class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+          </a>
+        </li>
+
+        <li class="hs-accordion sidebar-item @@if (context.page_group == 'auth') { active }" id="auth-login">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'auth') {active dropdown-menu-active dark:text-white}">
+            <iconify-icon icon="solar:lock-keyhole-minimalistic-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Login</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="auth-login" class="hs-accordion-content @@if (context.page_group == 'auth') { active-menu h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'side-login') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-login.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Side Login</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link @@if (context.page === 'box-login') { active text-primary  dark:text-primary}"
+                  href="@@webRoot/authentication-login.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Boxed Login</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion sidebar-item " id="auth-register">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'auth') { active dropdown-menu-active dark:text-white}">
+            <iconify-icon icon="solar:user-plus-rounded-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Register</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="auth-register" class="hs-accordion-content @@if (context.page_group == 'auth') { block h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'side-reg') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-register.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Side Register</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a class="dropdown-submenu-link @@if (context.page === 'box-reg') { active text-primary  dark:text-primary}"
+                  href="@@webRoot/authentication-register.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Boxed Register</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion sidebar-item" id="auth-forgot">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'auth') { active dropdown-menu-active dark:text-white}">
+            <iconify-icon icon="solar:password-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Forgot Password</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="auth-forgot" class="hs-accordion-content @@if (context.page_group == 'auth') { block h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'side-forgotpwd') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-forgot-password.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Side Forgot Password</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'box-forgotpwd') { active text-primary  dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-forgot-password2.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Boxed Forgot Password</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hs-accordion sidebar-item" id="auth-twostep">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'auth') { active dropdown-menu-active dark:text-white}">
+            <iconify-icon icon="solar:siderbar-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu">Two Steps</span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="auth-twostep" class="hs-accordion-content @@if (context.page_group == 'auth') { block h-full }">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'side-forgotpwd') { active text-primary dark:text-primary }"
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-two-steps.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Side Two Steps</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a target="_blank"
+                  class="dropdown-submenu-link @@if (context.page === 'box-forgotpwd') { active text-primary  dark:text-primary}"
+                  href="https://demos.tailwind-admin.com/html/dist/main/authentication-two-steps2.html">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                  <span class="hide-menu">Boxed Two Steps</span>
+                  <span
+                    class="ms-auto bg-lightsecondary text-secondary rounded-full px-2 text-[10px] leading-2.5 py-1 hide-menu">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="sidebar-item">
+          <a target="_blank" class="sidebar-link dark-sidebar-link  
+          @@if (context.page === 'maintenance') { active activemenu dark:text-white}"
+            href="https://demos.tailwind-admin.com/html/dist/main/authentication-maintenance.html">
+            <iconify-icon icon="solar:settings-linear" class="text-xl shrink-0"></iconify-icon> <span
+              class="hide-menu shrink-0">Maintenance</span>
+          </a>
+        </li>
+
+        <div class="caption mt-8">
+          <iconify-icon icon="solar:menu-dots-bold"
+            class="nav-small-cap-icon text-lg hidden text-center leading-[16px]"></iconify-icon>
+          <span class="hide-menu">OTHERS</span>
+        </div>
+
+        <li class="hs-accordion  sidebar-item  " id="users-accordion">
+          <a
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  @@if (context.page_group == 'dropdown') { hs-accordion-active bg-primary text-body}">
+            <iconify-icon icon="solar:align-horizontal-center-linear" class="text-xl shrink-0"></iconify-icon>
+            <span class="hide-menu">Menu Level </span>
+            <span class="hide-menu ms-auto flex items-center">
+              <iconify-icon icon="solar:alt-arrow-down-linear"
+                class="text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+              <iconify-icon icon="solar:alt-arrow-up-linear"
+                class="text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+            </span>
+          </a>
+
+          <div id="users-accordion"
+            class="hs-accordion-content @@if (context.page_group == 'dropdown') { block h-full }">
+            <ul class="hs-accordion-group " data-hs-accordion-always-open>
+              <li class="hs-accordion pl-4 pr-3 py-1 transition-colors duration-150 text-link dark:text-darklink"
+                id="users-accordion-sub-1">
+
+                <ul class>
+                  <li class>
+                    <a class="dropdown-submenu-link" href="javascript:void(0)">
+                      <iconify-icon icon="tabler:circle" class="shrink-0 text-xs me-3"></iconify-icon>
+                      <span class="hide-menu">Level 1</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <a class="hs-accordion-toggle py-2 w-full gap-2 flex dropdown-submenu-link" href="javascript:void(0)">
+                  <iconify-icon icon="tabler:circle" class="shrink-0 me-3 text-xs"></iconify-icon>
+                  <span class="hide-menu">Level 2</span>
+                  <span class="hide-menu ms-auto flex items-center">
+                    <iconify-icon icon="solar:alt-arrow-down-linear"
+                      class="shrink-0 text-lg ms-auto  hs-accordion-active:hidden"></iconify-icon>
+                    <iconify-icon icon="solar:alt-arrow-up-linear"
+                      class="shrink-0 text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></iconify-icon>
+                  </span>
+                </a>
+
+                <div id="users-accordion-sub-1" class="hs-accordion-content second-level">
+                  <ul class>
+                    <li class>
+                      <a class="w-full py-2 flex gap-2  dropdown-submenu-link" href="javascript:void(0)">
+                        <iconify-icon icon="tabler:circle" class="shrink-0 me-3 text-xs"></iconify-icon>
+                        <span class="hide-menu">Level 2.1</span>
+                      </a>
+                    </li>
+                    <li class>
+                      <a class="dropdown-submenu-link" href="javascript:void(0)">
+                        <iconify-icon icon="tabler:circle" class="shrink-0  me-3 text-xs"></iconify-icon>
+                        <span class="hide-menu">Level 2.2</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a class=" px-3 py-2 rounded-md text-link dark:text-darklink w-full flex items-center text-sm opacity-50"
+            href="javascript:void(0)">
+            <iconify-icon icon="solar:forbidden-circle-linear" class="shrink-0  me-3 text-xl"></iconify-icon>
+            <span class="hide-menu">Disabled</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class=" sidebar-link dark-sidebar-link  
+           " href="javascript:void(0)">
+            <span class="flex items-center">
+              <iconify-icon icon="solar:star-linear" class="shrink-0 me-3 text-xl"></iconify-icon>
+              <span class="hide-menu">Sub Caption <br>
+                <p class="text-xs  opacity-80">This is The subtitle</p>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class=" sidebar-link dark-sidebar-link " href="javascript:void(0)">
+            <iconify-icon icon="solar:medal-ribbons-star-linear" class="shrink-0 text-xl"></iconify-icon>
+            <span class="hide-menu">Chip</span>
+            <span
+              class="ms-auto bg-primary text-white h-6 w-6 rounded-full text-xs flex  items-center justify-center hide-menu-flex">9</span>
+
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class=" sidebar-link dark-sidebar-link  
+           " href="javascript:void(0)">
+            <iconify-icon icon="solar:smile-circle-linear" class="shrink-0 text-xl"></iconify-icon>
+            <span class="hide-menu">Outlined</span>
+            <span
+              class="ms-auto text-primary outline-1 rounded-full outline-primary text-center px-2 text-xs py-1 hide-menu">outline</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class=" sidebar-link dark-sidebar-link  
+           " href="javascript:void(0)">
+            <iconify-icon icon="solar:star-fall-minimalistic-2-linear" class="shrink-0 text-xl"></iconify-icon>
+            <span class="hide-menu">External Link</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Bottom User Profile -->
+<div class="px-6 pt-6  bg-surface  dark:bg-dark-surface relative">
+  <div class="bg-lightprimary flex items-center gap-3 rounded-lg p-5 mt-5">
+    <div class="shrink-0">
+      <h5 class="text-base font-semibold mb-2 leading-tight">
+        Haven't <br /> Account?
+      </h5>
+      <a href="https://tailwind-admin.com/#pricing" target="_blank" class="btn block">
+        Get Pro
+      </a>
+    </div>
+    <img src="@@webRoot/assets/images/background/rocket.png" alt="image"
+      class="mt-[-40px] w-25 h-auto object-contain" />
+  </div>
+
+</div>
+<!-- </aside> -->

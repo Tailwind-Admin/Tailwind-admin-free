@@ -1,0 +1,9 @@
+
+@media screen and (min-width: 1300px) {
+    .topbar{
+        width: calc(100% - 270px);
+    }
+    [data-layout=vertical] body[data-sidebartype=mini-sidebar] .topbar {
+        width: calc(100% - 87px);
+    }
+}

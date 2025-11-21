@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-color-theme="Blue_Theme" class="light selected" data-layout="vertical"
+	data-boxed-layout="boxed" data-card="shadow">
+
+<head>
+	@@include("partials/head.html")
+	<title>TailwindAdmin TailwindCSS HTML Admin Template</title>
+</head>
+
+<body class="DEFAULT_THEME  bg-white dark:bg-dark">
+
+	<main>
+		<!--start the project-->
+		<div id="main-wrapper" class="flex">
+
+			<aside id="application-sidebar-brand"
+				class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full xl:rtl:-translate-x-0 rtl:translate-x-full  left-0 rtl:left-auto rtl:right-0 transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed top-0 with-vertical  left-sidebar transition-all duration-300 h-screen z-20 flex-shrink-0 border-r rtl:border-l rtl:border-r-0 w-[270px] border-border dark:border-darkborder bg-white dark:bg-dark">
+				@@include("partials/sidebar.html",{ "page": "ui-button","page_group": "ui" })
+			</aside>
+			<div class="page-wrapper w-full" role="main">
+				<!--  Header Start -->
+				<header
+					class="sticky top-header top-0 inset-x-0 z-10 flex flex-wrap md:justify-start md:flex-nowrap text-sm bg-white dark:bg-dark ">
+					<div class="with-vertical w-full">@@include("./partials/header.html")</div>
+				</header>
+				<!--  Header End -->
+
+				<!-- Main Content -->
+				<main class="max-w-full pt-6">
+					<div class="container full-container py-5">
+						<div class="grid grid-cols-12 gap-6">
+							<div class="flex lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Solid color variants</h5>
+
+										</div>
+										<div class="flex gap-2 flex-wrap">
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-transparent bg-primary hover:bg-primaryemphasis text-white ">
+												Primary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-transparent bg-secondary hover:bg-secondaryemphasis  text-white  ">
+												Secondary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-transparent bg-success hover:bg-successemphasis text-white">
+												Success
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-transparent bg-warning hover:bg-warningemphasis text-white ">
+												Warning
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-transparent bg-error hover:bg-erroremphasis text-white  ">
+												Error
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-transparent bg-gray-800 text-white hover:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 dark:bg-white dark:text-gray-800">
+												Dark
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-transparent bg-gray-500 text-white hover:bg-gray-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Grey
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												White
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Outline color variants</h5>
+
+										</div>
+										<div class="flex gap-2 flex-wrap">
+
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-primary text-primary hover:bg-primary hover:text-white">
+												Primary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-secondary text-secondary hover:bg-secondary hover:text-white">
+												Secondary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-success text-success hover:bg-success hover:text-white">
+												Success
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-warning text-warning hover:bg-warning hover:text-white">
+												Warning
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-error text-error hover:bg-error hover:text-white">
+												Error
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-gray-800 dark:border-white text-gray-800 hover:bg-gray-900 hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-gray-900">
+												Dark
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-gray-500 dark:border-gray-400 dark:text-gray-400 text-gray-500 hover:bg-gray-600 hover:text-white dark:hover:bg-gray-400 dark:hover:text-white">
+												Grey
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Ghost color variants</h5>
+
+										</div>
+										<div class="flex gap-2 flex-wrap">
+
+
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent text-primary hover:bg-lightprimary hover:text-primaryemphasis dark:hover:bg-darkprimary dark:hover:text-primary">
+												Primary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent text-secondary hover:bg-lightsecondary hover:text-secondaryemphasis dark:hover:bg-darksecondary dark:hover:text-secondary">
+												Secondary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent text-success hover:bg-lightsuccess hover:text-successemphasis dark:hover:bg-darksuccess dark:hover:text-success">
+												Success
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent text-warning hover:bg-lightwarning hover:text-warningemphasis dark:hover:bg-darkwarning dark:hover:text-warning">
+												Warning
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent text-error hover:bg-lighterror hover:text-erroremphasis dark:hover:bg-darkerror dark:hover:text-error">
+												Error
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Button
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent text-gray-500 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Button
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent text-white hover:bg-gray-100 hover:text-gray-800 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-white/10 dark:hover:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Button
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Soft color variants</h5>
+
+										</div>
+										<div class="flex gap-2 flex-wrap">
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent bg-lightprimary text-primaryemphasis hover:bg-primary dark:hover:bg-primary dark:bg-darkprimary dark:hover:text-white hover:text-white dark:text-primary">
+												Primary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent bg-lightsecondary text-secondaryemphasis hover:bg-secondary dark:hover:bg-secondary dark:bg-darksecondary dark:hover:text-white hover:text-white dark:text-secondary">
+												Secondary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent bg-lightsuccess hover:text-white text-successemphasis hover:bg-success dark:hover:bg-success dark:hover:text-white dark:bg-darksuccess dark:text-success">
+												Success
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent bg-lightwarning text-warningemphasis hover:text-white hover:bg-warning dark:hover:bg-warning dark:hover:text-white dark:bg-darkwarning dark:text-warning">
+												Warning
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent bg-lighterror text-erroremphasis hover:text-white hover:bg-error dark:hover:bg-error dark:hover:text-white dark:bg-darkerror dark:text-error">
+												Error
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-white/10 dark:hover:bg-white/20 dark:text-white dark:hover:text-white">
+												Dark
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent bg-gray-100 text-gray-500 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-gray-300">
+												Grey
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-md border border-transparent bg-white/10 text-white hover:bg-white/20">
+												White
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">White color variants</h5>
+
+										</div>
+										<div class="flex gap-2 flex-wrap">
+
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-gray-200 bg-white text-primary hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700  dark:hover:bg-slate-900">
+												Primary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-gray-200 bg-white text-secondary hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:hover:bg-slate-900">
+												Secondary
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-gray-200 bg-white text-success hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:hover:bg-slate-900">
+												Button
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-gray-200 bg-white text-warning hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:hover:bg-slate-900">
+												Button
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-gray-200 bg-white text-error hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:hover:bg-slate-900">
+												Button
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-slate-900">
+												Button
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-gray-400 dark:hover:bg-slate-900">
+												Button
+											</button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-6">
+											<h5 class="card-title">Link color variants</h5>
+
+										</div>
+										<div class="flex gap-2 flex-wrap">
+
+											<button type="button"
+												class="inline-flex items-center gap-x-2 text-sm font-semibold rounded-md text-gray-800 hover:text-primary dark:text-white dark:hover:text-white/70 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Link
+											</button>
+											<button type="button"
+												class="inline-flex items-center gap-x-2 text-sm font-semibold rounded-md text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Link
+											</button>
+											<button type="button"
+												class="inline-flex items-center gap-x-2 text-sm font-semibold rounded-md text-primary hover:text-primaryemphasis dark:text-primaryemphasis dark:hover:text-primary dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Link
+											</button>
+											<button type="button"
+												class="inline-flex items-center gap-x-2 text-sm font-semibold rounded-md text-white hover:text-white/80 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Link
+											</button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center">
+											<h5 class="card-title">Pilled Button</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Use the <code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'.rounded-full'</code>
+											utility class to
+											make buttons circular.</p>
+										<div class="flex gap-2 flex-wrap">
+
+											<button type="button"
+												class="btn-md text-sm font-semibold rounded-full border border-transparent bg-primary text-white hover:bg-primaryemphasis disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Button
+											</button>
+											<button type="button"
+												class="btn-md text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-slate-900 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Button
+											</button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center">
+											<h5 class="card-title">Block Button</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6"><code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'.w-full'</code>
+											or <code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'.grid'</code>
+											classes will make the
+											button fit to its parent width.</p>
+										<div class="flex gap-2 flex-wrap">
+
+											<button type="button"
+												class="w-full btn-md inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-primary text-white hover:bg-primaryemphasis dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Button
+											</button>
+											<button type="button"
+												class="w-full btn-md inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 hover:bg-gray-50 dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-slate-900 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+												Button
+											</button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-span-12">
+								<p class="text-base text-center text-bodytext font-medium">Design and Developed by <a
+										target="_blank"
+										class="text-primary font-normal underline hover:text-primaryemphasis"
+										href="https://tailwind-admin.com/">tailwind-admin.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</main>
+				<!-- Main Content End -->
+			</div>
+		</div>
+		<!--end of project-->
+	</main>
+	<script src="@@webRoot/assets/js/vendor.min.js"></script>
+	@@include("partials/scripts.html")
+</body>
+
+</html>

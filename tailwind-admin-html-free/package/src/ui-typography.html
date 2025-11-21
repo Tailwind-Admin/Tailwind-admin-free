@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-color-theme="Blue_Theme" class="light selected" data-layout="vertical"
+	data-boxed-layout="boxed" data-card="shadow">
+
+<head>
+	@@include("partials/head.html")
+	<title>TailwindAdmin TailwindCSS HTML Admin Template</title>
+</head>
+
+<body class="DEFAULT_THEME  bg-white dark:bg-dark">
+
+	<main>
+		<!--start the project-->
+		<div id="main-wrapper" class="flex">
+
+			<aside id="application-sidebar-brand"
+				class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full xl:rtl:-translate-x-0 rtl:translate-x-full  left-0 rtl:left-auto rtl:right-0 transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed top-0 with-vertical  left-sidebar transition-all duration-300 h-screen z-20 flex-shrink-0 border-r rtl:border-l rtl:border-r-0 w-[270px] border-border dark:border-darkborder bg-white dark:bg-dark">
+				@@include("partials/sidebar.html",{ "page": "ui-typography","page_group": "ui" })
+			</aside>
+			<div class="page-wrapper w-full" role="main">
+				<!--  Header Start -->
+				<header
+					class="sticky top-header top-0 inset-x-0 z-10 flex flex-wrap md:justify-start md:flex-nowrap text-sm bg-white dark:bg-dark ">
+					<div class="with-vertical w-full">@@include("./partials/header.html")</div>
+				</header>
+				<!--  Header End -->
+
+				<!-- Main Content -->
+				<main class="max-w-full pt-6">
+					<div class="container full-container py-5">
+						<div class="grid grid-cols-12 gap-6">
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Headings</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Use <code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'h1 to h6'</code>
+											to get desire heading.</p>
+										<div class="flex flex-col gap-2">
+											<h1 class="text-4xl text-dark dark:text-white">h1. Preline heading</h1>
+											<h2 class="text-3xl text-dark dark:text-white">h2. Preline heading</h2>
+											<h3 class="text-2xl text-dark dark:text-white">h3. Preline heading</h3>
+											<h4 class="text-xl text-dark dark:text-white">h4. Preline heading</h4>
+											<h5 class="text-lg text-dark dark:text-white">h5. Preline heading</h5>
+											<h6 class="text-base text-dark dark:text-white">h6. Preline heading</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Inline text elements</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Styling for common inline <code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'HTML5'</code>elements.
+										</p>
+										<div class="flex flex-col gap-2">
+											<p class="text-dark text-base dark:text-white">You can use the mark tag to
+												<mark>highlight</mark> text.
+											</p>
+											<p class="text-dark text-base dark:text-white"><del>This line of text is
+													meant to be treated as deleted text.</del></p>
+											<p class="text-dark text-base dark:text-white"><s>This line of text is meant
+													to be treated as no longer accurate.</s></p>
+											<p class="text-dark text-base dark:text-white"><ins>This line of text is
+													meant to be treated as an addition to the document.</ins></p>
+											<p class="text-dark text-base dark:text-white"><u>This line of text will
+													render as underlined.</u></p>
+											<p class="text-dark text-base dark:text-white"><small>This line of text is
+													meant to be treated as fine print.</small></p>
+											<p class="text-dark text-base dark:text-white"><strong>This line rendered as
+													bold text.</strong></p>
+											<p class="text-dark text-base dark:text-white"><em>This line rendered as
+													italicized text.</em></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Gradient text</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Styling for common inline <code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'bg-clip-text'</code>,
+											<code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'color-transparent'</code>
+											and <code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'bg-gradient-*'</code>
+											classes to the text to add a gradient overlay to a text element.
+										</p>
+										<p
+											class="bg-clip-text text-base bg-gradient-to-tl from-primary to-violet-500 text-transparent">
+											This is a gradient text
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Blockquote</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Styling for common inline <code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'bg-clip-text'</code>,
+											<code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'color-transparent'</code>
+											and <code
+												class="text-error bg-lightwarning dark:bg-darkwarning">'bg-gradient-*'</code>
+											classes to the text to add a gradient overlay to a text element.
+										</p>
+										<blockquote class="relative">
+											<i
+												class="ti ti-quote absolute -top-7 start-3.5 size-16 text-gray-200 dark:text-gray-700 rotate-180 text-[40px] leading-tight font-medium origin-left"></i>
+											<div class="relative z-10">
+												<p class="text-gray-800 dark:text-white text-base"><em>
+														I just wanted to say that I'm very happy with my purchase so
+														far. The documentation is outstanding - clear and detailed.
+													</em></p>
+											</div>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Blockquote Alignment - Center</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Use text utilities as needed to change the
+											alignment of your blockquote.</p>
+										<blockquote class="relative text-center max-w-lg mx-autos">
+											<i
+												class="ti ti-quote absolute -top-7 start-8 size-16 text-gray-200 dark:text-gray-700 rotate-180 text-[40px] leading-tight font-medium origin-left"></i>
+											<div class="relative z-10">
+												<p class="text-gray-800 dark:text-white text-base"><em>
+														I just wanted to say that I'm very happy with my purchase so
+														far. The documentation is outstanding - clear and detailed.
+													</em></p>
+											</div>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Blockquote Alignment - Right</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Use text utilities as needed to change the
+											alignment of your blockquote.</p>
+										<blockquote class="relative text-end max-w-lg mx-autos">
+											<i
+												class="ti ti-quote absolute -top-7 start-12 size-16 text-gray-200 dark:text-gray-700 rotate-180 text-[40px] leading-tight font-medium origin-left"></i>
+											<div class="relative z-10">
+												<p class="text-gray-800 dark:text-white text-base"><em>
+														I just wanted to say that I'm very happy with my purchase so
+														far. The documentation is outstanding - clear and detailed.
+													</em></p>
+											</div>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 flex">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Naming a source</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Identify the work.</p>
+										<blockquote class="relative">
+											<i
+												class="ti ti-quote absolute -top-7 start-3.5 size-16 text-gray-200 dark:text-gray-700 rotate-180 text-[40px] leading-tight font-medium origin-left"></i>
+											<div class="relative z-10">
+												<p class="text-gray-800 dark:text-white text-base"><em>
+														I just wanted to say that I'm very happy with my purchase so
+														far. The documentation is outstanding - clear and detailed.
+													</em></p>
+											</div>
+											<footer class="mt-6">
+												<div class="text-base font-semibold text-gray-800 dark:text-gray-400">
+													Josh Grazioso</div>
+											</footer>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Blockquote with avatar</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">A blockquote option with avatar and border on the
+											left side.</p>
+										<blockquote class="relative border-s-4 ps-4 sm:ps-6 dark:border-gray-700">
+											<p class="text-gray-800 sm:text-lg dark:text-white"><em>
+													I just wanted to say that I'm very happy with my purchase so far.
+													The documentation is outstanding - clear and detailed.
+												</em></p>
+
+											<footer class="mt-4">
+												<div class="flex items-center">
+													<div class="flex-shrink-0">
+														<img class="size-10 rounded-full"
+															src="@@webRoot/assets/images/profile/user-1.jpg"
+															alt="Image Description">
+													</div>
+													<div class="ms-4">
+														<div
+															class="text-base font-semibold text-gray-800 dark:text-gray-400">
+															Josh Grazioso</div>
+														<div class="text-xs text-gray-500">Source title</div>
+													</div>
+												</div>
+											</footer>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Lists: Ol listing</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Ordered list item in bullet points.</p>
+										<ol class="list-decimal list-inside text-gray-800 dark:text-white text-sm">
+											<li>Lorem ipsum dolor sit . </li>
+											<li>amet consectetur, adipisicing elit</li>
+											<li>Ullam aliquam sint quasi.</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+							<div class=" lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="flex justify-between items-center mb-0">
+											<h5 class="card-title">Lists: Ul listing</h5>
+
+										</div>
+										<p class="card-subtitle  mb-6">Unordered list item in bullet points.</p>
+										<ul class="list-disc list-inside text-gray-800 dark:text-white text-sm">
+											<li>Lorem ipsum dolor sit . </li>
+											<li>amet consectetur, adipisicing elit</li>
+											<li>Ullam aliquam sint quasi.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+
+
+							<div class="col-span-12">
+								<p class="text-base text-center text-bodytext font-medium">Design and Developed by <a
+										target="_blank"
+										class="text-primary font-normal underline hover:text-primaryemphasis"
+										href="https://tailwind-admin.com/">tailwind-admin.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</main>
+				<!-- Main Content End -->
+			</div>
+		</div>
+		<!--end of project-->
+	</main>
+	<script src="@@webRoot/assets/js/vendor.min.js"></script>
+	@@include("partials/scripts.html")
+</body>
+
+</html>

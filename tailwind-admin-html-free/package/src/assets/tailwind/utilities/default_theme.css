@@ -1,0 +1,59 @@
+:root {
+    /* Default theme fonts */
+    --theme-font: DM Sans, sans-serif;
+
+    /* Custom Shadow */
+    --theme-shadow-md: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    --theme-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --theme-shadow-dark-md: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
+
+    /* Custom theme Radius */
+    --theme-radius-sm: 4px;
+    --theme-radius-md: 7px;
+
+    /* Custom theme font-size */
+    --theme-text-fs_21: 21px;
+    --theme-text-fs_28: 28px;
+    --theme-text-fs_13: 13px;
+    --theme-text-fs_10: 10px;
+
+    /* Default colors */
+    --info: oklch(68.98% 0.165 257.10);
+    --success: oklch(80.48% 0.150 174.63);
+    --warning: oklch(80.94% 0.165 74.03);
+    --error: oklch(74.75% 0.144 35.82);
+    --lightsuccess: oklch(98.05% 0.027 182.42);
+    --lighterror: oklch(95.74% 0.019 38.15);
+    --lightinfo: oklch(96.13% 0.017 256.28);
+    --lightwarning: oklch(97.29% 0.023 82.12);
+    --darkinfo: oklch(34.05% 0.082 264.13);
+    --darksuccess: oklch(33.68% 0.044 224.24);
+    --darkwarning: oklch(36.49% 0.037 61.35);
+    --darkerror: oklch(34.83% 0.042 350.24);
+    --darksecondary: oklch(76.32% 0.139 237.20);
+    --white: oklch(100.00% 0.000 0);
+    --dark: oklch(27.84% 0.027 257.53);
+    --border: oklch(95.50% 0.009 242.84);
+    --bordergray: oklch(92.03% 0.015 260.73);
+    --darkborder: oklch(36.67% 0.041 262.29);
+    --link: oklch(32.70% 0.035 260.11);
+    --bodytext: oklch(52.16% 0.047 260.80);
+    --darklink: oklch(64.54% 0.049 258.74);
+    --lightgray: oklch(98.07% 0.005 247.88);
+    --darkgray: oklch(45.04% 0.047 259.98);
+    --error-emphasis: oklch(66.29% 0.128 35.43);
+    --warning-emphasis: oklch(71.77% 0.146 74.27);
+    --success-emphasis: oklch(71.35% 0.133 174.50);
+
+}
+
+
+[data-color-theme="Blue_Theme"] {
+    --primary: oklch(65.33% 0.184 266.79);
+    --primary-emphasis: oklch(58.11% 0.161 266.76);
+    --secondary: oklch(76.32% 0.139 237.20);
+    --secondary-emphasis: oklch(67.79% 0.122 236.84);
+    --lightprimary: oklch(65.33% 0.184 266.79 / 12.50%);
+    --lightsecondary: oklch(76.32% 0.139 237.20 / 12.50%);
+
+}
