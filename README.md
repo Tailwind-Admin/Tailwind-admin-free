@@ -122,7 +122,7 @@ Welcome to the **Tailwind Admin Dashboard Template** documentation! Whether you'
 The Pro Version of the **Tailwind Admin Dashboard Template** comes packed with essential features—ideal for personal projects, prototypes, or small-scale applications. When you're ready to level up, the Pro Version unlocks a powerful suite of extras, including multiple theme options, advanced UI widgets, real-time notifications, priority support, and a host of other premium tools designed to supercharge your development workflow.
 
 <div style="display: flex; gap: 10px; align-items: center;">
-  <a href="https://tailwindadmin-nextjs-main.vercel.app/" target="_blank">
+  <a href="https://nextjs.tailwind-admin.com/" target="_blank">
     <img src="https://img.shields.io/badge/Try_the_Demo-Click_Here-blue" alt="Try the Demo">
   </a>
   <a href="https://tailwind-admin.com/pricing" target="_blank">
@@ -143,7 +143,7 @@ The **Free Version** of the **Tailwind Admin Dashboard Template** provides a sol
 
 | **Feature**                      | **Free Version**                       | **Pro Version**                                      |
 |-----------------------------------|----------------------------------------|-----------------------------------------------------|
-| **Demo**                          | [![Try the Demo](https://img.shields.io/badge/Try_the_Demo-Click_Here-blue)](https://tailwindadmin-nextjs-free.vercel.app/)                               | [![Try the Demo](https://img.shields.io/badge/Try_the_Demo-Click_Here-blue)](https://tailwindadmin-nextjs-main.vercel.app/)                                              |
+| **Demo**                          | [![Try the Demo](https://img.shields.io/badge/Try_the_Demo-Click_Here-blue)](https://next-free.tailwind-admin.com/)                               | [![Try the Demo](https://img.shields.io/badge/Try_the_Demo-Click_Here-blue)](https://nextjs.tailwind-admin.com/)                                              |
 | **Download**                      | [![Download Now](https://img.shields.io/badge/Download_Now-Click_Here-green)](https://tailwind-admin.com/#pricing)                                | [![Download Now](https://img.shields.io/badge/Download_Now-Click_Here-green)](https://tailwind-admin.com/pricing)                                          |
 | **Responsive Design**             | ✅ Yes                                 | ✅ Yes                                              |
 | **Pre-designed Pages**            | ✅ Basic Pages                         | ✅ Advanced Pages (more layouts & options)           |

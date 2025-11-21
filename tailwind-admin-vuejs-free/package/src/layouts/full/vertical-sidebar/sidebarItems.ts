@@ -26,20 +26,20 @@ const sidebarItem: menu[] = [
   {
     title: "eCommerce",
     icon: "bag-5-linear",
-    to: "https://tailwindadmin-vuejs-main.netlify.app/dashboards/eCommerce",
+    to: "https://vuejs.tailwind-admin.com/dashboards/eCommerce",
     isPro: true,
   },
   {
     title: "Music",
     icon: "music-note-linear",
-    to: "https://tailwindadmin-vuejs-main.netlify.app/dashboards/music",
+    to: "https://vuejs.tailwind-admin.com/dashboards/music",
     isPro: true,
   },
 
   {
     title: 'General',
     icon: 'chart-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/dashboards/general',
+    to: 'https://vuejs.tailwind-admin.com/dashboards/general',
     isPro: true,
   },
   {
@@ -49,44 +49,44 @@ const sidebarItem: menu[] = [
       {
 
         title: 'Homepage',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/frontend-pages/homepage',
+        to: 'https://vuejs.tailwind-admin.com/frontend-pages/homepage',
         isPro: true,
       },
       {
 
         title: 'About Us',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/frontend-pages/about',
+        to: 'https://vuejs.tailwind-admin.com/frontend-pages/about',
         isPro: true,
       },
       {
 
         title: 'Blog',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/frontend-pages/blog/post',
+        to: 'https://vuejs.tailwind-admin.com/frontend-pages/blog/post',
         isPro: true,
       },
       {
 
         title: 'Blog Details',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/frontend-pages/blog/early-black-friday-amazon-deals-cheap-tvs-headphones',
+        to: 'https://vuejs.tailwind-admin.com/frontend-pages/blog/early-black-friday-amazon-deals-cheap-tvs-headphones',
         isPro: true,
       },
 
       {
 
         title: 'Portfolio',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/frontend-pages/portfolio',
+        to: 'https://vuejs.tailwind-admin.com/frontend-pages/portfolio',
         isPro: true,
       },
       {
 
         title: 'Pricing',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/frontend-pages/pricing',
+        to: 'https://vuejs.tailwind-admin.com/frontend-pages/pricing',
         isPro: true,
       },
       {
 
         title: 'Contact Us',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/frontend-pages/contact',
+        to: 'https://vuejs.tailwind-admin.com/frontend-pages/contact',
         isPro: true,
       },
     ],
@@ -147,12 +147,12 @@ const sidebarItem: menu[] = [
 
       {
         title: 'Chat',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/ai/chat-ai',
+        to: 'https://vuejs.tailwind-admin.com/apps/ai/chat-ai',
         isPro: true,
       },
       {
         title: 'Image ',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/ai/image-generator',
+        to: 'https://vuejs.tailwind-admin.com/apps/ai/image-generator',
         isPro: true,
       },
     ]
@@ -181,25 +181,25 @@ const sidebarItem: menu[] = [
     children: [
       {
         title: "Profile",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/user-profile/profile",
+        to: "https://vuejs.tailwind-admin.com/apps/user-profile/profile",
         isPro: true,
       },
       {
 
         title: "Followers",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/user-profile/followers",
+        to: "https://vuejs.tailwind-admin.com/apps/user-profile/followers",
         isPro: true,
       },
       {
 
         title: "Friends",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/user-profile/friends",
+        to: "https://vuejs.tailwind-admin.com/apps/user-profile/friends",
         isPro: true,
       },
       {
 
         title: "Gallery",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/user-profile/gallery",
+        to: "https://vuejs.tailwind-admin.com/apps/user-profile/gallery",
         isPro: true,
       },
     ],
@@ -211,22 +211,22 @@ const sidebarItem: menu[] = [
     children: [
       {
         title: 'List',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/invoice',
+        to: 'https://vuejs.tailwind-admin.com/apps/invoice',
         isPro: true,
       },
       {
         title: 'Details',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/invoice/details/102',
+        to: 'https://vuejs.tailwind-admin.com/apps/invoice/details/102',
         isPro: true,
       },
       {
         title: 'Create',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/invoice/create',
+        to: 'https://vuejs.tailwind-admin.com/apps/invoice/create',
         isPro: true,
       },
       {
         title: 'Edit',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/invoice/edit/102',
+        to: 'https://vuejs.tailwind-admin.com/apps/invoice/edit/102',
         isPro: true,
       }
     ]
@@ -238,37 +238,37 @@ const sidebarItem: menu[] = [
       {
 
         title: "Shop",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/ecommerce/shop",
+        to: "https://vuejs.tailwind-admin.com/apps/ecommerce/shop",
         isPro: true,
       },
       {
 
         title: "Details",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/ecommerce/detail/3",
+        to: "https://vuejs.tailwind-admin.com/apps/ecommerce/detail/3",
         isPro: true,
       },
       {
 
         title: "List",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/ecommerce/list",
+        to: "https://vuejs.tailwind-admin.com/apps/ecommerce/list",
         isPro: true,
       },
       {
 
         title: "Checkout",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/ecommerce/checkout",
+        to: "https://vuejs.tailwind-admin.com/apps/ecommerce/checkout",
         isPro: true,
       },
       {
 
         title: "Add Product",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/ecommerce/addproduct",
+        to: "https://vuejs.tailwind-admin.com/apps/ecommerce/addproduct",
         isPro: true,
       },
       {
 
         title: "Edit Product",
-        to: "https://tailwindadmin-vuejs-main.netlify.app/apps/ecommerce/editproduct",
+        to: "https://vuejs.tailwind-admin.com/apps/ecommerce/editproduct",
         isPro: true,
       },
     ],
@@ -276,13 +276,13 @@ const sidebarItem: menu[] = [
   {
     title: 'Chats',
     icon: 'dialog-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/chats',
+    to: 'https://vuejs.tailwind-admin.com/apps/chats',
     isPro: true,
   },
   {
     title: 'Kanban',
     icon: 'dialog-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/kanban',
+    to: 'https://vuejs.tailwind-admin.com/apps/kanban',
     isPro: true,
   },
   {
@@ -294,13 +294,13 @@ const sidebarItem: menu[] = [
   {
     title: 'Calendar',
     icon: 'calendar-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/calendar',
+    to: 'https://vuejs.tailwind-admin.com/apps/calendar',
     isPro: true,
   },
   {
     title: 'Contacts',
     icon: 'users-group-rounded-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/contacts',
+    to: 'https://vuejs.tailwind-admin.com/apps/contacts',
     isPro: true,
   },
   {
@@ -312,7 +312,7 @@ const sidebarItem: menu[] = [
   {
     title: 'Email',
     icon: 'letter-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/apps/email',
+    to: 'https://vuejs.tailwind-admin.com/apps/email',
     isPro: true,
   },
   { header: "Pages" },
@@ -321,62 +321,62 @@ const sidebarItem: menu[] = [
   {
     title: 'Account Setting',
     icon: 'settings-minimalistic-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/theme-pages/account-settings',
+    to: 'https://vuejs.tailwind-admin.com/theme-pages/account-settings',
     isPro: true,
   },
   {
     title: 'FAQ',
     icon: 'question-circle-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/theme-pages/faq',
+    to: 'https://vuejs.tailwind-admin.com/theme-pages/faq',
     isPro: true,
   },
   {
     title: 'Pricing',
     icon: 'tag-price-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/theme-pages/pricing',
+    to: 'https://vuejs.tailwind-admin.com/theme-pages/pricing',
     isPro: true,
   },
   {
     title: 'Rollbase Access',
     icon: 'accessibility-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/theme-pages/casl',
+    to: 'https://vuejs.tailwind-admin.com/theme-pages/casl',
     isPro: true,
   },
   {
     title: 'Landingpage',
     icon: 'three-squares-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/landingpage',
+    to: 'https://vuejs.tailwind-admin.com/landingpage',
     isPro: true,
   },
   {
     title: 'Integrations',
     icon: 'home-add-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/theme-pages/integration',
+    to: 'https://vuejs.tailwind-admin.com/theme-pages/integration',
     isPro: true,
   },
   {
     title: 'API Keys',
     icon: 'key-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/theme-pages/apikey',
+    to: 'https://vuejs.tailwind-admin.com/theme-pages/apikey',
     isPro: true,
   },
   { header: "WIDGETS" },
   {
     title: 'Cards',
     icon: 'card-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/widgets/cards',
+    to: 'https://vuejs.tailwind-admin.com/widgets/cards',
     isPro: true,
   },
   {
     title: 'Banners',
     icon: 'object-scan-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/widgets/banners',
+    to: 'https://vuejs.tailwind-admin.com/widgets/banners',
     isPro: true,
   },
   {
     title: 'Charts',
     icon: 'pie-chart-2-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/widgets/charts',
+    to: 'https://vuejs.tailwind-admin.com/widgets/charts',
 
   },
 
@@ -387,35 +387,35 @@ const sidebarItem: menu[] = [
     children: [
       {
         title: 'Line Chart',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/charts/apex-charts/line',
+        to: 'https://vuejs.tailwind-admin.com/charts/apex-charts/line',
         isPro: true,
       },
       {
         title: 'Area Chart',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/charts/apex-charts/area',
+        to: 'https://vuejs.tailwind-admin.com/charts/apex-charts/area',
         isPro: true,
       }, {
         title: 'Gradient Chart',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/charts/apex-charts/gradient',
+        to: 'https://vuejs.tailwind-admin.com/charts/apex-charts/gradient',
         isPro: true,
       },
       {
         title: 'Candlestick',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/charts/apex-charts/candlestick',
+        to: 'https://vuejs.tailwind-admin.com/charts/apex-charts/candlestick',
         isPro: true,
       }, {
         title: 'Column Chart',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/charts/apex-charts/column',
+        to: 'https://vuejs.tailwind-admin.com/charts/apex-charts/column',
         isPro: true,
       },
       {
         title: 'Doughnut & Pie',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/charts/apex-charts/doughnut',
+        to: 'https://vuejs.tailwind-admin.com/charts/apex-charts/doughnut',
         isPro: true,
       },
       {
         title: 'Radial & Radar',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/charts/apex-charts/radialbar',
+        to: 'https://vuejs.tailwind-admin.com/charts/apex-charts/radialbar',
         isPro: true,
       },
 
@@ -426,7 +426,7 @@ const sidebarItem: menu[] = [
   {
     title: "Form Elements",
     icon: "code-file-linear",
-    to: "https://tailwindadmin-vuejs-main.netlify.app/components/form/checkbox",
+    to: "https://vuejs.tailwind-admin.com/components/form/checkbox",
     isPro: true,
 
   },
@@ -515,7 +515,7 @@ const sidebarItem: menu[] = [
   { header: "Ui" },
   {
     title: 'Ui Elements',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/components/ui/alert',
+    to: 'https://vuejs.tailwind-admin.com/components/ui/alert',
     isPro: true,
     icon: "palette-round-linear",
   },
@@ -536,7 +536,7 @@ const sidebarItem: menu[] = [
     children: [
       {
         title: 'Side Login',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/auth/auth1/login',
+        to: 'https://vuejs.tailwind-admin.com/auth/auth1/login',
         isPro: true,
       },
       {
@@ -554,7 +554,7 @@ const sidebarItem: menu[] = [
     children: [
       {
         title: 'Side Register',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/auth/auth1/register',
+        to: 'https://vuejs.tailwind-admin.com/auth/auth1/register',
         isPro: true,
       },
       {
@@ -573,7 +573,7 @@ const sidebarItem: menu[] = [
     children: [
       {
         title: 'Side Forgot',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/auth/auth1/forgot-password',
+        to: 'https://vuejs.tailwind-admin.com/auth/auth1/forgot-password',
         isPro: true,
       },
       {
@@ -592,7 +592,7 @@ const sidebarItem: menu[] = [
     children: [
       {
         title: 'Side Two Steps',
-        to: 'https://tailwindadmin-vuejs-main.netlify.app/auth/auth1/two-steps',
+        to: 'https://vuejs.tailwind-admin.com/auth/auth1/two-steps',
         isPro: true,
       },
       {
@@ -605,13 +605,13 @@ const sidebarItem: menu[] = [
   {
     title: 'Error',
     icon: 'link-broken-minimalistic-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/auth/error',
+    to: 'https://vuejs.tailwind-admin.com/auth/error',
     isPro: true,
   },
   {
     title: 'Maintenance',
     icon: 'settings-linear',
-    to: 'https://tailwindadmin-vuejs-main.netlify.app/auth/maintenance',
+    to: 'https://vuejs.tailwind-admin.com/auth/maintenance',
     isPro: true,
   },
   { header: "Other" },
